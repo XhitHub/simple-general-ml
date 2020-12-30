@@ -51,6 +51,10 @@ def fillMissing(df):
 def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')):
   data = imputer.fit_transform(df)
   for (x,y), value in np.ndenumerate(data):
+    # print(x)
+    # print(y)
+    # print(df.columns[y])
+    # print(value)
     df.at[x, df.columns[y]] = value
 
 
