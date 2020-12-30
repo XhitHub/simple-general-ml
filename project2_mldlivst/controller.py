@@ -11,7 +11,7 @@ def run():
   print('After process X:')
   print(df)
   print(res)
-  resPath = ROOT + '/data/processed.csv'
+  resPath = ROOT + '/data/preprocessed.csv'
   df.to_csv(resPath, index=False)
 
 def processX(df):
