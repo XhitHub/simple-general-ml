@@ -17,6 +17,8 @@ def run():
   #   ys_df: poss Ys df
   x_df = pd.read_csv(X_CSV_FILEPATH)
   ys_df = pd.read_csv(YS_CSV_FILEPATH)
+  removeDates(x_df)
+  removeDates(ys_df)
 
   # preprocess
   #   standardize scale
@@ -43,6 +45,9 @@ def run():
   linear_regression_results_df = pd.DataFrame(linear_regression_results)
   df.to_json(TRAINING_RESULTS_FILEPATH, orient='records', lines=True)
 
+def removeDates(df):
+  del df['datetime']
+  del df['dateObj']
 
 def processX(df):
   # do all preprocess, feature extraction, ...
