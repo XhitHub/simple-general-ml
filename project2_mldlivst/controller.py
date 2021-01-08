@@ -28,7 +28,8 @@ def run():
   #     no scaling for y
 
   # scalers, ... obtained in preo=process
-  preprocessRes = processX(x_df)
+  preprocess_x_res = processX(x_df)
+  # preprocess_y_res = processX(ys_df)
   # gPre.impute(x_df)
   # processY(ys_df)
   gPre.impute(ys_df)
@@ -39,7 +40,7 @@ def run():
   #     train_df = join x_df and picked col
   #     df of x and a y picked
   #     try diff MLs on the df
-  maxCount = 30
+  maxCount = 200
   count = 0
   for col in ys_df:
     # train_df = pd.concat([df1, df2], axis=1)
@@ -86,6 +87,7 @@ def train(stock, x_df, y_df):
   res['stock'] = stock
   res['score'] = reg.score(x, y)
   res['params'] = reg.get_params()
+  # res['coef_'] = reg.coef_
   linear_regression_results.append(res)
 
     

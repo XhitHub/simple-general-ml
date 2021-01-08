@@ -55,7 +55,9 @@ def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequ
     # print(y)
     # print(df.columns[y])
     # print(value)
-    df.at[x, df.columns[y]] = value
+    oVal = df.at[x, df.columns[y]]
+    if (oVal == '' or pd.isnull(oVal)):
+      df.at[x, df.columns[y]] = value
 
 
 # def runWithListOfPreprocessers(df, numPreprocessers):
