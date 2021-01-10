@@ -12,7 +12,9 @@ TRAINING_RESULTS_FILEPATH = ROOT + '/data/results/results.json'
 linear_regression_results = []
 
 def run():
-  df = pd.read_csv(X_CSV_FILEPATH, error_bad_lines=False)
+  df = pd.read_csv(X_CSV_FILEPATH)
+  # df = pd.read_csv(X_CSV_FILEPATH, error_bad_lines=False)
+  # df = pd.read_csv(X_CSV_FILEPATH, sep=',')
 
   # preprocess
   # words vect by encode ctg
