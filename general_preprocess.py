@@ -50,6 +50,10 @@ def fillMissing(df):
 
 def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')):
   data = imputer.fit_transform(df)
+  ndenum = np.ndenumerate(data)
+  # print(ndenum)
+  # print(len(ndenum))
+  # print(df.shape)
   for (x,y), value in np.ndenumerate(data):
     # print(x)
     # print(y)

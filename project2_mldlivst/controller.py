@@ -5,6 +5,7 @@ import general_preprocess as gPre
 
 ROOT = 'project2_mldlivst'
 X_CSV_FILEPATH = ROOT + '/data/training1_X.csv'
+X_CSV_FILEPATH_TEST = ROOT + '/data/test/training1_X.csv'
 YS_CSV_FILEPATH = ROOT + '/data/training1_Y.csv'
 TRAINING_RESULTS_FILEPATH = ROOT + '/data/results/results.json'
 
@@ -16,10 +17,12 @@ def run():
   # read csv to df
   #   x_df: X df
   #   ys_df: poss Ys df
-  x_df = pd.read_csv(X_CSV_FILEPATH)
-  ys_df = pd.read_csv(YS_CSV_FILEPATH)
-  removeDates(x_df)
-  removeDates(ys_df)
+  x_df_all = pd.read_csv(X_CSV_FILEPATH)
+  ys_df_all = pd.read_csv(YS_CSV_FILEPATH)
+  trimCount = 8
+  dfLen = len(x_df_all.index)
+  removeDates(x_df_all)
+  removeDates(ys_df_all)
 
   # preprocess
   #   standardize scale
@@ -28,11 +31,18 @@ def run():
   #     no scaling for y
 
   # scalers, ... obtained in preo=process
-  preprocess_x_res = processX(x_df)
+  preprocess_x_res = processX(x_df_all)
   # preprocess_y_res = processX(ys_df)
   # gPre.impute(x_df)
   # processY(ys_df)
-  gPre.impute(ys_df)
+  gPre.impute(ys_df_all)
+
+  x_df = x_df_all[trimCount : dfLen-trimCount]
+  ys_df = ys_df_all[trimCount : dfLen-trimCount]
+
+  # inspect x_df
+  x_df.to_csv(ROOT + '/data/test/x_t1_imputed.csv')
+  ys_df.to_csv(ROOT + '/data/test/ys_t1_imputed.csv')
 
   # train
   #   foreach col in ys_df:
@@ -76,17 +86,31 @@ def processY(df):
 
 def train(stock, x_df, y_df):
   # check nan
-  print(x_df.isnull().values.any())
-  print(y_df.isnull().values.any())
+  # print(x_df.isnull().values.any())
+  # print(y_df.isnull().values.any())
 
   # LinearRegression
-  x = x_df[:].values
-  y = y_df[:].values
+  x = x_df.values
+  y = y_df.values
+
+  # print(x)
+  # print(y)
+  # x = x_df[:].values
+  # y = y_df[:].values
   reg = LinearRegression().fit(x, y)
   res = {}
   res['stock'] = stock
   res['score'] = reg.score(x, y)
   res['params'] = reg.get_params()
+
+  # test prediction
+  pY = reg.predict(x)
+  py_df = pd.DataFrame(pY)
+  pred_df = pd.concat([y_df, py_df], axis=1)
+  pred_df.to_csv(ROOT + '/data/test_pred/'+stock[0:4]+'.csv')
+
+
+
   # res['coef_'] = reg.coef_
   linear_regression_results.append(res)
 
