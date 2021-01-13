@@ -1,3 +1,4 @@
+import math
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from . import preprocess
@@ -32,10 +33,8 @@ def run():
 
   # scalers, ... obtained in preo=process
   preprocess_x_res = processX(x_df_all)
-  # preprocess_y_res = processX(ys_df)
-  # gPre.impute(x_df)
-  # processY(ys_df)
-  gPre.impute(ys_df_all)
+  preprocess_y_res = processX(ys_df_all)
+  # gPre.impute(ys_df_all)
 
   x_df = x_df_all[trimCount : dfLen-trimCount]
   ys_df = ys_df_all[trimCount : dfLen-trimCount]
@@ -93,11 +92,15 @@ def train(stock, x_df, y_df):
   x = x_df.values
   y = y_df.values
 
-  # print(x)
-  # print(y)
+  print(stock)
+  # print(x.shape)
+  # print(y.shape)
   # x = x_df[:].values
   # y = y_df[:].values
-  reg = LinearRegression().fit(x, y)
+  try:
+    reg = LinearRegression().fit(x, y)
+  except Exception as e:
+    print(e)
   res = {}
   res['stock'] = stock
   res['score'] = reg.score(x, y)
@@ -105,10 +108,20 @@ def train(stock, x_df, y_df):
 
   # test prediction
   pY = reg.predict(x)
+  print(pY.shape)
   py_df = pd.DataFrame(pY)
   pred_df = pd.concat([y_df, py_df], axis=1)
   pred_df.to_csv(ROOT + '/data/test_pred/'+stock[0:4]+'.csv')
 
+  # custom score
+  sum = 0
+  for i,predY in enumerate(pY):
+    diff = predY - y[i]
+    # print(diff)
+    sum += (diff * diff)
+  print(sum)
+  res['custom_training_error_sum'] = sum
+  res['custom_training_error'] = math.sqrt(sum / len(pY))
 
 
   # res['coef_'] = reg.coef_
