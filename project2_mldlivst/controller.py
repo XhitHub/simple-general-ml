@@ -97,13 +97,18 @@ def train(stock, x_df, y_df):
   # print(y.shape)
   # x = x_df[:].values
   # y = y_df[:].values
+  tc = 180
+  x_train = x[:tc]
+  y_train = y[:tc]
+  x_test = x[tc:]
+  y_test = y[tc:]
   try:
-    reg = LinearRegression().fit(x, y)
+    reg = LinearRegression().fit(x_train, y_train)
   except Exception as e:
     print(e)
   res = {}
   res['stock'] = stock
-  res['score'] = reg.score(x, y)
+  res['score'] = reg.score(x_test, y_test)
   res['params'] = reg.get_params()
 
   # test prediction
