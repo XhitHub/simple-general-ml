@@ -1,17 +1,13 @@
 import math
 import pandas as pd
 from sklearn.linear_model import LinearRegression
-from sklearn.tree import DecisionTreeClassifier
 from . import preprocess
 import general_preprocess as gPre
-import general_train as gTrain
 
 ROOT = 'project2_mldlivst'
 X_CSV_FILEPATH = ROOT + '/data/training1_X.csv'
 X_CSV_FILEPATH_TEST = ROOT + '/data/test/training1_X.csv'
-# YS_CSV_FILEPATH = ROOT + '/data/training1_Y.csv'
-YS_CSV_FILEPATH = ROOT + '/data/training1_Y_riseDrop.csv'
-ALL_CSV_FILEPATH = ROOT + '/data/training1.csv'
+YS_CSV_FILEPATH = ROOT + '/data/training1_Y.csv'
 TRAINING_RESULTS_FILEPATH = ROOT + '/data/results/results.json'
 
 linear_regression_results = []
@@ -24,7 +20,6 @@ def run():
   #   ys_df: poss Ys df
   x_df_all = pd.read_csv(X_CSV_FILEPATH)
   ys_df_all = pd.read_csv(YS_CSV_FILEPATH)
-  all_df_all = pd.read_csv(ALL_CSV_FILEPATH)
   trimCount = 8
   dfLen = len(x_df_all.index)
   removeDates(x_df_all)
@@ -38,18 +33,15 @@ def run():
 
   # scalers, ... obtained in preo=process
   preprocess_x_res = processX(x_df_all)
-  # preprocess_y_res = processX(ys_df_all)
-  gPre.impute(ys_df_all)
-  preprocess_all_res = processX(all_df_all)
+  preprocess_y_res = processX(ys_df_all)
+  # gPre.impute(ys_df_all)
 
   x_df = x_df_all[trimCount : dfLen-trimCount]
   ys_df = ys_df_all[trimCount : dfLen-trimCount]
-  all_df = all_df_all[trimCount : dfLen-trimCount]
 
   # inspect x_df
   x_df.to_csv(ROOT + '/data/test/x_t1_imputed.csv')
   ys_df.to_csv(ROOT + '/data/test/ys_t1_imputed.csv')
-  all_df.to_csv(ROOT + '/data/test/all_t1_imputed.csv')
 
   # train
   #   foreach col in ys_df:
@@ -111,18 +103,13 @@ def train(stock, x_df, y_df):
   x_test = x[tc:]
   y_test = y[tc:]
   try:
-    # reg = LinearRegression().fit(x_train, y_train)
-    reg = DecisionTreeClassifier().fit(x_train, y_train)
+    reg = LinearRegression().fit(x_train, y_train)
   except Exception as e:
     print(e)
   res = {}
   res['stock'] = stock
   res['score'] = reg.score(x_test, y_test)
   res['params'] = reg.get_params()
-
-  # custom eval decision tree
-  treeEvalRes = gTrain.eval_decision_tree(reg.tree_)
-  res['tree_eval'] = treeEvalRes
 
   # test prediction
   pY = reg.predict(x)
@@ -145,4 +132,4 @@ def train(stock, x_df, y_df):
   # res['coef_'] = reg.coef_
   linear_regression_results.append(res)
 
-   
+    
