@@ -2,6 +2,7 @@ import math
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import plot_tree
 from . import preprocess
 import general_preprocess as gPre
 import general_train as gTrain
@@ -9,8 +10,8 @@ import general_train as gTrain
 ROOT = 'project2_mldlivst'
 X_CSV_FILEPATH = ROOT + '/data/training1_X.csv'
 X_CSV_FILEPATH_TEST = ROOT + '/data/test/training1_X.csv'
-# YS_CSV_FILEPATH = ROOT + '/data/training1_Y.csv'
-YS_CSV_FILEPATH = ROOT + '/data/training1_Y_riseDrop.csv'
+YS_CSV_FILEPATH = ROOT + '/data/training1_Y.csv'
+# YS_CSV_FILEPATH = ROOT + '/data/training1_Y_riseDrop.csv'
 ALL_CSV_FILEPATH = ROOT + '/data/training1.csv'
 TRAINING_RESULTS_FILEPATH = ROOT + '/data/results/results.json'
 
@@ -40,6 +41,22 @@ def run():
   preprocess_x_res = processX(x_df_all)
   # preprocess_y_res = processX(ys_df_all)
   gPre.impute(ys_df_all)
+  gPre.finalImpute(ys_df_all)
+  print('discretize df nan check 1:')
+  print(ys_df_all.isnull().values.any())
+  # print(ys_df_all.isnull().values)
+  ys_df_all.to_csv(ROOT + '/data/test/ys_df_all_imputed.csv')
+  print('ys_df_all:')
+  print(ys_df_all)
+  y_discretize_res = gPre.discretize(ys_df_all, 5)
+  print(y_discretize_res)
+  print(type(y_discretize_res))
+  # ys_df_all = pd.DataFrame(data=y_discretize_res,index=ys_df_all.index, columns=ys_df_all.columns)
+  # ys_df_all = y_discretize_res
+  # ys_df_all = pd.DataFrame(y_discretize_res.toarray())
+  # ys_df_all = pd.DataFrame(y_discretize_res, index=ys_df_all.index, columns=ys_df_all.columns)
+  ys_df_all = y_discretize_res
+  ys_df_all.to_csv(ROOT + '/data/test/ys_df_all_imputed_2.csv')
   preprocess_all_res = processX(all_df_all)
 
   x_df = x_df_all[trimCount : dfLen-trimCount]
@@ -113,36 +130,39 @@ def train(stock, x_df, y_df):
   try:
     # reg = LinearRegression().fit(x_train, y_train)
     reg = DecisionTreeClassifier().fit(x_train, y_train)
+    res = {}
+    res['stock'] = stock
+    res['score'] = reg.score(x_test, y_test)
+    res['params'] = reg.get_params()
+
+    # custom eval decision tree
+    treeEvalRes = gTrain.eval_decision_tree(reg)
+    res['tree_eval'] = treeEvalRes
+    # tree_plot = plot_tree(reg)
+    # res['tree_plot'] = tree_plot
+    # res['tree_plot_str'] = str(tree_plot)
+
+    # test prediction
+    pY = reg.predict(x)
+    print(pY.shape)
+    py_df = pd.DataFrame(pY)
+    pred_df = pd.concat([y_df, py_df], axis=1)
+    pred_df.to_csv(ROOT + '/data/test_pred/'+stock[0:4]+'.csv')
+
+    # custom score
+    sum = 0
+    for i,predY in enumerate(pY):
+      diff = predY - y[i]
+      # print(diff)
+      sum += (diff * diff)
+    print(sum)
+    res['custom_training_error_sum'] = sum
+    res['custom_training_error'] = math.sqrt(sum / len(pY))
+
+
+    # res['coef_'] = reg.coef_
+    linear_regression_results.append(res)
   except Exception as e:
     print(e)
-  res = {}
-  res['stock'] = stock
-  res['score'] = reg.score(x_test, y_test)
-  res['params'] = reg.get_params()
-
-  # custom eval decision tree
-  treeEvalRes = gTrain.eval_decision_tree(reg.tree_)
-  res['tree_eval'] = treeEvalRes
-
-  # test prediction
-  pY = reg.predict(x)
-  print(pY.shape)
-  py_df = pd.DataFrame(pY)
-  pred_df = pd.concat([y_df, py_df], axis=1)
-  pred_df.to_csv(ROOT + '/data/test_pred/'+stock[0:4]+'.csv')
-
-  # custom score
-  sum = 0
-  for i,predY in enumerate(pY):
-    diff = predY - y[i]
-    # print(diff)
-    sum += (diff * diff)
-  print(sum)
-  res['custom_training_error_sum'] = sum
-  res['custom_training_error'] = math.sqrt(sum / len(pY))
-
-
-  # res['coef_'] = reg.coef_
-  linear_regression_results.append(res)
 
    

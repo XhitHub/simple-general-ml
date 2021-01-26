@@ -23,10 +23,11 @@ def filter_tree_eval(resItem):
 
 
 # ref: https://stackoverflow.com/questions/32506951/how-to-explore-a-decision-tree-built-using-scikit-learn
-def eval_decision_tree(tree):
+def eval_decision_tree(clf):
+  myTree = clf.tree_
   res = []
-  cl = tree.children_left
-  cr = tree.children_right
+  cl = myTree.children_left
+  cr = myTree.children_right
   # for children in [cl, cr]:
   i = 0
   # can only look at cl. if node i is leaf, 
@@ -36,9 +37,11 @@ def eval_decision_tree(tree):
       # is leaf
       resItem = {
         'i': i,
-        'feature': tree.feature[i],
-        'n_node_samples': tree.n_node_samples[i],
-        'impurity': tree.impurity[i]
+        # 'feature': myTree.feature[i],
+        'val': myTree.value[i],
+        'class': clf.classes_[np.argmax(myTree.value[i])],
+        'n_node_samples': myTree.n_node_samples[i],
+        'impurity': myTree.impurity[i]
       }
       if (resItem['n_node_samples'] >= SAMPLES_THRESHOLD):
         res.append(resItem)
