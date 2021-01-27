@@ -44,13 +44,20 @@ def encodeCtgs(df, col, preprocesser=OneHotEncoder()):
   df.drop(col, 1, inplace=True)
   return preprocesser
 
+def myDiscretize(df, ctgCount):
+  for col in df:
+    valRange = col.max() - col.min()
+    interval = valRange / ctgCount
+
+
 def discretize(df, ctgCount):
   # print('discretize df nan check:')
   # print(df.isnull().values.any())
   est = KBinsDiscretizer(n_bins=ctgCount, strategy='uniform', encode='ordinal').fit(df)
   ndarrayTransformed = est.transform(df)
-  # ndarrayTransformed2 = est.inverse_transform(ndarrayTransformed)
-  resDf = pd.DataFrame(ndarrayTransformed, index=df.index, columns=df.columns)
+  # resDf = pd.DataFrame(ndarrayTransformed, index=df.index, columns=df.columns)
+  ndarrayTransformed2 = est.inverse_transform(ndarrayTransformed)
+  resDf = pd.DataFrame(ndarrayTransformed2, index=df.index, columns=df.columns)
   return resDf
 
 def fillMissing(df):
