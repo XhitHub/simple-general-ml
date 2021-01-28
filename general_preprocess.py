@@ -45,9 +45,25 @@ def encodeCtgs(df, col, preprocesser=OneHotEncoder()):
   return preprocesser
 
 def myDiscretize(df, ctgCount):
-  for col in df:
+  for colName in df.columns:
+    col = df[colName]
     valRange = col.max() - col.min()
     interval = valRange / ctgCount
+    sectMax = [0] * ctgCount
+    classes = [0] * ctgCount
+    for i in range(0,ctgCount):
+      sectMax[i] = col.min() + (i+1) * interval
+      classes[i] = "S" + str(col.min() + i * interval)
+    newCol = []
+    # for val in col:
+    for i in range(0, len(col)):
+      for j in range(0,ctgCount):
+        if sectMax[j] >= col[i]:
+          col[i] = classes[j]
+          break
+  return df
+
+    
 
 
 def discretize(df, ctgCount):

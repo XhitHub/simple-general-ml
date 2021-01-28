@@ -48,7 +48,8 @@ def run():
   ys_df_all.to_csv(ROOT + '/data/test/ys_df_all_imputed.csv')
   print('ys_df_all:')
   print(ys_df_all)
-  y_discretize_res = gPre.discretize(ys_df_all, 5)
+  # y_discretize_res = gPre.discretize(ys_df_all, 5)
+  y_discretize_res = gPre.myDiscretize(ys_df_all, 5)
   print(y_discretize_res)
   print(type(y_discretize_res))
   # ys_df_all = pd.DataFrame(data=y_discretize_res,index=ys_df_all.index, columns=ys_df_all.columns)
@@ -57,6 +58,7 @@ def run():
   # ys_df_all = pd.DataFrame(y_discretize_res, index=ys_df_all.index, columns=ys_df_all.columns)
   ys_df_all = y_discretize_res
   ys_df_all.to_csv(ROOT + '/data/test/ys_df_all_imputed_2.csv')
+  y_discretize_res.to_csv(ROOT + '/data/test/ys_df_all_imputed_3.csv')
   preprocess_all_res = processX(all_df_all)
 
   x_df = x_df_all[trimCount : dfLen-trimCount]
@@ -142,22 +144,22 @@ def train(stock, x_df, y_df):
     # res['tree_plot'] = tree_plot
     # res['tree_plot_str'] = str(tree_plot)
 
-    # test prediction
-    pY = reg.predict(x)
-    print(pY.shape)
-    py_df = pd.DataFrame(pY)
-    pred_df = pd.concat([y_df, py_df], axis=1)
-    pred_df.to_csv(ROOT + '/data/test_pred/'+stock[0:4]+'.csv')
+    # # test prediction
+    # pY = reg.predict(x)
+    # print(pY.shape)
+    # py_df = pd.DataFrame(pY)
+    # pred_df = pd.concat([y_df, py_df], axis=1)
+    # pred_df.to_csv(ROOT + '/data/test_pred/'+stock[0:4]+'.csv')
 
-    # custom score
-    sum = 0
-    for i,predY in enumerate(pY):
-      diff = predY - y[i]
-      # print(diff)
-      sum += (diff * diff)
-    print(sum)
-    res['custom_training_error_sum'] = sum
-    res['custom_training_error'] = math.sqrt(sum / len(pY))
+    # # custom score
+    # sum = 0
+    # for i,predY in enumerate(pY):
+    #   diff = predY - y[i]
+    #   # print(diff)
+    #   sum += (diff * diff)
+    # print(sum)
+    # res['custom_training_error_sum'] = sum
+    # res['custom_training_error'] = math.sqrt(sum / len(pY))
 
 
     # res['coef_'] = reg.coef_
