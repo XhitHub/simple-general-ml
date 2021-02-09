@@ -129,14 +129,19 @@ def train(stock, x_df, y_df):
   y_train = y[:tc]
   x_test = x[tc:]
   y_test = y[tc:]
+
+  res = {}
+  res['stock'] = stock
   try:
     # reg = LinearRegression().fit(x_train, y_train)
     reg = DecisionTreeClassifier().fit(x_train, y_train)
-    res = {}
-    res['stock'] = stock
     res['score'] = reg.score(x_test, y_test)
     res['params'] = reg.get_params()
+  except Exception as e:
+    print('train err pt 1')
+    print(e)
 
+  try:
     # custom eval decision tree
     treeEvalRes = gTrain.eval_decision_tree(reg)
     res['tree_eval'] = treeEvalRes
@@ -163,8 +168,10 @@ def train(stock, x_df, y_df):
 
 
     # res['coef_'] = reg.coef_
-    linear_regression_results.append(res)
-  except Exception as e:
-    print(e)
+  except Exception as e2:
+    print('train err pt 2')
+    print(e2)
+    
+  linear_regression_results.append(res)
 
    

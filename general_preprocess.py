@@ -53,7 +53,11 @@ def myDiscretize(df, ctgCount):
     classes = [0] * ctgCount
     for i in range(0,ctgCount):
       sectMax[i] = col.min() + (i+1) * interval
-      classes[i] = "S" + str(col.min() + i * interval)
+      classMin = (str(col.min() + i * interval))[:8]
+      classMax = (str(col.min() + (i+1) * interval))[:8]
+      classAvg = (str(col.min() + (i+0.5) * interval))[:8]
+      # classes[i] = "S" + str(col.min() + i * interval)
+      classes[i] = str(i) + ", " + classAvg + ": " + classMin + " to " + classMax
     newCol = []
     # for val in col:
     for i in range(0, len(col)):
