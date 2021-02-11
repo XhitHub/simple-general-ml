@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import plot_tree
+from joblib import dump, load
 from . import preprocess
 import general_preprocess as gPre
 import general_train as gTrain
@@ -110,6 +111,10 @@ def processY(df):
   res = gPre.impute(df)
   return res
 
+def getModelName(stock):
+  modelName = stock.replace('.','_')
+  return modelName
+
 def train(stock, x_df, y_df):
   # check nan
   # print(x_df.isnull().values.any())
@@ -134,7 +139,7 @@ def train(stock, x_df, y_df):
   res['stock'] = stock
   try:
     # reg = LinearRegression().fit(x_train, y_train)
-    reg = DecisionTreeClassifier().fit(x_train, y_train)
+    reg = DecisionTreeClassifier(min_samples_leaf=0.15).fit(x_train, y_train)
     res['score'] = reg.score(x_test, y_test)
     res['params'] = reg.get_params()
   except Exception as e:
@@ -171,6 +176,14 @@ def train(stock, x_df, y_df):
   except Exception as e2:
     print('train err pt 2')
     print(e2)
+
+  try:
+    # mn = getModelName(stock)
+    mn = stock
+    dump(reg, ROOT + '/data/results/models/' + mn + '.joblib')
+  except Exception as e3:
+    print('train err pt 3: dump')
+    print(e3)
     
   linear_regression_results.append(res)
 
