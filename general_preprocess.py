@@ -22,6 +22,11 @@ def run(df, scaler=StandardScaler()):
   }
   return res
 
+def scale(df):
+  scaler = StandardScaler()
+  scalerFitted = preprocessNumeric(df, scaler)
+  return scalerFitted
+
 def preprocess(df, preprocesser):
   df = preprocesser.fit_transform(df)
   return preprocesser
@@ -85,7 +90,8 @@ def fillMissing(df):
     df[col].fillna(method='pad',inplace=True)
 
 def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')):
-  data = imputer.fit_transform(df)
+  imputerFitted = imputer.fit(df)
+  data = imputerFitted.transform(df)
   ndenum = np.ndenumerate(data)
   # print(ndenum)
   # print(len(ndenum))
@@ -98,6 +104,7 @@ def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequ
     oVal = df.at[x, df.columns[y]]
     if (oVal == '' or pd.isnull(oVal)):
       df.at[x, df.columns[y]] = value
+  return imputerFitted
 
 def finalImpute(df):
   df.fillna(value=0, inplace=True)
