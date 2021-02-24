@@ -1,3 +1,4 @@
+import pandas as pd
 import general_preprocess as gPre
 from joblib import dump, load
 
@@ -10,18 +11,20 @@ def run():
   dfLen = len(x_df_all.index)
   removeDates(x_df_all)
   removeDates(ys_df_all)
+  # preprocess X
+  x_imputer = gPre.impute(x_df_all)
+  gPre.fillMissingFinal(x_df_all, value=0)
+  x_scaler = gPre.scale(x_df_all)
+  # preprocess Ys
+  ys_imputer = gPre.impute(ys_df_all)
+  gPre.fillMissingFinal(ys_df_all, value=0)
+  ys_df_all = gPre.myDiscretize(ys_df_all, 5)
   # trim bad rows
   x_df = x_df_all[trimCount : dfLen-trimCount]
   ys_df = ys_df_all[trimCount : dfLen-trimCount]
-  # preprocess X
-  x_imputer = gPre.impute(x_df)
-  x_scaler = gPre.scale(x_df)
-  # preprocess Ys
-  ys_imputer = gPre.impute(ys_df)
-  ys_df = gPre.myDiscretize(ys_df, 5)
-  # persist preprocessed data
-  x_df.to_csv(ROOT + '/training1_X_pre.csv')
-  ys_df.to_csv(ROOT + '/training1_Ys_pre.csv')
+  # save preprocessed data
+  x_df.to_csv(ROOT + '/preprocessed/training1_X.csv', index=False)
+  ys_df.to_csv(ROOT + '/preprocessed/training1_Y.csv', index=False)
   # persist preprocessors
   try:
     dump(x_imputer, ROOT + '/results/preprocess/x_imputer.joblib')
@@ -29,7 +32,6 @@ def run():
   except Exception as e3:
     print('preprocess err pt 1: dump')
     print(e3)
-
 
 
 

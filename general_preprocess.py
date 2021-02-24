@@ -50,7 +50,10 @@ def encodeCtgs(df, col, preprocesser=OneHotEncoder()):
   return preprocesser
 
 def myDiscretize(df, ctgCount):
+  processed = 0
+  total = len(df.columns)
   for colName in df.columns:
+    print('Processing myDiscretize on ' + str(colName) + ' (' + str(processed) +'/' + str(total) + ')')
     col = df[colName]
     valRange = col.max() - col.min()
     interval = valRange / ctgCount
@@ -70,6 +73,7 @@ def myDiscretize(df, ctgCount):
         if sectMax[j] >= col[i]:
           col[i] = classes[j]
           break
+    processed += 1
   return df
 
     
@@ -88,6 +92,13 @@ def discretize(df, ctgCount):
 def fillMissing(df):
   for col in df.columns:
     df[col].fillna(method='pad',inplace=True)
+
+def fillMissingFinal(df, value):
+  nonNanCount = df.count()
+  nanCount = df.isnull().sum().sum()
+  print('fillMissingFinal still Nan count: ' + str(nanCount) + '/' + str(nonNanCount + nanCount))
+  for col in df.columns:
+    df[col].fillna(value=value,inplace=True)
 
 def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')):
   imputerFitted = imputer.fit(df)
