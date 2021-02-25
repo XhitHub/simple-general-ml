@@ -27,6 +27,10 @@ def scale(df):
   scalerFitted = preprocessNumeric(df, scaler)
   return scalerFitted
 
+def scaleNoFit(df, scaler):
+  num_cols = df.columns[df.dtypes.apply(lambda c: np.issubdtype(c, np.number))]
+  df[num_cols] = scaler.transform(df[num_cols])
+
 def preprocess(df, preprocesser):
   df = preprocesser.fit_transform(df)
   return preprocesser
@@ -100,8 +104,12 @@ def fillMissingFinal(df, value):
   for col in df.columns:
     df[col].fillna(value=value,inplace=True)
 
-def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')):
-  imputerFitted = imputer.fit(df)
+def impute(df, imputer):
+  if (imputer=None):
+    imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')
+    imputerFitted = imputer.fit(df)
+  else:
+    imputerFitted = imputer
   data = imputerFitted.transform(df)
   ndenum = np.ndenumerate(data)
   # print(ndenum)
