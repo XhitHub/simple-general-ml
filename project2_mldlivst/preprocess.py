@@ -28,6 +28,7 @@ def run():
   # persist preprocessors
   try:
     dump(x_imputer, ROOT + '/results/preprocess/x_imputer.joblib')
+    dump(ys_imputer, ROOT + '/results/preprocess/ys_imputer.joblib')
     dump(x_scaler, ROOT + '/results/preprocess/x_scaler.joblib')
   except Exception as e3:
     print('preprocess err pt 1: dump')

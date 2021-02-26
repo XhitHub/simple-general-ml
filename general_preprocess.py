@@ -104,22 +104,21 @@ def fillMissingFinal(df, value):
   for col in df.columns:
     df[col].fillna(value=value,inplace=True)
 
-def impute(df, imputer):
-  if (imputer=None):
-    imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')
-    imputerFitted = imputer.fit(df)
-  else:
-    imputerFitted = imputer
+def impute(df, imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')):
+  imputerFitted = imputer.fit(df)
   data = imputerFitted.transform(df)
   ndenum = np.ndenumerate(data)
-  # print(ndenum)
-  # print(len(ndenum))
-  # print(df.shape)
   for (x,y), value in np.ndenumerate(data):
-    # print(x)
-    # print(y)
-    # print(df.columns[y])
-    # print(value)
+    oVal = df.at[x, df.columns[y]]
+    if (oVal == '' or pd.isnull(oVal)):
+      df.at[x, df.columns[y]] = value
+  return imputerFitted
+
+def imputeNoFit(df, imputer):
+  imputerFitted = imputer
+  data = imputerFitted.transform(df)
+  ndenum = np.ndenumerate(data)
+  for (x,y), value in np.ndenumerate(data):
     oVal = df.at[x, df.columns[y]]
     if (oVal == '' or pd.isnull(oVal)):
       df.at[x, df.columns[y]] = value
@@ -135,3 +134,25 @@ def finalImpute(df):
 #     res = preprocessNumeric(df, numP)
 #     resList.append(res)
 #   return resList
+
+
+# def impute(df, imputer):
+#   if (imputer==None):
+#     imputer=SimpleImputer(missing_values=np.nan, strategy='most_frequent')
+#     imputerFitted = imputer.fit(df)
+#   else:
+#     imputerFitted = imputer
+#   data = imputerFitted.transform(df)
+#   ndenum = np.ndenumerate(data)
+#   # print(ndenum)
+#   # print(len(ndenum))
+#   # print(df.shape)
+#   for (x,y), value in np.ndenumerate(data):
+#     # print(x)
+#     # print(y)
+#     # print(df.columns[y])
+#     # print(value)
+#     oVal = df.at[x, df.columns[y]]
+#     if (oVal == '' or pd.isnull(oVal)):
+#       df.at[x, df.columns[y]] = value
+#   return imputerFitted
