@@ -13,10 +13,12 @@ def run():
   removeDates(ys_df_all)
   # preprocess X
   x_imputer = gPre.impute(x_df_all)
+  dump(x_imputer, ROOT + '/results/preprocess/x_imputer.joblib')
   gPre.fillMissingFinal(x_df_all, value=0)
   x_scaler = gPre.scale(x_df_all)
   # preprocess Ys
   ys_imputer = gPre.impute(ys_df_all)
+  dump(ys_imputer, ROOT + '/results/preprocess/ys_imputer.joblib')
   gPre.fillMissingFinal(ys_df_all, value=0)
   ys_df_all = gPre.myDiscretize(ys_df_all, 5)
   # trim bad rows
@@ -27,8 +29,8 @@ def run():
   ys_df.to_csv(ROOT + '/preprocessed/training1_Y.csv', index=False)
   # persist preprocessors
   try:
-    dump(x_imputer, ROOT + '/results/preprocess/x_imputer.joblib')
-    dump(ys_imputer, ROOT + '/results/preprocess/ys_imputer.joblib')
+    # dump(x_imputer, ROOT + '/results/preprocess/x_imputer.joblib')
+    # dump(ys_imputer, ROOT + '/results/preprocess/ys_imputer.joblib')
     dump(x_scaler, ROOT + '/results/preprocess/x_scaler.joblib')
   except Exception as e3:
     print('preprocess err pt 1: dump')

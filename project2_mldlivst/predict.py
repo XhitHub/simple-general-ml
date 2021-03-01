@@ -1,5 +1,6 @@
 from joblib import dump, load
 import pandas as pd
+import numpy as np
 import general_preprocess as gPre
 
 ROOT = 'project2_mldlivst/data'
@@ -27,32 +28,57 @@ def run():
   count = 0
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
   total = maxCount
+  # test
+  print(x_dfDatetime)
+  testDf = pd.DataFrame(data=[x_dfDatetime], columns=['datatime'])
+  print(testDf)
+  testDf2 = pd.DataFrame()
+  testDf2['datetime'] = x_dfDatetime
+  print(testDf2)
+  # print(len(train_ys_df))
   for col in train_ys_df:
     # col is the Y name
     try:
-      if (col != 'datetime' and col != 'dateObj'):
+      if (col == 'datetime' or col == 'dateObj'):
         continue
       if (count == total):
         break
       count += 1
       yName = str(col)
       print('Predicting ' + yName + '. ('+str(count)+'/'+str(total)+')')
-      resDf = pd.DataFrame(data=[x_dfDatetime], columns=['datatime'])
+      resDf = pd.DataFrame()
+      resDf['datetime'] = x_dfDatetime
       modelPath = ROOT + '/results/models/' + yName + '.joblib'
       model = load(modelPath)
       pred = model.predict(x_df)
-      resDf['pred'] = pred
+      # print(pred)
+      resDf['predict'] = pred
+    except Exception as e:
+      print('Predict ' + yName + ' err pt1: ')
+      print(e)
+    try:
       predProbs = model.predict_proba(x_df)
-      for i in len(predProbs):
-        yClass = model.classes_[i]
-        # label = str(col) + '_' + str(yClass)
-        label = str(yClass)
-        resDf[label] = predProbs[i]
+      pMax = np.max(predProbs, axis=1)
+      resDf['predict_proba_max'] = pMax
+    except Exception as e:
+      print('Predict ' + yName + ' err pt2: ')
+      print(e)
+    try:
       resDf.to_csv(ROOT + '/prediction/' + yName + '.csv', index=False)
     except Exception as e:
-      print('Predict err: ' + yName)
+      print('Predict ' + yName + ' err pt3: ')
       print(e)
 
 def removeDates(df):
   del df['datetime']
   del df['dateObj']
+
+
+
+      # wrong proba approach
+      # print(predProbs)
+      # for i in range(0,len(predProbs)):
+      #   yClass = model.classes_[i]
+      #   # label = str(col) + '_' + str(yClass)
+      #   label = str(yClass)
+      #   resDf[label] = predProbs[i]
