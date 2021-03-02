@@ -11,6 +11,10 @@ import general_train as gTrain
 ROOT = 'project2_mldlivst/data'
 # to try on some of the data first, set maxCount
 maxCount = 500
+# min_samples_leaf = 0.15
+min_samples_leaf = 0.2 #gd
+# min_samples_leaf = 0.4
+# min_samples_leaf = .5
 
 training_results = []
 
@@ -64,7 +68,7 @@ def train(stock, x_df, y_df):
   res['stock'] = stock
   try:
     # model = LinearRegression().fit(x_train, y_train)
-    model = DecisionTreeClassifier(min_samples_leaf=0.15).fit(x_train, y_train)
+    model = DecisionTreeClassifier(min_samples_leaf=min_samples_leaf).fit(x_train, y_train)
     res['train_score'] = model.score(x_train, y_train)
     if (x_test != None and y_test != None):
       res['test_score'] = model.score(x_test, y_test)

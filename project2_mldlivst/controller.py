@@ -4,5 +4,5 @@ import project2_mldlivst.predict as predict
 
 def run():
   # preprocess.run()
-  # train.run()
+  train.run()
   predict.run()
