@@ -28,13 +28,8 @@ def run():
   count = 0
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
   total = maxCount
-  # test
-  print(x_dfDatetime)
-  testDf = pd.DataFrame(data=[x_dfDatetime], columns=['datatime'])
-  print(testDf)
-  testDf2 = pd.DataFrame()
-  testDf2['datetime'] = x_dfDatetime
-  print(testDf2)
+  allResDf = pd.DataFrame()
+  allResDf['datetime'] = x_dfDatetime
   # print(len(train_ys_df))
   for col in train_ys_df:
     # col is the Y name
@@ -53,6 +48,7 @@ def run():
       pred = model.predict(x_df)
       # print(pred)
       resDf['predict'] = pred
+      allResDf[yName + '_predict'] = pred
     except Exception as e:
       print('Predict ' + yName + ' err pt1: ')
       print(e)
@@ -60,6 +56,7 @@ def run():
       predProbs = model.predict_proba(x_df)
       pMax = np.max(predProbs, axis=1)
       resDf['predict_proba_max'] = pMax
+      allResDf[yName + '_predict_proba_max'] = pMax
     except Exception as e:
       print('Predict ' + yName + ' err pt2: ')
       print(e)
@@ -68,6 +65,11 @@ def run():
     except Exception as e:
       print('Predict ' + yName + ' err pt3: ')
       print(e)
+  try:
+    allResDf.to_csv(ROOT + '/results/all_predictions.csv', index=False)
+  except Exception as e:
+    print('pt4: Write allResDf err: ')
+    print(e)
 
 def removeDates(df):
   del df['datetime']
