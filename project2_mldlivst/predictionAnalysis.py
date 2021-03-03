@@ -24,6 +24,7 @@ def run():
       "datetime": row['datetime'],
       "picks": []
     }
+    picksCount = 0
     for i in range(0,len(yNames)):
       try:
         yName = yNames[i]
@@ -43,11 +44,13 @@ def run():
               "probability": prob
             }
             item['picks'].append(pickItem)
+            picksCount += 1
       except Exception as e:
         print('Exception in picking for ' + yName)
         # print(e)
         # print(traceback.format_exc())
+    item['picksCount'] = picksCount
     res.append(item)
   
   with open(ROOT + '/results/all_predictions_analysis.json', 'w') as fout:
-    json.dump(res , fout)
+    json.dump(res , fout, indent=2)
