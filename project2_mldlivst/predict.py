@@ -4,7 +4,7 @@ import numpy as np
 import general_preprocess as gPre
 
 ROOT = 'project2_mldlivst/data'
-maxCount = 500
+maxCount = 900
 
 def run():
   x_df = pd.read_csv(ROOT + '/predict_X.csv')
