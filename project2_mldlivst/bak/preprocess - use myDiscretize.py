@@ -4,7 +4,6 @@ from joblib import dump, load
 
 ROOT = 'project2_mldlivst/data'
 trimCount = 8
-yCtgArr = [2,5]
 
 def run():
   x_df_all = pd.read_csv(ROOT + '/training1_X.csv')
@@ -21,8 +20,7 @@ def run():
   ys_imputer = gPre.impute(ys_df_all)
   dump(ys_imputer, ROOT + '/results/preprocess/ys_imputer.joblib')
   gPre.fillMissingFinal(ys_df_all, value=0)
-  # ys_df_all = gPre.myDiscretize(ys_df_all, 5)
-  ys_df_all = gPre.percentageChangeToCtg(ys_df_all, yCtgArr)
+  ys_df_all = gPre.myDiscretize(ys_df_all, 5)
   # trim bad rows
   x_df = x_df_all[trimCount : dfLen-trimCount]
   ys_df = ys_df_all[trimCount : dfLen-trimCount]

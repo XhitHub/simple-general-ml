@@ -80,6 +80,33 @@ def myDiscretize(df, ctgCount):
     processed += 1
   return df
 
+def percentageChangeToCtg(df, ctgArr):
+  processed = 0
+  total = len(df.columns)
+  for colName in df.columns:
+    print('Processing percentageChangeToCtg on ' + str(colName) + ' (' + str(processed) +'/' + str(total) + ')')
+    col = df[colName]
+    # for val in col:
+    for i in range(0, len(col)):
+      # *100 as is percentage
+      val = col[i] * 100
+      prefix = None
+      resC = 0
+      if val > 0:
+        prefix = 'i'
+        for c in ctgArr:
+          if val >= c and c > resC:
+            resC = c
+      if val <= 0:
+        prefix = 'd'
+        for c in ctgArr:
+          if -val >= c and c > resC:
+            resC = c
+      resVal = prefix + str(resC)
+      col[i] = resVal
+    processed += 1
+  return df
+
     
 
 
