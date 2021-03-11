@@ -41,5 +41,7 @@ def run():
 
 
 def removeDates(df):
-  del df['datetime']
-  del df['dateObj']
+  if ('datetime' in df.columns):
+    del df['datetime']
+  if ('dateObj' in df.columns):
+    del df['dateObj']
