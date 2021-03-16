@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import json
-import math
 import traceback
 
 ROOT = 'project2_mldlivst/data'
@@ -13,8 +12,6 @@ def run():
   df = pd.read_csv(ROOT + '/results/all_predictions.csv')
   # refers to train Y csv to see wt Ys are available to be predicted
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
-  raw_train_ys_df = pd.read_csv(ROOT + '/training1_Y.csv')
-  raw_train_ys_df.set_index('datetime', inplace=True)
   # del train_ys_df['datetime']
   yNames = train_ys_df.columns
   print(yNames)
@@ -23,9 +20,8 @@ def run():
 
   res = []
   for index, row in df.iterrows():
-    rowDateTime = row['datetime']
     item = {
-      "datetime": rowDateTime,
+      "datetime": row['datetime'],
     }
     tempRisePicks = []
     risePicksCount = 0
@@ -46,7 +42,7 @@ def run():
           predInt = int(row[predKey][1:])
           # pick rise
           if (predFlag == 'i' and predInt >= pickMin):
-            ### pass rise
+            # pass rise
             # rawPred? No, there won't be rawPred as any pred is already ctg processed classes
             pickItem = {
               "item": yName,
@@ -54,21 +50,11 @@ def run():
               "predInt": predInt,
               "probability": prob
             }
-            # actual result, available for old enough records
-            try:
-              actualRow = raw_train_ys_df.loc[rowDateTime]
-              actualRes = actualRow[yName]
-              if (math.isnan(actualRes)):
-                actualRes = 'nan'
-              pickItem['actual_result'] = actualRes
-            except Exception as e:
-              print('Exception in adding actual result ' + rowDateTime + ', ' + yName)
-              print(traceback.format_exc())
             tempRisePicks.append(pickItem)
             risePicksCount += 1
           # pick drop
           if (predFlag == 'd' and predInt >= pickMin):
-            ### pass drop
+            # pass drop
             # rawPred? No, there won't be rawPred as any pred is already ctg processed classes
             pickItem = {
               "item": yName,
@@ -76,16 +62,6 @@ def run():
               "predInt": predInt,
               "probability": prob
             }
-            # actual result, available for old enough records
-            try:
-              actualRow = raw_train_ys_df.loc[rowDateTime]
-              actualRes = actualRow[yName]
-              if (math.isnan(actualRes)):
-                actualRes = 'nan'
-              pickItem['actual_result'] = actualRes
-            except Exception as e:
-              print('Exception in adding actual result ' + rowDateTime + ', ' + yName)
-              print(traceback.format_exc())
             tempDropPicks.append(pickItem)
             dropPicksCount += 1
       except Exception as e:

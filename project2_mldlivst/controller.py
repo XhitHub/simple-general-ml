@@ -5,6 +5,6 @@ import project2_mldlivst.predictionAnalysis as predictionAnalysis
 
 def run():
   # preprocess.run()
-  train.run()
-  predict.run()
+  # train.run()
+  # predict.run()
   predictionAnalysis.run()
