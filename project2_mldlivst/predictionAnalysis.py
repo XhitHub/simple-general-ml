@@ -13,7 +13,7 @@ def run():
   df = pd.read_csv(ROOT + '/results/all_predictions.csv')
   # refers to train Y csv to see wt Ys are available to be predicted
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
-  raw_train_ys_df = pd.read_csv(ROOT + '/training1_Y.csv')
+  raw_train_ys_df = pd.read_csv(ROOT + '/validation1_Y.csv')
   raw_train_ys_df.set_index('datetime', inplace=True)
   # del train_ys_df['datetime']
   yNames = train_ys_df.columns
@@ -22,6 +22,7 @@ def run():
   # return
 
   res = []
+  resErrorList = []
   for index, row in df.iterrows():
     rowDateTime = row['datetime']
     item = {
@@ -31,6 +32,7 @@ def run():
     risePicksCount = 0
     tempDropPicks = []
     dropPicksCount = 0
+    totalRisePicksError = 0
     for i in range(0,len(yNames)):
       try:
         yName = yNames[i]
@@ -60,7 +62,14 @@ def run():
               actualRes = actualRow[yName]
               if (math.isnan(actualRes)):
                 actualRes = 'nan'
+                error = 'nan'
+              else:
+                # to percentage
+                actualRes *= 100
+                error = actualRes - predInt
+                totalRisePicksError += error
               pickItem['actual_result'] = actualRes
+              pickItem['error'] = error
             except Exception as e:
               print('Exception in adding actual result ' + rowDateTime + ', ' + yName)
               print(traceback.format_exc())
@@ -95,9 +104,20 @@ def run():
     # order the picks
     item['risePicksCount'] = risePicksCount
     item['dropPicksCount'] = dropPicksCount
+    if (risePicksCount > 0 and totalRisePicksError != 0):
+      avgRisePicksError = totalRisePicksError / risePicksCount
+      item['avgRisePicksError'] = avgRisePicksError
+      resErrorListItem = {
+        "datetime": rowDateTime,
+        "avgRisePicksError": avgRisePicksError,
+      }
+      resErrorList.append(resErrorListItem)
     item['risePicks'] = sorted(tempRisePicks, key=lambda item: item["predInt"] + item["probability"], reverse=True)
     item['dropPicks'] = sorted(tempDropPicks, key=lambda item: item["predInt"] + item["probability"], reverse=True)
     res.append(item)
   
   with open(ROOT + '/results/all_predictions_analysis.json', 'w') as fout:
     json.dump(res , fout, indent=2)
+
+  resErrorListDf = pd.DataFrame(resErrorList)
+  resErrorListDf.to_csv(ROOT + '/results/all_predictions_analysis_avg_errors.csv', index=False)
