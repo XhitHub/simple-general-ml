@@ -4,17 +4,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import plot_tree
 from joblib import dump, load
-
-from keras.optimizers import Adam
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Reshape
-from keras.layers import Flatten
-from keras.layers import Conv2D
-from keras.layers import Conv2DTranspose
-from keras.layers import LeakyReLU
-from keras.layers import Dropout
-
 from . import preprocess
 import general_preprocess as gPre
 import general_train as gTrain
@@ -22,8 +11,6 @@ import general_train as gTrain
 ROOT = 'project2_mldlivst/data'
 # to try on some of the data first, set maxCount
 maxCount = 900
-
-xAttrCount = 2400
 # min_samples_leaf = 0.15
 min_samples_leaf = 0.2 #gd
 # min_samples_leaf = 0.4
@@ -57,18 +44,6 @@ def getModelName(stock):
   modelName = stock.replace('.','_')
   return modelName
 
-def defineModel():
-  c = xAttrCount
-  model = Sequential()
-  for i in range(0,9):
-    c = int(c/2)
-    model.add(Dense(c, input_shape=(xAttrCount,), activation='sigmoid'))
-  model.add(Dense(1, activation='sigmoid'))
-  # compile model
-  opt = Adam(lr=0.0002, beta_1=0.5)
-  model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
-  return model
-
 def train(stock, x_df, y_df):
   # LinearRegression
   x = x_df.values
@@ -101,6 +76,14 @@ def train(stock, x_df, y_df):
   except Exception as e:
     print('train err pt 1')
     print(e)
+
+  # custom eval decision tree
+  try:
+    treeEvalRes = gTrain.eval_decision_tree(model)
+    res['tree_eval'] = treeEvalRes
+  except Exception as e2:
+    print('train err pt 2')
+    print(e2)
 
   # persist model
   try:

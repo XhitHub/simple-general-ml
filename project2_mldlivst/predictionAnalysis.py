@@ -6,8 +6,9 @@ import traceback
 
 ROOT = 'project2_mldlivst/data'
 
-pickMin = 2
-pickProbMin = 0.7
+pickMin = 5
+# pickProbMin = 0.75
+pickProbMin = 0.8
 
 def run():
   df = pd.read_csv(ROOT + '/results/all_predictions.csv')
@@ -110,6 +111,7 @@ def run():
       resErrorListItem = {
         "datetime": rowDateTime,
         "avgRisePicksError": avgRisePicksError,
+        "risePicksCount": risePicksCount,
       }
       resErrorList.append(resErrorListItem)
     item['risePicks'] = sorted(tempRisePicks, key=lambda item: item["predInt"] + item["probability"], reverse=True)
@@ -120,4 +122,4 @@ def run():
     json.dump(res , fout, indent=2)
 
   resErrorListDf = pd.DataFrame(resErrorList)
-  resErrorListDf.to_csv(ROOT + '/results/all_predictions_analysis_avg_errors.csv', index=False)
+  resErrorListDf.to_csv(ROOT + '/results/all_predictions_analysis_avg_errors.csv', index=False, sep="\t")
