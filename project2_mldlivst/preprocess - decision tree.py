@@ -24,8 +24,7 @@ def run():
   dump(ys_imputer, ROOT + '/results/preprocess/ys_imputer.joblib')
   gPre.fillMissingFinal(ys_df_all, value=0)
   # ys_df_all = gPre.myDiscretize(ys_df_all, 5)
-  # ys_df_all = gPre.percentageChangeToOrdinalCtg(ys_df_all, yCtgArr)
-  # for regression just use original percentage change, no need further preprocess
+  ys_df_all = gPre.percentageChangeToCtg(ys_df_all, yCtgArr)
 
   # trim bad rows
   x_df = x_df_all[trimCount : dfLen-trimCount]

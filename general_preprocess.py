@@ -108,6 +108,30 @@ def percentageChangeToCtg(df, ctgArr):
   return df
 
     
+def percentageChangeToOrdinalCtg(df, ctgArr):
+  processed = 0
+  total = len(df.columns)
+  for colName in df.columns:
+    print('Processing percentageChangeToCtg on ' + str(colName) + ' (' + str(processed) +'/' + str(total) + ')')
+    col = df[colName]
+    # for val in col:
+    for i in range(0, len(col)):
+      # *100 as is percentage
+      val = col[i] * 100
+      prefix = None
+      resC = 0
+      if val > 0:
+        for c in ctgArr:
+          if val >= c and c > resC:
+            resC = c
+      if val <= 0:
+        for c in ctgArr:
+          if -val >= c and c > resC:
+            resC = -c
+      resVal = resC
+      col[i] = resVal
+    processed += 1
+  return df
 
 
 def discretize(df, ctgCount):

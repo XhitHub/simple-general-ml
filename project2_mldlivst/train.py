@@ -1,19 +1,20 @@
 import math
 import pandas as pd
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression, LogisticRegression
+from sklearn.svm import SVR
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import plot_tree
 from joblib import dump, load
 
-from keras.optimizers import Adam
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Reshape
-from keras.layers import Flatten
-from keras.layers import Conv2D
-from keras.layers import Conv2DTranspose
-from keras.layers import LeakyReLU
-from keras.layers import Dropout
+# from keras.optimizers import Adam
+# from keras.models import Sequential
+# from keras.layers import Dense
+# from keras.layers import Reshape
+# from keras.layers import Flatten
+# from keras.layers import Conv2D
+# from keras.layers import Conv2DTranspose
+# from keras.layers import LeakyReLU
+# from keras.layers import Dropout
 
 from . import preprocess
 import general_preprocess as gPre
@@ -57,17 +58,17 @@ def getModelName(stock):
   modelName = stock.replace('.','_')
   return modelName
 
-def defineModel():
-  c = xAttrCount
-  model = Sequential()
-  for i in range(0,9):
-    c = int(c/2)
-    model.add(Dense(c, input_shape=(xAttrCount,), activation='sigmoid'))
-  model.add(Dense(1, activation='sigmoid'))
-  # compile model
-  opt = Adam(lr=0.0002, beta_1=0.5)
-  model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
-  return model
+# def defineModel():
+#   c = xAttrCount
+#   model = Sequential()
+#   for i in range(0,9):
+#     c = int(c/2)
+#     model.add(Dense(c, input_shape=(xAttrCount,), activation='tanh'))
+#   model.add(Dense(1, activation='sigmoid'))
+#   # compile model
+#   opt = Adam(lr=0.0002, beta_1=0.5)
+#   model.compile(loss='binary_crossentropy', optimizer=opt, metrics=['accuracy'])
+#   return model
 
 def train(stock, x_df, y_df):
   # LinearRegression
@@ -92,8 +93,8 @@ def train(stock, x_df, y_df):
   res = {}
   res['stock'] = stock
   try:
-    # model = LinearRegression().fit(x_train, y_train)
-    model = DecisionTreeClassifier(min_samples_leaf=min_samples_leaf).fit(x_train, y_train)
+    model = LogisticRegression().fit(x_train, y_train)
+    # model = DecisionTreeClassifier(min_samples_leaf=min_samples_leaf).fit(x_train, y_train)
     res['train_score'] = model.score(x_train, y_train)
     if (x_test != None and y_test != None):
       res['test_score'] = model.score(x_test, y_test)
