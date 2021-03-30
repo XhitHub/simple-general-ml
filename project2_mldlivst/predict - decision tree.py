@@ -52,14 +52,14 @@ def run():
     except Exception as e:
       print('Predict ' + yName + ' err pt1: ')
       print(e)
-    # try:
-    #   predProbs = model.predict_proba(x_df)
-    #   pMax = np.max(predProbs, axis=1)
-    #   resDf['predict_proba_max'] = pMax
-    #   allResDf[yName + '_predict_proba_max'] = pMax
-    # except Exception as e:
-    #   print('Predict ' + yName + ' err pt2: ')
-    #   print(e)
+    try:
+      predProbs = model.predict_proba(x_df)
+      pMax = np.max(predProbs, axis=1)
+      resDf['predict_proba_max'] = pMax
+      allResDf[yName + '_predict_proba_max'] = pMax
+    except Exception as e:
+      print('Predict ' + yName + ' err pt2: ')
+      print(e)
     try:
       resDf.to_csv(ROOT + '/prediction/' + yName + '.csv', index=False)
     except Exception as e:

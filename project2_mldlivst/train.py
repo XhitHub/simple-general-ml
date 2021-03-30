@@ -93,7 +93,8 @@ def train(stock, x_df, y_df):
   res = {}
   res['stock'] = stock
   try:
-    model = LogisticRegression().fit(x_train, y_train)
+    model = SVR().fit(x_train, y_train)
+    # model = LogisticRegression().fit(x_train, y_train)
     # model = DecisionTreeClassifier(min_samples_leaf=min_samples_leaf).fit(x_train, y_train)
     res['train_score'] = model.score(x_train, y_train)
     if (x_test != None and y_test != None):
