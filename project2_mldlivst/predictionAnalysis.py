@@ -15,6 +15,7 @@ def run():
   # refers to train Y csv to see wt Ys are available to be predicted
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
   raw_train_ys_df = pd.read_csv(ROOT + '/validation1_Y.csv')
+  df.set_index('datetime', inplace=True)
   raw_train_ys_df.set_index('datetime', inplace=True)
   # del train_ys_df['datetime']
   yNames = train_ys_df.columns
@@ -38,6 +39,8 @@ def run():
       try:
         yName = yNames[i]
         predKey = yName + '_predict'
+
+        
         predProbKey = yName + '_predict_proba_max'
         # check if the yName's prediction qualifies as picks
         # print(row)

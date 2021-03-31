@@ -30,6 +30,8 @@ min_samples_leaf = 0.2 #gd
 # min_samples_leaf = 0.4
 # min_samples_leaf = .5
 
+training_ratio = 0.7
+
 training_results = []
 
 def run():
@@ -52,7 +54,8 @@ def run():
       break
   # save results
   training_results_df = pd.DataFrame(training_results)
-  training_results_df.to_json(ROOT + '/results/results.json', orient='records', lines=True)
+  training_results_df.to_json(ROOT + '/results/training_results.json', orient='records', lines=True)
+  training_results_df.to_csv(ROOT + '/results/training_results.csv')
 
 def getModelName(stock):
   modelName = stock.replace('.','_')
@@ -71,6 +74,8 @@ def getModelName(stock):
 #   return model
 
 def train(stock, x_df, y_df):
+  split_train_test = False
+
   # LinearRegression
   x = x_df.values
   y = y_df.values
@@ -83,12 +88,13 @@ def train(stock, x_df, y_df):
   x_test = None
   y_test = None
 
-  # # split train test set
-  # tc = 180
-  # x_train = x[:tc]
-  # y_train = y[:tc]
-  # x_test = x[tc:]
-  # y_test = y[tc:]
+  # split train test set
+  split_train_test = True
+  tc = int(len(x_df.index) * training_ratio)
+  x_train = x[:tc]
+  y_train = y[:tc]
+  x_test = x[tc:]
+  y_test = y[tc:]
 
   res = {}
   res['stock'] = stock
@@ -97,7 +103,7 @@ def train(stock, x_df, y_df):
     # model = LogisticRegression().fit(x_train, y_train)
     # model = DecisionTreeClassifier(min_samples_leaf=min_samples_leaf).fit(x_train, y_train)
     res['train_score'] = model.score(x_train, y_train)
-    if (x_test != None and y_test != None):
+    if (split_train_test):
       res['test_score'] = model.score(x_test, y_test)
     # res['params'] = model.get_params()
   except Exception as e:
