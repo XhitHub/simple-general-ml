@@ -15,7 +15,7 @@ def run():
   # refers to train Y csv to see wt Ys are available to be predicted
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
   raw_train_ys_df = pd.read_csv(ROOT + '/validation1_Y.csv')
-  df.set_index('datetime', inplace=True)
+  # df.set_index('datetime', inplace=True)
   raw_train_ys_df.set_index('datetime', inplace=True)
   # del train_ys_df['datetime']
   yNames = train_ys_df.columns
@@ -25,7 +25,9 @@ def run():
 
   res = []
   resErrorList = []
+  total = len(df.index)
   for index, row in df.iterrows():
+    print('Prediction analysis: ('+str(index)+'/'+str(total)+')')
     rowDateTime = row['datetime']
     item = {
       "datetime": rowDateTime,
@@ -39,9 +41,10 @@ def run():
       try:
         yName = yNames[i]
         predKey = yName + '_predict'
-
-        predError = row[predKey] - raw_train_ys_df.loc[rowDateTime][yName]
-        item[yName + '_predError'] = predError
+        item[predKey] = row[predKey]
+        if (rowDateTime in raw_train_ys_df.index):
+          predError = raw_train_ys_df.loc[rowDateTime][yName] - row[predKey]
+          item[yName + '_predError'] = predError
       except Exception as e:
         print('Predict Analysis ' + yName + ' err pt1: ')
         print(e)
