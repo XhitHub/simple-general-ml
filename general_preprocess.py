@@ -106,7 +106,6 @@ def percentageChangeToCtg(df, ctgArr):
       col[i] = resVal
     processed += 1
   return df
-
     
 def percentageChangeToOrdinalCtg(df, ctgArr):
   processed = 0
@@ -132,6 +131,31 @@ def percentageChangeToOrdinalCtg(df, ctgArr):
       col[i] = resVal
     processed += 1
   return df
+
+def getValCtg(val, valRangeArr):
+  for v in valRangeArr:
+    if (val < )
+
+def toValueRangeCtg(df, valRangeArr):
+  dfRowsCount = len(df.index)
+  dfColsCount = len(df.columns)
+  # create resDf with same rows as df, cols being ctgs for each df col 
+  postfixes = ['c0']
+  for v in valRangeArr:
+    postfixes.append('c' + str(v))
+  # zero 2darr
+  arr2d = np.zeros((dfRowsCount, dfColsCount * len(postfixes)))
+  # create new cols
+  newCols = []
+  for colName in df.columns:
+    for postfix in postfixes:
+      newCols.append(colName + '_' + postfix)
+  # create new df
+  resDf = pd.DataFrame(arr2d, columns=newCols)
+  # fill 1 to resDf according to values
+  for index, row in df.iterrows():
+    for colName in df.columns:
+
 
 
 def discretize(df, ctgCount):
