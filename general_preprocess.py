@@ -132,31 +132,59 @@ def percentageChangeToOrdinalCtg(df, ctgArr):
     processed += 1
   return df
 
-def getValCtg(val, valRangeArr):
-  for v in valRangeArr:
-    if (val < )
+def getValCtg(val, valCtgArr):
+  # default is 0
+  # print('getValCtg val: ' + val)
+  valCtg = 0
+  if (val > 0):
+    for v in valCtgArr:
+      if val > v:
+        valCtg = v
+      else:
+        break
+  if (val < 0):
+    for v in valCtgArr:
+      if val < v:
+        valCtg = v
+        break
+  return valCtg
 
-def toValueRangeCtg(df, valRangeArr):
+def getValCtgColName(colName, valCtg):
+  postfix = '_c' + str(valCtg)
+  return colName + postfix
+
+def toValCtgDf(df, valCtgArr):
   dfRowsCount = len(df.index)
   dfColsCount = len(df.columns)
   # create resDf with same rows as df, cols being ctgs for each df col 
-  postfixes = ['c0']
-  for v in valRangeArr:
-    postfixes.append('c' + str(v))
+  # postfixes = ['c0']
+  # for v in valCtgArr:
+  #   postfixes.append('c' + str(v))
+  if 0 not in valCtgArr:
+    valCtgArr.append(0)
+  valCtgArr.sort()
   # zero 2darr
-  arr2d = np.zeros((dfRowsCount, dfColsCount * len(postfixes)))
+  # arr2d = np.zeros((dfRowsCount, dfColsCount * len(postfixes)))
+  arr2d = np.zeros((dfRowsCount, dfColsCount * len(valCtgArr)))
   # create new cols
   newCols = []
   for colName in df.columns:
-    for postfix in postfixes:
-      newCols.append(colName + '_' + postfix)
+    # for postfix in postfixes:
+    #   newCols.append(colName + '_' + postfix)
+    for valCtg in valCtgArr:
+      newCols.append(getValCtgColName(colName, valCtg))
   # create new df
   resDf = pd.DataFrame(arr2d, columns=newCols)
   # fill 1 to resDf according to values
   for index, row in df.iterrows():
+    print('toValCtgDf: ' + str(index) + '/' + str(len(df.index)))
     for colName in df.columns:
-
-
+      # get ctg cell belongs to. need * 100 as is percentage
+      valCtg = getValCtg(row[colName] * 100, valCtgArr)
+      # fill 1 to corresponding col in resDf
+      targetColName = getValCtgColName(colName, valCtg)
+      resDf.at[index, targetColName] = 1
+  return resDf
 
 def discretize(df, ctgCount):
   # print('discretize df nan check:')
