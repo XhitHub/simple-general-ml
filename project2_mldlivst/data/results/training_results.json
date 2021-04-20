@@ -183,7 +183,7 @@
 {"stock":"0941.XHKG_closeDelta1dR_c2","train_score":1.0,"test_score":0.8235294118}
 {"stock":"0941.XHKG_closeDelta1dR_c5","train_score":1.0,"test_score":0.9882352941}
 {"stock":"0941.XHKG_closeDelta2dR_c-5","train_score":1.0,"test_score":0.9529411765}
-{"stock":"0941.XHKG_closeDelta2dR_c0","train_score":1.0,"test_score":0.6823529412}
+{"stock":"0941.XHKG_closeDelta2dR_c0","train_score":1.0,"test_score":0.6941176471}
 {"stock":"0941.XHKG_closeDelta2dR_c2","train_score":1.0,"test_score":0.7647058824}
 {"stock":"0941.XHKG_closeDelta2dR_c5","train_score":1.0,"test_score":0.9176470588}
 {"stock":"0941.XHKG_closeDelta3dR_c-5","train_score":1.0,"test_score":0.9058823529}
@@ -327,7 +327,7 @@
 {"stock":"3968.XHKG_closeDelta1dR_c2","train_score":1.0,"test_score":0.8470588235}
 {"stock":"3968.XHKG_closeDelta1dR_c5","train_score":1.0,"test_score":0.9647058824}
 {"stock":"3968.XHKG_closeDelta2dR_c-5","train_score":1.0,"test_score":0.9882352941}
-{"stock":"3968.XHKG_closeDelta2dR_c0","train_score":1.0,"test_score":0.6470588235}
+{"stock":"3968.XHKG_closeDelta2dR_c0","train_score":1.0,"test_score":0.6352941176}
 {"stock":"3968.XHKG_closeDelta2dR_c2","train_score":1.0,"test_score":0.7176470588}
 {"stock":"3968.XHKG_closeDelta2dR_c5","train_score":1.0,"test_score":0.9647058824}
 {"stock":"3968.XHKG_closeDelta3dR_c-5","train_score":1.0,"test_score":0.9647058824}
@@ -831,7 +831,7 @@
 {"stock":"0388.XHKG_closeDelta1dR_c2","train_score":1.0,"test_score":0.8470588235}
 {"stock":"0388.XHKG_closeDelta1dR_c5","train_score":1.0,"test_score":1.0}
 {"stock":"0388.XHKG_closeDelta2dR_c-5","train_score":1.0,"test_score":0.9882352941}
-{"stock":"0388.XHKG_closeDelta2dR_c0","train_score":1.0,"test_score":0.7882352941}
+{"stock":"0388.XHKG_closeDelta2dR_c0","train_score":1.0,"test_score":0.7764705882}
 {"stock":"0388.XHKG_closeDelta2dR_c2","train_score":1.0,"test_score":0.8470588235}
 {"stock":"0388.XHKG_closeDelta2dR_c5","train_score":1.0,"test_score":0.9647058824}
 {"stock":"0388.XHKG_closeDelta3dR_c-5","train_score":1.0,"test_score":0.9529411765}

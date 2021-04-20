@@ -34,6 +34,10 @@ training_ratio = 0.7
 
 training_results = []
 
+def makeModel():
+  model = LogisticRegression(max_iter=1000)
+  return model
+
 def run():
   count = 0
   x_df = pd.read_csv(ROOT + '/preprocessed/training1_X.csv')
@@ -99,7 +103,7 @@ def train(stock, x_df, y_df):
   res = {}
   res['stock'] = stock
   try:
-    model = LogisticRegression().fit(x_train, y_train)
+    model = makeModel().fit(x_train, y_train)
     # model = LogisticRegression().fit(x_train, y_train)
     # model = DecisionTreeClassifier(min_samples_leaf=min_samples_leaf).fit(x_train, y_train)
     res['train_score'] = model.score(x_train, y_train)
