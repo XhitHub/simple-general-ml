@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.linear_model import LogisticRegression
 
 # df test
 
@@ -42,3 +43,23 @@ print(dfJ)
 # sort columns
 df3 = df3.reindex(sorted(df3.columns), axis=1)
 print(df3)
+
+
+# test LogisticRegression
+train_x = [[1,2,3],[4,5,6],[7,8,9]]
+train_y1 = [[1,0,0],[0,1,0],[0,0,1]]
+train_y2 = ['a','b','c']
+train_y3 = [11,22,33]
+
+x_df = pd.DataFrame(train_x)
+y_df = pd.DataFrame(train_y3)
+
+print(x_df)
+print(y_df)
+model = LogisticRegression().fit(x_df, y_df)
+train_score = model.score(x_df, y_df)
+prediction = model.predict(x_df)
+probas = model.predict_proba(x_df)
+print(train_score)
+print(prediction)
+print(probas)
