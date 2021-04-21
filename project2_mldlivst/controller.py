@@ -7,4 +7,4 @@ def run():
   # preprocess.run()
   # train.run()
   predict.run()
-  # predictionAnalysis.run()
+  predictionAnalysis.run()

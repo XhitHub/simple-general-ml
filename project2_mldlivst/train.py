@@ -22,7 +22,7 @@ import general_train as gTrain
 
 ROOT = 'project2_mldlivst/data'
 # to try on some of the data first, set maxCount
-maxCount = 900
+maxCount = 3600
 
 xAttrCount = 2400
 # min_samples_leaf = 0.15

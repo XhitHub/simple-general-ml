@@ -4,7 +4,7 @@ import numpy as np
 import general_preprocess as gPre
 
 ROOT = 'project2_mldlivst/data'
-maxCount = 900
+maxCount = 3600
 
 def run():
   x_df = pd.read_csv(ROOT + '/predict_X.csv')
@@ -47,7 +47,7 @@ def run():
       model = load(modelPath)
       # pred = model.predict(x_df)
       pred = model.predict_proba(x_df)
-      print(pred)
+      # print(pred)
       pred1P = list(pred.T)[1]
       resDf['predict'] = pred1P
       allResDf[yName + '_predict'] = pred1P

@@ -34,3 +34,11 @@ cols2 = ['a','s','d','f','g']
 arr2d = np.zeros((3,5))
 df3 = pd.DataFrame(arr2d, columns=cols2)
 print(df3)
+
+# join horizontally by index
+dfJ = pd.concat([df, df2], axis=1)
+print(dfJ)
+
+# sort columns
+df3 = df3.reindex(sorted(df3.columns), axis=1)
+print(df3)
