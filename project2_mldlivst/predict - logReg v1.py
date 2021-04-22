@@ -45,13 +45,12 @@ def run():
       resDf['datetime'] = x_dfDatetime
       modelPath = ROOT + '/results/models/' + yName + '.joblib'
       model = load(modelPath)
-      pred = model.predict(x_df)
-      predP = model.predict_proba(x_df)
-      predPMaxs = [max(probaRow) for probaRow in predP]
-      resDf['predict'] = pred
-      allResDf[yName + '_predict'] = pred
-      resDf['predict_maxP'] = predPMaxs
-      allResDf[yName + '_predict_maxP'] = predPMaxs
+      # pred = model.predict(x_df)
+      pred = model.predict_proba(x_df)
+      # print(pred)
+      pred1P = list(pred.T)[1]
+      resDf['predict'] = pred1P
+      allResDf[yName + '_predict'] = pred1P
     except Exception as e:
       print('Predict ' + yName + ' err pt1: ')
       print(e)

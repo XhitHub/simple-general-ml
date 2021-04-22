@@ -27,7 +27,7 @@ def run():
   # simple joined prediction and validation df
   dfJoined = pd.concat([df, raw_train_ys_df], axis=1)
   dfJoined = dfJoined.reindex(sorted(dfJoined.columns), axis=1)
-  dfJoined.to_csv(ROOT + '/results/all_predictions_analysis_LogisticRegV2Joined.csv')
+  dfJoined.to_csv(ROOT + '/results/all_predictions_analysis_LogisticRegJoined.csv')
 
   # res = []
   # resErrorList = []

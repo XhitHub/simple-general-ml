@@ -149,6 +149,26 @@ def getValCtg(val, valCtgArr):
         break
   return valCtg
 
+def percentageChangeDfToIntegerCtgDf(df, valCtgArr):
+  dfRowsCount = len(df.index)
+  dfColsCount = len(df.columns)
+  if 0 not in valCtgArr:
+    valCtgArr.append(0)
+  valCtgArr.sort()
+  # zero 2darr
+  arr2d = np.zeros((dfRowsCount, dfColsCount))
+  # create new df
+  # resDf = pd.DataFrame(arr2d, columns=df.columns)
+  resDf = pd.DataFrame(index=df.index, columns=df.columns)
+  # fill 1 to resDf according to values
+  for index, row in df.iterrows():
+    print('toIntegerCtgDf: ' + str(index) + '/' + str(len(df.index)))
+    for colName in df.columns:
+      # get ctg cell belongs to. need * 100 as is percentage
+      valCtg = getValCtg(row[colName] * 100, valCtgArr)
+      resDf.at[index, colName] = valCtg
+  return resDf
+
 def getValCtgColName(colName, valCtg):
   postfix = '_c' + str(valCtg)
   return colName + postfix

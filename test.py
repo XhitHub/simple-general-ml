@@ -50,9 +50,12 @@ train_x = [[1,2,3],[4,5,6],[7,8,9]]
 train_y1 = [[1,0,0],[0,1,0],[0,0,1]]
 train_y2 = ['a','b','c']
 train_y3 = [11,22,33]
+train_y4 = np.zeros((3,1))
+
 
 x_df = pd.DataFrame(train_x)
-y_df = pd.DataFrame(train_y3)
+y_df = pd.DataFrame(train_y4)
+y_df.at[1,0] = 1
 
 print(x_df)
 print(y_df)
@@ -63,3 +66,6 @@ probas = model.predict_proba(x_df)
 print(train_score)
 print(prediction)
 print(probas)
+
+max_probas = [max(probaRow) for probaRow in probas]
+print(max_probas)
