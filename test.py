@@ -34,6 +34,7 @@ print(df2)
 cols2 = ['a','s','d','f','g']
 arr2d = np.zeros((3,5))
 df3 = pd.DataFrame(arr2d, columns=cols2)
+df_asdfg = pd.DataFrame(arr2d, columns=cols2)
 print(df3)
 
 # join horizontally by index
@@ -75,3 +76,11 @@ print(max_probas)
 print(x_df)
 print(x_df.values)
 print(x_df.values[0:2])
+
+x_df2 = x_df[0:2]
+print(x_df2)
+
+
+cols = df_asdfg.columns
+print(cols)
+print(cols.values)

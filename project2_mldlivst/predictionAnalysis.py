@@ -6,18 +6,23 @@ import traceback
 
 ROOT = 'project2_mldlivst/data'
 
+training_ratio = 0.7
+
 pickMin = 5
 # pickProbMin = 0.75
 pickProbMin = 0.8
+trustProbMin = 0.8
 
 def run():
   df = pd.read_csv(ROOT + '/results/all_predictions.csv')
+  dfTrainingResults = pd.read_csv(ROOT + '/results/training_results.csv')
   # refers to train Y csv to see wt Ys are available to be predicted
   train_ys_df = pd.read_csv(ROOT + '/preprocessed/training1_Y.csv')
   raw_train_ys_df = pd.read_csv(ROOT + '/validation1_Y.csv')
   # df.set_index('datetime', inplace=True)
   df.set_index('datetime', inplace=True)
   raw_train_ys_df.set_index('datetime', inplace=True)
+  dfTrainingResults.set_index('stock', inplace=True)
   # del train_ys_df['datetime']
   yNames = train_ys_df.columns
   print(yNames)
@@ -28,6 +33,61 @@ def run():
   dfJoined = pd.concat([df, raw_train_ys_df], axis=1)
   dfJoined = dfJoined.reindex(sorted(dfJoined.columns), axis=1)
   dfJoined.to_csv(ROOT + '/results/all_predictions_analysis_LogisticRegV2Joined.csv')
+
+  # analysis 2
+  # class gd
+  #   class 3
+  # target analysis res
+  #   cols
+  #     predY
+  #     model test score
+  #     class gd count
+  #     avg err of trusted class gd cells
+  #       trusted class gd cells
+  #         class gd cells with proba >= min trust threshold
+  #       as in PROD, will ivst according to trusted class gd cells. this estimates how doing ivst according to trusted class gd cells will goes
+  # impl
+  #   in test split part:
+  #     for each predY col
+  #       1. count class gd
+  #       2. pick class gd cells
+  #         compare with df_valid
+  #         calc avg err of them
+  CLASS_GD = 3
+  testCount = int(len(dfJoined.index) * (1 - training_ratio))
+  dfJoinedTest = dfJoined[:testCount]
+  predYCols = raw_train_ys_df.columns.values
+  res2 = []
+  count = 0
+  for col in predYCols:
+    count += 1
+    print(str(count) + '/' + str(len(predYCols)))
+    actualYs = dfJoinedTest[col]
+    preds = dfJoinedTest[col + '_predict']
+    predPs = dfJoinedTest[col + '_predict_maxP']
+    modelTestScore = dfTrainingResults.loc[col, 'test_score']
+    # classGdCount = preds.count(CLASS_GD)
+    totalPickedError = 0
+    pickedCount = 0
+    for i,pred in enumerate(preds):
+      if pred == CLASS_GD and predPs[i] >= trustProbMin:
+        # pick
+        pickedCount += 1
+        totalPickedError += actualYs[i]*100 - pred
+    item = {
+      "Y": col,
+      "modelTestScore": modelTestScore,
+      "pickedCount": pickedCount,
+      "totalPickedError": totalPickedError,
+    }
+    if (pickedCount > 0):
+      avgPickedErr = totalPickedError / pickedCount
+      item['avgPickedErr'] = avgPickedErr
+    res2.append(item)
+  res2Df = pd.DataFrame(res2)
+  res2Df.to_csv(ROOT + '/results/all_predictions_analysis_LogisticRegV2_analysis2.csv')
+
+
 
   # res = []
   # resErrorList = []
