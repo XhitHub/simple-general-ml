@@ -22,7 +22,7 @@ import general_train as gTrain
 
 ROOT = 'project2_mldlivst/data'
 # to try on some of the data first, set maxCount
-maxCount = 3600
+maxCount = 900
 
 xAttrCount = 2400
 # min_samples_leaf = 0.15
@@ -92,13 +92,23 @@ def train(stock, x_df, y_df):
   x_test = None
   y_test = None
 
-  # split train test set
+  # # split train test set v1
+  # split_train_test = True
+  # tc = int(len(x_df.index) * training_ratio)
+  # print(tc)
+  # x_train = x[:tc]
+  # y_train = y[:tc]
+  # x_test = x[tc:]
+  # y_test = y[tc:]
+
+  # split train test set v2
   split_train_test = True
-  tc = int(len(x_df.index) * training_ratio)
-  x_train = x[:tc]
-  y_train = y[:tc]
-  x_test = x[tc:]
-  y_test = y[tc:]
+  tc = int(len(x_df.index) * (1-training_ratio))
+  print(tc)
+  x_test = x[:tc]
+  y_test = y[:tc]
+  x_train = x[tc:]
+  y_train = y[tc:]
 
   res = {}
   res['stock'] = stock

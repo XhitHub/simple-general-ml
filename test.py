@@ -69,3 +69,9 @@ print(probas)
 
 max_probas = [max(probaRow) for probaRow in probas]
 print(max_probas)
+
+
+
+print(x_df)
+print(x_df.values)
+print(x_df.values[0:2])
