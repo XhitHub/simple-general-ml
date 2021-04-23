@@ -11,6 +11,7 @@ training_ratio = 0.7
 pickMin = 5
 # pickProbMin = 0.75
 pickProbMin = 0.8
+testScoreMin = 0.75
 trustProbMin = 0.8
 
 def run():
@@ -29,10 +30,12 @@ def run():
   print(yNames[0])
   # return
 
+
   # simple joined prediction and validation df
   dfJoined = pd.concat([df, raw_train_ys_df], axis=1)
   dfJoined = dfJoined.reindex(sorted(dfJoined.columns), axis=1)
   dfJoined.to_csv(ROOT + '/results/all_predictions_analysis_LogisticRegV2Joined.csv')
+
 
   # analysis 2
   # class gd
@@ -61,7 +64,7 @@ def run():
   count = 0
   for col in predYCols:
     count += 1
-    print(str(count) + '/' + str(len(predYCols)))
+    print('analysis 2: ' + str(count) + '/' + str(len(predYCols)))
     actualYs = dfJoinedTest[col]
     preds = dfJoinedTest[col + '_predict']
     predPs = dfJoinedTest[col + '_predict_maxP']
@@ -86,6 +89,61 @@ def run():
     res2.append(item)
   res2Df = pd.DataFrame(res2)
   res2Df.to_csv(ROOT + '/results/all_predictions_analysis_LogisticRegV2_analysis2.csv')
+
+
+  
+  # picking
+  pickRes = pick(dfJoined, dfTrainingResults, train_ys_df.columns.values)
+  with open(ROOT + '/results/picks_Log_reg.json', 'w') as fout:
+    json.dump(pickRes , fout, indent=2)
+
+
+# all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
+# train_res_df: training_results.csv
+# yCols: all cols of train1_Y
+def pick(all_pred_valid_df, train_res_df, yCols):
+  CLASS_GD = 3
+  # determ cols with gd enough test score
+  gdCols = []
+  for col in yCols:
+    testScore = train_res_df.loc[col, 'test_score']
+    if (testScore >= testScoreMin):
+      gdCols.append(col)
+  res = []
+  for i, row in all_pred_valid_df.iterrows():
+    rowPicks = []
+    rowPicksCount = 0
+    totalActualY = 0
+    totalErr = 0
+    for col in gdCols:
+      pred = row[col + '_predict']
+      predP = row[col + '_predict_maxP']
+      actualY = row[col] * 100
+      predErr = actualY - pred
+      if (pred == CLASS_GD and predP >= trustProbMin):
+        item = {
+          "pick": col,
+          "pred": pred,
+          "predP": predP,
+          "actualY": actualY,
+          "predErr": predErr,
+        }
+        rowPicks.append(item)
+        rowPicksCount += 1
+        totalActualY += actualY
+        totalErr += predErr
+    item = {
+      'datetime': i,
+      'picksCount': rowPicksCount,
+    }
+    if (rowPicksCount > 0):
+      item['avgActualY'] = totalActualY / rowPicksCount
+      item['avgErr'] = totalErr / rowPicksCount
+    item['picks'] = rowPicks
+    res.append(item)
+  return res
+      
+
 
 
 
