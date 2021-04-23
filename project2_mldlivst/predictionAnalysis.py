@@ -93,7 +93,8 @@ def run():
 
   
   # picking
-  pickRes = pick(dfJoined, dfTrainingResults, train_ys_df.columns.values)
+  dfJoinedTest = dfJoined[:testCount]
+  pickRes = pick(dfJoinedTest, dfTrainingResults, train_ys_df.columns.values)
   with open(ROOT + '/results/picks_Log_reg.json', 'w') as fout:
     json.dump(pickRes , fout, indent=2)
 
