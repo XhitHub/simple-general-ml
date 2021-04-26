@@ -95,14 +95,96 @@ def run():
   # picking
   dfJoinedTest = dfJoined[:testCount]
   pickRes = pick(dfJoinedTest, dfTrainingResults, train_ys_df.columns.values)
-  with open(ROOT + '/results/picks_Log_reg.json', 'w') as fout:
+  with open(ROOT + '/results/picks_Log_reg_v2.json', 'w') as fout:
     json.dump(pickRes , fout, indent=2)
+  pickResDf = pd.DataFrame(pickRes['daysPicks'])
+  pickResDf.to_csv(ROOT + '/results/picks_Log_reg_v2.csv')
 
 
-# all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
-# train_res_df: training_results.csv
-# yCols: all cols of train1_Y
-def pick(all_pred_valid_df, train_res_df, yCols):
+def is_gd_class(c):
+  return c == 3
+
+def pick(all_pred_valid_df, train_res_df, yCols, max_pick_count=5):
+  # all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
+  # train_res_df: training_results.csv
+  # yCols: all cols of train1_Y
+
+  # determ cols with gd enough test score
+  gdCols = []
+  for col in yCols:
+    testScore = train_res_df.loc[col, 'test_score']
+    if (testScore >= testScoreMin):
+      gdCols.append(col)
+  res = []
+  resWithAvg = []
+  for i, row in all_pred_valid_df.iterrows():
+    rowPicks = []
+    rowPicksCount = 0
+    totalActualY = 0
+    totalErr = 0
+    for col in gdCols:
+      pred = row[col + '_predict']
+      predP = row[col + '_predict_maxP']
+      actualY = row[col] * 100
+      predErr = actualY - pred
+      if (is_gd_class(pred) and predP >= trustProbMin):
+        item = {
+          "pick": col,
+          "pred": pred,
+          "predP": predP,
+          "actualY": actualY,
+          "predErr": predErr,
+        }
+        rowPicks.append(item)
+        rowPicksCount += 1
+        totalActualY += actualY
+        totalErr += predErr
+
+    item = {
+      'datetime': i,
+      'initialPicksCount': rowPicksCount,
+    }
+
+    # pick with max pick count and non repeating stock, i.e. same stock XdR only pick once
+    if (len(rowPicks) > 0):
+      limitedTotalActualY = 0
+      limitedTotalErr = 0
+      rowPicks = sorted(rowPicks, key=lambda k: -k['predP'])
+      limitedRowPicks = []
+      pickedStocks = []
+      for pick in rowPicks:
+        if (len(limitedRowPicks) >= max_pick_count):
+          break
+        stock = pick['pick'][:9]
+        if (stock not in pickedStocks):
+          limitedRowPicks.append(pick)
+          pickedStocks.append(stock)
+          limitedTotalActualY += pick['actualY']
+          limitedTotalErr += pick['predErr']
+      limitedPicksCount = len(limitedRowPicks)
+      item['limitedPicksCount'] = limitedPicksCount
+      item['avgActualY'] = limitedTotalActualY / limitedPicksCount
+      item['avgErr'] = limitedTotalErr / limitedPicksCount
+
+    item['limitedPicks'] = limitedRowPicks
+    item['limitedPicks_simple'] = [d['pick'] for d in limitedRowPicks]
+    res.append(item)
+
+  itemsWithAvg = [d for d in res if 'avgActualY' in d and not np.isnan(d['avgActualY'])]
+  # print(itemsWithAvg)
+  allDaysAvgActualY = sum(d['avgActualY'] for d in itemsWithAvg) / len(itemsWithAvg)
+
+  bigRes = {
+    'allDaysAvgActualY': allDaysAvgActualY,
+    'daysPicks': res,
+  }
+  return bigRes
+      
+
+def pick_v1(all_pred_valid_df, train_res_df, yCols):
+  # all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
+  # train_res_df: training_results.csv
+  # yCols: all cols of train1_Y
   CLASS_GD = 3
   # determ cols with gd enough test score
   gdCols = []
@@ -143,9 +225,6 @@ def pick(all_pred_valid_df, train_res_df, yCols):
     item['picks'] = rowPicks
     res.append(item)
   return res
-      
-
-
 
 
   # res = []

@@ -1,0 +1,2880 @@
+[
+  {
+    "datetime": "2021-03-10",
+    "initialPicksCount": 2,
+    "limitedPicksCount": 2,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9594352703451297,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0270.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8472427910448839,
+        "actualY": NaN,
+        "predErr": NaN
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-09",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9594352703451297,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0270.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8472427910448839,
+        "actualY": NaN,
+        "predErr": NaN
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-08",
+    "initialPicksCount": 6,
+    "limitedPicksCount": 5,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "2688.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.967872994492453,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "1288.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9628543435892142,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.95906892739647,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0941.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9499003324744,
+        "actualY": 4.748603351955301,
+        "predErr": 1.7486033519553006
+      },
+      {
+        "pick": "1109.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8090422534699966,
+        "actualY": 1.94174757281554,
+        "predErr": -1.05825242718446
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-05",
+    "initialPicksCount": 3,
+    "limitedPicksCount": 2,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "2688.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9721340745922724,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0006.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.8566120042640701,
+        "actualY": NaN,
+        "predErr": NaN
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-04",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "2688.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9721340745922724,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0006.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.8566120042640701,
+        "actualY": NaN,
+        "predErr": NaN
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-03",
+    "initialPicksCount": 2,
+    "limitedPicksCount": 2,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "0384.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9294959206047974,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8198140610206901,
+        "actualY": -4.86486486486485,
+        "predErr": -7.86486486486485
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-02",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "2688.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.948357632841492,
+        "actualY": NaN,
+        "predErr": NaN
+      }
+    ]
+  },
+  {
+    "datetime": "2021-03-01",
+    "initialPicksCount": 2,
+    "limitedPicksCount": 2,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "2688.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8973989547499273,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "2007.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.8812733200436768,
+        "actualY": 1.60427807486631,
+        "predErr": -1.39572192513369
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-26",
+    "initialPicksCount": 9,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.944549395186578,
+    "avgErr": -3.944549395186578,
+    "limitedPicks": [
+      {
+        "pick": "3328.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9976182496031348,
+        "actualY": -3.9473684210526203,
+        "predErr": -6.94736842105262
+      },
+      {
+        "pick": "0003.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9758401342223127,
+        "actualY": 0.0,
+        "predErr": -3.0
+      },
+      {
+        "pick": "2007.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9725508028471502,
+        "actualY": 3.0982905982906,
+        "predErr": 0.09829059829060016
+      },
+      {
+        "pick": "2020.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.961424827402204,
+        "actualY": -1.97693574958814,
+        "predErr": -4.97693574958814
+      },
+      {
+        "pick": "0066.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9179498449339272,
+        "actualY": -1.89673340358273,
+        "predErr": -4.89673340358273
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-25",
+    "initialPicksCount": 17,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.815093754970578,
+    "avgErr": -2.184906245029422,
+    "limitedPicks": [
+      {
+        "pick": "2007.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9999487006013438,
+        "actualY": 7.03463203463203,
+        "predErr": 4.03463203463203
+      },
+      {
+        "pick": "0003.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9999390222047808,
+        "actualY": -0.17094017094015998,
+        "predErr": -3.17094017094016
+      },
+      {
+        "pick": "0066.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9970738197388308,
+        "actualY": 1.3815090329436799,
+        "predErr": -1.6184909670563201
+      },
+      {
+        "pick": "0960.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9885375239064764,
+        "actualY": -7.62970498474059,
+        "predErr": -10.62970498474059
+      },
+      {
+        "pick": "0002.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9628648559974912,
+        "actualY": 3.45997286295793,
+        "predErr": 0.45997286295793005
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-24",
+    "initialPicksCount": 16,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.864797574719194,
+    "avgErr": -3.8647975747191943,
+    "limitedPicks": [
+      {
+        "pick": "0066.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.998602711122384,
+        "actualY": -0.9656652360515,
+        "predErr": -3.9656652360515
+      },
+      {
+        "pick": "0003.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9979857176820632,
+        "actualY": 1.3840830449827,
+        "predErr": -1.6159169550173
+      },
+      {
+        "pick": "0941.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9917432909991118,
+        "actualY": 2.048417132216,
+        "predErr": -0.9515828677839999
+      },
+      {
+        "pick": "2007.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9868642083436396,
+        "actualY": -4.559585492227971,
+        "predErr": -7.559585492227971
+      },
+      {
+        "pick": "0883.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9846249825568248,
+        "actualY": -2.2312373225152,
+        "predErr": -5.2312373225152005
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-23",
+    "initialPicksCount": 5,
+    "limitedPicksCount": 5,
+    "avgActualY": -3.2173345615861435,
+    "avgErr": -6.217334561586144,
+    "limitedPicks": [
+      {
+        "pick": "1918.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9780920478648936,
+        "actualY": -8.259587020648949,
+        "predErr": -11.259587020648949
+      },
+      {
+        "pick": "0960.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.8798546127669871,
+        "actualY": -10.55900621118011,
+        "predErr": -13.55900621118011
+      },
+      {
+        "pick": "1398.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.8476039599366656,
+        "actualY": 4.15019762845849,
+        "predErr": 1.15019762845849
+      },
+      {
+        "pick": "0823.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.8244070178053314,
+        "actualY": -1.84426229508197,
+        "predErr": -4.84426229508197
+      },
+      {
+        "pick": "2007.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.803224249771664,
+        "actualY": 0.42598509052182,
+        "predErr": -2.57401490947818
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-22",
+    "initialPicksCount": 5,
+    "limitedPicksCount": 4,
+    "avgActualY": 0.39700286155524755,
+    "avgErr": -2.602997138444753,
+    "limitedPicks": [
+      {
+        "pick": "0066.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9946639849545252,
+        "actualY": -2.27765726681128,
+        "predErr": -5.27765726681128
+      },
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.963429744781741,
+        "actualY": 1.38339920948617,
+        "predErr": -1.61660079051383
+      },
+      {
+        "pick": "1288.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9439805176092118,
+        "actualY": 2.4822695035461,
+        "predErr": -0.5177304964539
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8389560465049001,
+        "actualY": 0.0,
+        "predErr": -3.0
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-19",
+    "initialPicksCount": 5,
+    "limitedPicksCount": 3,
+    "avgActualY": 3.498430117919243,
+    "avgErr": 0.4984301179192432,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.962251648301318,
+        "actualY": 0.31512605042016,
+        "predErr": -2.68487394957984
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.959069193622198,
+        "actualY": -3.13152400835073,
+        "predErr": -6.1315240083507305
+      },
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8418447227749452,
+        "actualY": 13.3116883116883,
+        "predErr": 10.3116883116883
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-18",
+    "initialPicksCount": 7,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.03217336354920412,
+    "avgErr": -2.9678266364507957,
+    "limitedPicks": [
+      {
+        "pick": "0288.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9902558016414248,
+        "actualY": -3.12499999999999,
+        "predErr": -6.124999999999989
+      },
+      {
+        "pick": "0291.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9706298266260628,
+        "actualY": 11.4448051948052,
+        "predErr": 8.4448051948052
+      },
+      {
+        "pick": "1816.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9300592646634178,
+        "actualY": 0.0,
+        "predErr": -3.0
+      },
+      {
+        "pick": "0386.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8451849736235006,
+        "actualY": -1.36363636363637,
+        "predErr": -4.36363636363637
+      },
+      {
+        "pick": "0016.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8195632084888833,
+        "actualY": -6.79530201342282,
+        "predErr": -9.79530201342282
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-17",
+    "initialPicksCount": 6,
+    "limitedPicksCount": 5,
+    "avgActualY": 5.885406622069188,
+    "avgErr": 2.885406622069188,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9378893730958128,
+        "actualY": 10.03236245954693,
+        "predErr": 7.032362459546929
+      },
+      {
+        "pick": "1088.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.91614659352662,
+        "actualY": -3.69393139841689,
+        "predErr": -6.69393139841689
+      },
+      {
+        "pick": "0288.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8711519865908578,
+        "actualY": -2.53731343283581,
+        "predErr": -5.53731343283581
+      },
+      {
+        "pick": "0388.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.8491336519210808,
+        "actualY": 19.08284023668639,
+        "predErr": 16.08284023668639
+      },
+      {
+        "pick": "1997.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.840072950660119,
+        "actualY": 6.543075245365319,
+        "predErr": 3.543075245365319
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-16",
+    "initialPicksCount": 3,
+    "limitedPicksCount": 3,
+    "avgActualY": 3.517717102120487,
+    "avgErr": 0.5177171021204865,
+    "limitedPicks": [
+      {
+        "pick": "6818.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9979356310136808,
+        "actualY": 2.05278592375366,
+        "predErr": -0.9472140762463401
+      },
+      {
+        "pick": "0291.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9734662255649238,
+        "actualY": 10.11326860841424,
+        "predErr": 7.11326860841424
+      },
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9278856411936054,
+        "actualY": -1.6129032258064402,
+        "predErr": -4.61290322580644
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-11",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": -3.7940379403794,
+    "avgErr": -6.7940379403794005,
+    "limitedPicks": [
+      {
+        "pick": "6808.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9887217558093576,
+        "actualY": -3.7940379403794,
+        "predErr": -6.7940379403794005
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-10",
+    "initialPicksCount": 2,
+    "limitedPicksCount": 2,
+    "avgActualY": 4.46224224474756,
+    "avgErr": 1.4622422447475598,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8770524382037821,
+        "actualY": 10.38167938931297,
+        "predErr": 7.3816793893129695
+      },
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8616722458416852,
+        "actualY": -1.4571948998178499,
+        "predErr": -4.45719489981785
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-09",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 2.29226361031519,
+    "avgErr": -0.7077363896848099,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8543747893434105,
+        "actualY": 2.29226361031519,
+        "predErr": -0.7077363896848099
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-08",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8543747893434105,
+        "actualY": 2.29226361031519,
+        "predErr": -0.7077363896848099
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-05",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 0.36697247706421,
+    "avgErr": -2.63302752293579,
+    "limitedPicks": [
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9102037767334508,
+        "actualY": 0.36697247706421,
+        "predErr": -2.63302752293579
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-04",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 4.7759000734753805,
+    "avgErr": 1.7759000734753805,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9053690582883714,
+        "actualY": 4.7759000734753805,
+        "predErr": 1.7759000734753805
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-03",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9053690582883714,
+        "actualY": 4.7759000734753805,
+        "predErr": 1.7759000734753805
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-02",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9053690582883714,
+        "actualY": 4.7759000734753805,
+        "predErr": 1.7759000734753805
+      }
+    ]
+  },
+  {
+    "datetime": "2021-02-01",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9053690582883714,
+        "actualY": 4.7759000734753805,
+        "predErr": 1.7759000734753805
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-29",
+    "initialPicksCount": 7,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.37009935281382,
+    "avgErr": -3.3700993528138197,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.966482003131417,
+        "actualY": 2.03619909502262,
+        "predErr": -0.9638009049773801
+      },
+      {
+        "pick": "0001.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9277602592246657,
+        "actualY": 1.22525918944393,
+        "predErr": -1.77474081055607
+      },
+      {
+        "pick": "0688.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9102325672937854,
+        "actualY": -1.46561443066515,
+        "predErr": -4.46561443066515
+      },
+      {
+        "pick": "0390.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.861295915674814,
+        "actualY": -2.21606648199446,
+        "predErr": -5.21606648199446
+      },
+      {
+        "pick": "1038.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8254714714040908,
+        "actualY": -1.43027413587604,
+        "predErr": -4.43027413587604
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-28",
+    "initialPicksCount": 13,
+    "limitedPicksCount": 5,
+    "avgActualY": 2.4833173691417323,
+    "avgErr": -0.5166826308582679,
+    "limitedPicks": [
+      {
+        "pick": "6808.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.986540712829859,
+        "actualY": 9.47368421052632,
+        "predErr": 6.47368421052632
+      },
+      {
+        "pick": "0823.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9657142028608318,
+        "actualY": 2.1739130434782603,
+        "predErr": -0.8260869565217397
+      },
+      {
+        "pick": "1038.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9448754707638264,
+        "actualY": 1.31264916467781,
+        "predErr": -1.68735083532219
+      },
+      {
+        "pick": "1972.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9329423789339611,
+        "actualY": 2.45535714285714,
+        "predErr": -0.5446428571428599
+      },
+      {
+        "pick": "6160.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9266356917472576,
+        "actualY": -2.9990167158308703,
+        "predErr": -5.99901671583087
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-27",
+    "initialPicksCount": 32,
+    "limitedPicksCount": 5,
+    "avgActualY": 4.51639904711721,
+    "avgErr": 1.51639904711721,
+    "limitedPicks": [
+      {
+        "pick": "6160.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9916181410323356,
+        "actualY": 5.52458185504306,
+        "predErr": 2.52458185504306
+      },
+      {
+        "pick": "0688.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.991216201627076,
+        "actualY": 5.14874141876429,
+        "predErr": 2.14874141876429
+      },
+      {
+        "pick": "0823.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9780867509065784,
+        "actualY": 1.33828996282528,
+        "predErr": -1.66171003717472
+      },
+      {
+        "pick": "1972.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9768526733787756,
+        "actualY": 5.44217687074829,
+        "predErr": 2.4421768707482903
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9712828570783836,
+        "actualY": 5.12820512820513,
+        "predErr": 2.1282051282051304
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-26",
+    "initialPicksCount": 40,
+    "limitedPicksCount": 5,
+    "avgActualY": 2.5344753082178437,
+    "avgErr": -0.465524691782156,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9864625376960036,
+        "actualY": 5.41760722347631,
+        "predErr": 2.4176072234763097
+      },
+      {
+        "pick": "2020.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.980489296625457,
+        "actualY": 3.81917381137956,
+        "predErr": 0.8191738113795601
+      },
+      {
+        "pick": "0823.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9801133837318404,
+        "actualY": 0.7380073800738001,
+        "predErr": -2.2619926199262
+      },
+      {
+        "pick": "0006.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9780072517057982,
+        "actualY": -0.36363636363636,
+        "predErr": -3.3636363636363598
+      },
+      {
+        "pick": "0939.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9757231617930728,
+        "actualY": 3.0612244897959098,
+        "predErr": 0.061224489795909776
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-25",
+    "initialPicksCount": 60,
+    "limitedPicksCount": 5,
+    "avgActualY": 8.693156748212536,
+    "avgErr": 5.693156748212536,
+    "limitedPicks": [
+      {
+        "pick": "2382.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.999519649456034,
+        "actualY": 10.149253731343281,
+        "predErr": 7.149253731343281
+      },
+      {
+        "pick": "2319.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9986459306869836,
+        "actualY": 3.36225596529283,
+        "predErr": 0.3622559652928299
+      },
+      {
+        "pick": "0700.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9985632759857804,
+        "actualY": 12.47248716067498,
+        "predErr": 9.47248716067498
+      },
+      {
+        "pick": "0384.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9971964671706206,
+        "actualY": 7.2992700729927,
+        "predErr": 4.2992700729927
+      },
+      {
+        "pick": "6160.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.996592920678897,
+        "actualY": 10.18251681075889,
+        "predErr": 7.182516810758891
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-22",
+    "initialPicksCount": 30,
+    "limitedPicksCount": 5,
+    "avgActualY": 3.9634669112192618,
+    "avgErr": 0.963466911219262,
+    "limitedPicks": [
+      {
+        "pick": "3328.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9980164620969508,
+        "actualY": 3.55450236966825,
+        "predErr": 0.5545023696682501
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9830111467641538,
+        "actualY": 5.85774058577404,
+        "predErr": 2.8577405857740397
+      },
+      {
+        "pick": "0241.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9699226427602036,
+        "actualY": 6.71785028790787,
+        "predErr": 3.7178502879078703
+      },
+      {
+        "pick": "0017.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9681653373329134,
+        "actualY": 0.5420054200542,
+        "predErr": -2.4579945799458
+      },
+      {
+        "pick": "6160.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9593516157721292,
+        "actualY": 3.14523589269195,
+        "predErr": 0.14523589269195014
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-21",
+    "initialPicksCount": 53,
+    "limitedPicksCount": 5,
+    "avgActualY": 7.385843138006967,
+    "avgErr": 4.385843138006968,
+    "limitedPicks": [
+      {
+        "pick": "3328.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.999794516804866,
+        "actualY": 5.66037735849057,
+        "predErr": 2.66037735849057
+      },
+      {
+        "pick": "2007.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9989603059931246,
+        "actualY": 10.40339702760085,
+        "predErr": 7.40339702760085
+      },
+      {
+        "pick": "1800.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9985698623494,
+        "actualY": 5.36193029490617,
+        "predErr": 2.36193029490617
+      },
+      {
+        "pick": "1918.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9960059121952912,
+        "actualY": 3.58814352574104,
+        "predErr": 0.5881435257410401
+      },
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9928880196702368,
+        "actualY": 11.91536748329621,
+        "predErr": 8.91536748329621
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-20",
+    "initialPicksCount": 63,
+    "limitedPicksCount": 5,
+    "avgActualY": 7.299830048948268,
+    "avgErr": 4.299830048948266,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9999655606327998,
+        "actualY": 10.90410958904109,
+        "predErr": 7.90410958904109
+      },
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9992861659847032,
+        "actualY": 6.02409638554216,
+        "predErr": 3.02409638554216
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9990551202650187,
+        "actualY": 11.46496815286624,
+        "predErr": 8.46496815286624
+      },
+      {
+        "pick": "0390.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9975418663061808,
+        "actualY": 5.013192612137201,
+        "predErr": 2.0131926121372006
+      },
+      {
+        "pick": "1800.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9972697096892096,
+        "actualY": 3.09278350515464,
+        "predErr": 0.09278350515464018
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-19",
+    "initialPicksCount": 26,
+    "limitedPicksCount": 5,
+    "avgActualY": 4.029934718724919,
+    "avgErr": 1.0299347187249182,
+    "limitedPicks": [
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9980865485521933,
+        "actualY": 5.15873015873015,
+        "predErr": 2.15873015873015
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9977483672507416,
+        "actualY": 7.75510204081632,
+        "predErr": 4.75510204081632
+      },
+      {
+        "pick": "1972.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9960877045810832,
+        "actualY": 0.85653104925053,
+        "predErr": -2.1434689507494697
+      },
+      {
+        "pick": "0998.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.993385256313534,
+        "actualY": 4.3103448275862,
+        "predErr": 1.3103448275862002
+      },
+      {
+        "pick": "3328.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9920530607449748,
+        "actualY": 2.06896551724139,
+        "predErr": -0.9310344827586099
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-18",
+    "initialPicksCount": 6,
+    "limitedPicksCount": 5,
+    "avgActualY": 6.413518776802439,
+    "avgErr": 3.413518776802441,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9747264535848016,
+        "actualY": 11.17196056955093,
+        "predErr": 8.17196056955093
+      },
+      {
+        "pick": "0384.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9469855809559556,
+        "actualY": 12.22627737226278,
+        "predErr": 9.22627737226278
+      },
+      {
+        "pick": "1299.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.8948231948430508,
+        "actualY": 11.25333333333333,
+        "predErr": 8.25333333333333
+      },
+      {
+        "pick": "0006.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.8700928878448501,
+        "actualY": -0.72639225181597,
+        "predErr": -3.72639225181597
+      },
+      {
+        "pick": "0012.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8635139546693281,
+        "actualY": -1.85758513931887,
+        "predErr": -4.85758513931887
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-15",
+    "initialPicksCount": 15,
+    "limitedPicksCount": 5,
+    "avgActualY": 4.56455913734621,
+    "avgErr": 1.5645591373462095,
+    "limitedPicks": [
+      {
+        "pick": "0006.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9998359372274824,
+        "actualY": -0.9673518742442501,
+        "predErr": -3.96735187424425
+      },
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9993162027652136,
+        "actualY": 10.385438972162719,
+        "predErr": 7.385438972162719
+      },
+      {
+        "pick": "2007.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.998449635630585,
+        "actualY": -0.89641434262948,
+        "predErr": -3.89641434262948
+      },
+      {
+        "pick": "0011.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.998251022936286,
+        "actualY": 1.18055555555554,
+        "predErr": -1.81944444444446
+      },
+      {
+        "pick": "0384.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9962846438658962,
+        "actualY": 13.12056737588652,
+        "predErr": 10.12056737588652
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-14",
+    "initialPicksCount": 16,
+    "limitedPicksCount": 5,
+    "avgActualY": 2.3347416788213975,
+    "avgErr": -0.6652583211786023,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9984553241458436,
+        "actualY": 1.2195121951219299,
+        "predErr": -1.7804878048780701
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9952700437835924,
+        "actualY": 0.19960079840317999,
+        "predErr": -2.80039920159682
+      },
+      {
+        "pick": "1336.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9908999999041076,
+        "actualY": -1.90174326465927,
+        "predErr": -4.90174326465927
+      },
+      {
+        "pick": "1810.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9617359948824415,
+        "actualY": 11.4334470989761,
+        "predErr": 8.4334470989761
+      },
+      {
+        "pick": "2338.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9291789210007484,
+        "actualY": 0.72289156626505,
+        "predErr": -2.27710843373495
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-13",
+    "initialPicksCount": 31,
+    "limitedPicksCount": 5,
+    "avgActualY": 2.690683467289082,
+    "avgErr": -0.30931653271091814,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9992103369761328,
+        "actualY": 3.5897435897435797,
+        "predErr": 0.5897435897435797
+      },
+      {
+        "pick": "1336.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9988698707792524,
+        "actualY": 0.32051282051282,
+        "predErr": -2.67948717948718
+      },
+      {
+        "pick": "1810.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.998648480377359,
+        "actualY": 1.07197549770291,
+        "predErr": -1.92802450229709
+      },
+      {
+        "pick": "0384.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9965802247062306,
+        "actualY": 5.92216582064297,
+        "predErr": 2.92216582064297
+      },
+      {
+        "pick": "0914.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9897205708929238,
+        "actualY": 2.54901960784313,
+        "predErr": -0.45098039215687
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-12",
+    "initialPicksCount": 36,
+    "limitedPicksCount": 5,
+    "avgActualY": 1.0110254403368322,
+    "avgErr": -1.9889745596631676,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9998241782237112,
+        "actualY": 1.27032520325203,
+        "predErr": -1.72967479674797
+      },
+      {
+        "pick": "1336.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9994547796351996,
+        "actualY": 2.58481421647819,
+        "predErr": -0.4151857835218098
+      },
+      {
+        "pick": "1339.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9989987218145197,
+        "actualY": -0.40485829959515,
+        "predErr": -3.40485829959515
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9980410546861654,
+        "actualY": 0.79051383399209,
+        "predErr": -2.20948616600791
+      },
+      {
+        "pick": "1918.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9917374567453991,
+        "actualY": 0.814332247557,
+        "predErr": -2.185667752443
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-11",
+    "initialPicksCount": 36,
+    "limitedPicksCount": 5,
+    "avgActualY": -2.5029896123177604,
+    "avgErr": -5.50298961231776,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.999757863332946,
+        "actualY": -7.06521739130435,
+        "predErr": -10.065217391304351
+      },
+      {
+        "pick": "1918.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9957881040826504,
+        "actualY": -1.79445350734093,
+        "predErr": -4.79445350734093
+      },
+      {
+        "pick": "0998.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.993999911995713,
+        "actualY": -0.8771929824561301,
+        "predErr": -3.87719298245613
+      },
+      {
+        "pick": "0384.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9934323193085958,
+        "actualY": -2.6645768025078302,
+        "predErr": -5.66457680250783
+      },
+      {
+        "pick": "0066.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9852251064897228,
+        "actualY": -0.11350737797956,
+        "predErr": -3.11350737797956
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-08",
+    "initialPicksCount": 30,
+    "limitedPicksCount": 5,
+    "avgActualY": -1.733468668753974,
+    "avgErr": -4.733468668753973,
+    "limitedPicks": [
+      {
+        "pick": "2382.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9999181090497896,
+        "actualY": -0.63058328954283,
+        "predErr": -3.6305832895428303
+      },
+      {
+        "pick": "2319.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9996956731298277,
+        "actualY": 1.58415841584157,
+        "predErr": -1.41584158415843
+      },
+      {
+        "pick": "0066.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9982428591727268,
+        "actualY": -1.43646408839778,
+        "predErr": -4.43646408839778
+      },
+      {
+        "pick": "0016.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.997679361563279,
+        "actualY": -2.27894257064721,
+        "predErr": -5.27894257064721
+      },
+      {
+        "pick": "2318.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9973477928276168,
+        "actualY": -5.9055118110236196,
+        "predErr": -8.905511811023619
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-07",
+    "initialPicksCount": 35,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.424148172825474,
+    "avgErr": -3.424148172825474,
+    "limitedPicks": [
+      {
+        "pick": "0011.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9993790879732086,
+        "actualY": -0.6177076183939401,
+        "predErr": -3.61770761839394
+      },
+      {
+        "pick": "0066.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9979233567578748,
+        "actualY": 0.22346368715084,
+        "predErr": -2.77653631284916
+      },
+      {
+        "pick": "0669.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9956343489608132,
+        "actualY": -1.20689655172414,
+        "predErr": -4.20689655172414
+      },
+      {
+        "pick": "1038.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9918630724565792,
+        "actualY": -1.53482880755607,
+        "predErr": -4.53482880755607
+      },
+      {
+        "pick": "1336.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.991214701521248,
+        "actualY": 1.0152284263959401,
+        "predErr": -1.9847715736040599
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-06",
+    "initialPicksCount": 40,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.43749780269616834,
+    "avgErr": -2.5625021973038313,
+    "limitedPicks": [
+      {
+        "pick": "2318.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9999503517239756,
+        "actualY": -9.21435499515034,
+        "predErr": -12.21435499515034
+      },
+      {
+        "pick": "0700.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9998264198950378,
+        "actualY": 0.08389261744966,
+        "predErr": -2.91610738255034
+      },
+      {
+        "pick": "0388.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9977142796290964,
+        "actualY": -0.9704455227172399,
+        "predErr": -3.97044552271724
+      },
+      {
+        "pick": "0291.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9972709024448132,
+        "actualY": 8.21114369501465,
+        "predErr": 5.21114369501465
+      },
+      {
+        "pick": "0823.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9960979117985396,
+        "actualY": 4.077253218884111,
+        "predErr": 1.0772532188841106
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-05",
+    "initialPicksCount": 40,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.7601131996719879,
+    "avgErr": -2.239886800328012,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9999813142331072,
+        "actualY": 7.168458781362,
+        "predErr": 4.168458781362
+      },
+      {
+        "pick": "0011.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9995138294175878,
+        "actualY": -5.08241758241758,
+        "predErr": -8.08241758241758
+      },
+      {
+        "pick": "1299.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.999273023915214,
+        "actualY": -1.9364448857994,
+        "predErr": -4.9364448857994
+      },
+      {
+        "pick": "1038.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.998879859852186,
+        "actualY": -0.9269988412514399,
+        "predErr": -3.92699884125144
+      },
+      {
+        "pick": "0823.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.998635727394828,
+        "actualY": 4.57796852646636,
+        "predErr": 1.5779685264663597
+      }
+    ]
+  },
+  {
+    "datetime": "2021-01-04",
+    "initialPicksCount": 5,
+    "limitedPicksCount": 5,
+    "avgActualY": -1.905524601311176,
+    "avgErr": -4.905524601311176,
+    "limitedPicks": [
+      {
+        "pick": "0270.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.878114580835072,
+        "actualY": 3.3478893740902396,
+        "predErr": 0.34788937409023957
+      },
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.8765593541167951,
+        "actualY": -8.53540252182347,
+        "predErr": -11.53540252182347
+      },
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8442262816732881,
+        "actualY": -0.35714285714284,
+        "predErr": -3.35714285714284
+      },
+      {
+        "pick": "0001.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.8296453734137218,
+        "actualY": -1.7652250661959399,
+        "predErr": -4.76522506619594
+      },
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8173432238689081,
+        "actualY": -2.21774193548387,
+        "predErr": -5.21774193548387
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-31",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 0.0,
+    "avgErr": -3.0,
+    "limitedPicks": [
+      {
+        "pick": "0823.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8134104028629587,
+        "actualY": 0.0,
+        "predErr": -3.0
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-30",
+    "initialPicksCount": 8,
+    "limitedPicksCount": 5,
+    "avgActualY": -3.016463861626444,
+    "avgErr": -6.016463861626444,
+    "limitedPicks": [
+      {
+        "pick": "2020.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.964559779528243,
+        "actualY": -4.79134466769706,
+        "predErr": -7.79134466769706
+      },
+      {
+        "pick": "0384.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9639930170143812,
+        "actualY": 0.3257328990228,
+        "predErr": -2.6742671009772
+      },
+      {
+        "pick": "2319.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9534292450824928,
+        "actualY": -8.86939571150097,
+        "predErr": -11.86939571150097
+      },
+      {
+        "pick": "1109.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9427382286879952,
+        "actualY": 2.41935483870967,
+        "predErr": -0.5806451612903301
+      },
+      {
+        "pick": "2688.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9268740268535284,
+        "actualY": -4.16666666666666,
+        "predErr": -7.16666666666666
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-29",
+    "initialPicksCount": 8,
+    "limitedPicksCount": 5,
+    "avgActualY": -5.760541014710307,
+    "avgErr": -8.760541014710306,
+    "limitedPicks": [
+      {
+        "pick": "0384.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9937173222358118,
+        "actualY": -6.50793650793651,
+        "predErr": -9.50793650793651
+      },
+      {
+        "pick": "2688.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9865103646256804,
+        "actualY": -10.34201954397394,
+        "predErr": -13.34201954397394
+      },
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9792312428287632,
+        "actualY": -6.271951831409931,
+        "predErr": -9.27195183140993
+      },
+      {
+        "pick": "1972.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9709433562375824,
+        "actualY": -5.03144654088051,
+        "predErr": -8.03144654088051
+      },
+      {
+        "pick": "1177.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.900564381297401,
+        "actualY": -0.64935064935064,
+        "predErr": -3.64935064935064
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-24",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": -0.53333333333333,
+    "avgErr": -3.53333333333333,
+    "limitedPicks": [
+      {
+        "pick": "1177.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.922701333835998,
+        "actualY": -0.53333333333333,
+        "predErr": -3.53333333333333
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-23",
+    "initialPicksCount": 18,
+    "limitedPicksCount": 5,
+    "avgActualY": -3.0665171899433306,
+    "avgErr": -6.066517189943331,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9954652599513104,
+        "actualY": -2.57510729613734,
+        "predErr": -5.57510729613734
+      },
+      {
+        "pick": "0011.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9665153581837016,
+        "actualY": -3.94160583941606,
+        "predErr": -6.941605839416059
+      },
+      {
+        "pick": "1038.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.962834972819072,
+        "actualY": -4.196642685851311,
+        "predErr": -7.196642685851311
+      },
+      {
+        "pick": "1177.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9537186524611184,
+        "actualY": -2.35294117647059,
+        "predErr": -5.3529411764705905
+      },
+      {
+        "pick": "0823.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.936471053975064,
+        "actualY": -2.26628895184135,
+        "predErr": -5.26628895184135
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-22",
+    "initialPicksCount": 7,
+    "limitedPicksCount": 5,
+    "avgActualY": -2.4806558443184,
+    "avgErr": -5.480655844318401,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9947141639635052,
+        "actualY": 0.88691796008868,
+        "predErr": -2.11308203991132
+      },
+      {
+        "pick": "0390.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9780160804251622,
+        "actualY": -2.3391812865497097,
+        "predErr": -5.33918128654971
+      },
+      {
+        "pick": "1038.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9299072395383552,
+        "actualY": -7.294117647058821,
+        "predErr": -10.29411764705882
+      },
+      {
+        "pick": "2359.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.897334290527126,
+        "actualY": 0.21171489061398,
+        "predErr": -2.78828510938602
+      },
+      {
+        "pick": "0011.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8419634806058476,
+        "actualY": -3.86861313868613,
+        "predErr": -6.86861313868613
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-21",
+    "initialPicksCount": 3,
+    "limitedPicksCount": 3,
+    "avgActualY": -2.5192649673977496,
+    "avgErr": -5.51926496739775,
+    "limitedPicks": [
+      {
+        "pick": "0390.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.8426015874262203,
+        "actualY": 0.0,
+        "predErr": -3.0
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8371847347913876,
+        "actualY": -0.4149377593361,
+        "predErr": -3.4149377593361
+      },
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.8038680006098421,
+        "actualY": -7.1428571428571495,
+        "predErr": -10.14285714285715
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-18",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 0.38759689922479,
+    "avgErr": -2.61240310077521,
+    "limitedPicks": [
+      {
+        "pick": "2338.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.855107582284583,
+        "actualY": 0.38759689922479,
+        "predErr": -2.61240310077521
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-17",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "2338.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.855107582284583,
+        "actualY": 0.38759689922479,
+        "predErr": -2.61240310077521
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-16",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "2338.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.855107582284583,
+        "actualY": 0.38759689922479,
+        "predErr": -2.61240310077521
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-15",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "2338.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.855107582284583,
+        "actualY": 0.38759689922479,
+        "predErr": -2.61240310077521
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-14",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 2.63736263736264,
+    "avgErr": -0.36263736263736,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9108119280674268,
+        "actualY": 2.63736263736264,
+        "predErr": -0.36263736263736
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-11",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9108119280674268,
+        "actualY": 2.63736263736264,
+        "predErr": -0.36263736263736
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-10",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9108119280674268,
+        "actualY": 2.63736263736264,
+        "predErr": -0.36263736263736
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-09",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9108119280674268,
+        "actualY": 2.63736263736264,
+        "predErr": -0.36263736263736
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-08",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9108119280674268,
+        "actualY": 2.63736263736264,
+        "predErr": -0.36263736263736
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-07",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9108119280674268,
+        "actualY": 2.63736263736264,
+        "predErr": -0.36263736263736
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-04",
+    "initialPicksCount": 10,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.242834342327926,
+    "avgErr": -3.242834342327926,
+    "limitedPicks": [
+      {
+        "pick": "1038.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9972543445083962,
+        "actualY": 1.77215189873418,
+        "predErr": -1.22784810126582
+      },
+      {
+        "pick": "0003.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9943654089896375,
+        "actualY": 3.1250000000000098,
+        "predErr": 0.12500000000000977
+      },
+      {
+        "pick": "0006.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9930006553415316,
+        "actualY": 0.97919216646266,
+        "predErr": -2.02080783353734
+      },
+      {
+        "pick": "0291.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9914650419032426,
+        "actualY": -5.56379821958458,
+        "predErr": -8.56379821958458
+      },
+      {
+        "pick": "0016.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9774379705228128,
+        "actualY": -1.5267175572519,
+        "predErr": -4.5267175572519
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-03",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": 8.88252148997133,
+    "avgErr": 5.88252148997133,
+    "limitedPicks": [
+      {
+        "pick": "0390.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9500292703503518,
+        "actualY": 8.88252148997133,
+        "predErr": 5.88252148997133
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-02",
+    "initialPicksCount": 12,
+    "limitedPicksCount": 5,
+    "avgActualY": 2.384057942323638,
+    "avgErr": -0.6159420576763621,
+    "limitedPicks": [
+      {
+        "pick": "0384.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9994806318269612,
+        "actualY": -0.3448275862069,
+        "predErr": -3.3448275862069
+      },
+      {
+        "pick": "1988.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9994279586638184,
+        "actualY": 2.55220417633411,
+        "predErr": -0.4477958236658899
+      },
+      {
+        "pick": "0939.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9988618471169518,
+        "actualY": 5.64102564102564,
+        "predErr": 2.6410256410256396
+      },
+      {
+        "pick": "1288.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9976018313970312,
+        "actualY": 3.84615384615385,
+        "predErr": 0.8461538461538498
+      },
+      {
+        "pick": "2313.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9956244408093472,
+        "actualY": 0.22573363431149002,
+        "predErr": -2.77426636568851
+      }
+    ]
+  },
+  {
+    "datetime": "2020-12-01",
+    "initialPicksCount": 27,
+    "limitedPicksCount": 5,
+    "avgActualY": 2.2920865142766944,
+    "avgErr": -0.7079134857233059,
+    "limitedPicks": [
+      {
+        "pick": "0939.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9982744306597252,
+        "actualY": 3.8525963149078803,
+        "predErr": 0.8525963149078803
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9980180243842264,
+        "actualY": 2.08333333333334,
+        "predErr": -0.9166666666666599
+      },
+      {
+        "pick": "2318.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.9972290947850188,
+        "actualY": 0.80171031533939,
+        "predErr": -2.19828968466061
+      },
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.994471471360791,
+        "actualY": 4.72279260780286,
+        "predErr": 1.7227926078028597
+      },
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.984471694874852,
+        "actualY": 0.0,
+        "predErr": -3.0
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-30",
+    "initialPicksCount": 10,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.2510073178618241,
+    "avgErr": -3.2510073178618244,
+    "limitedPicks": [
+      {
+        "pick": "0390.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9928456253674274,
+        "actualY": 5.21978021978021,
+        "predErr": 2.21978021978021
+      },
+      {
+        "pick": "1816.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9924435185640108,
+        "actualY": 0.0,
+        "predErr": -3.0
+      },
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9876955962634428,
+        "actualY": 0.67796610169491,
+        "predErr": -2.32203389830509
+      },
+      {
+        "pick": "2338.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9836366727884832,
+        "actualY": -4.6987951807228905,
+        "predErr": -7.6987951807228905
+      },
+      {
+        "pick": "1928.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9814891410571296,
+        "actualY": -2.45398773006135,
+        "predErr": -5.45398773006135
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-27",
+    "initialPicksCount": 18,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.4595757945855462,
+    "avgErr": -2.540424205414454,
+    "limitedPicks": [
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9968848998483733,
+        "actualY": 6.04838709677419,
+        "predErr": 3.0483870967741904
+      },
+      {
+        "pick": "0939.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9841799528456214,
+        "actualY": -1.29449838187702,
+        "predErr": -4.29449838187702
+      },
+      {
+        "pick": "0012.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9804391622013432,
+        "actualY": 2.05371248025276,
+        "predErr": -0.9462875197472398
+      },
+      {
+        "pick": "1398.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9681723522642304,
+        "actualY": -2.5999999999999903,
+        "predErr": -5.599999999999991
+      },
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9666863777300932,
+        "actualY": -1.9097222222222099,
+        "predErr": -4.90972222222221
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-26",
+    "initialPicksCount": 11,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.23693710952585406,
+    "avgErr": -2.7630628904741457,
+    "limitedPicks": [
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9992791341439332,
+        "actualY": 7.287449392712531,
+        "predErr": 4.287449392712531
+      },
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9737033350621273,
+        "actualY": -2.74509803921568,
+        "predErr": -5.74509803921568
+      },
+      {
+        "pick": "6186.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.954771855246728,
+        "actualY": -4.535637149028069,
+        "predErr": -7.535637149028069
+      },
+      {
+        "pick": "0019.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9270941507682487,
+        "actualY": 4.044943820224709,
+        "predErr": 1.0449438202247094
+      },
+      {
+        "pick": "6030.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9153621281816848,
+        "actualY": -2.86697247706422,
+        "predErr": -5.86697247706422
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-25",
+    "initialPicksCount": 13,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.49761847248888624,
+    "avgErr": -2.5023815275111136,
+    "limitedPicks": [
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.996873018125808,
+        "actualY": -0.40816326530613,
+        "predErr": -3.40816326530613
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9925934415323096,
+        "actualY": 6.938775510204071,
+        "predErr": 3.9387755102040707
+      },
+      {
+        "pick": "0012.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9922084121836726,
+        "actualY": 0.30769230769231,
+        "predErr": -2.69230769230769
+      },
+      {
+        "pick": "6818.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.958237408597856,
+        "actualY": -5.6782334384857895,
+        "predErr": -8.67823343848579
+      },
+      {
+        "pick": "1997.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9557087002564132,
+        "actualY": 1.32802124833997,
+        "predErr": -1.67197875166003
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-24",
+    "initialPicksCount": 9,
+    "limitedPicksCount": 5,
+    "avgActualY": -3.229090007613864,
+    "avgErr": -6.229090007613864,
+    "limitedPicks": [
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9871633723286132,
+        "actualY": -4.34782608695651,
+        "predErr": -7.34782608695651
+      },
+      {
+        "pick": "0945.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9542487856020052,
+        "actualY": -2.9500756429651798,
+        "predErr": -5.95007564296518
+      },
+      {
+        "pick": "2378.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.8928241400607829,
+        "actualY": 0.92307692307691,
+        "predErr": -2.07692307692309
+      },
+      {
+        "pick": "1336.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8895019498140947,
+        "actualY": -3.92156862745097,
+        "predErr": -6.92156862745097
+      },
+      {
+        "pick": "0241.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8746805944619581,
+        "actualY": -5.84905660377357,
+        "predErr": -8.849056603773569
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-23",
+    "initialPicksCount": 9,
+    "limitedPicksCount": 5,
+    "avgActualY": 0.11778647277180405,
+    "avgErr": -2.8822135272281963,
+    "limitedPicks": [
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9766276682465824,
+        "actualY": 2.56410256410255,
+        "predErr": -0.4358974358974499
+      },
+      {
+        "pick": "1972.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9391967034513504,
+        "actualY": 0.84925690021231,
+        "predErr": -2.15074309978769
+      },
+      {
+        "pick": "0390.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9215785569324254,
+        "actualY": 1.79948586118251,
+        "predErr": -1.20051413881749
+      },
+      {
+        "pick": "1038.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.880033843486811,
+        "actualY": -2.72277227722772,
+        "predErr": -5.72277227722772
+      },
+      {
+        "pick": "0857.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8731011500219692,
+        "actualY": -1.90114068441063,
+        "predErr": -4.90114068441063
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-20",
+    "initialPicksCount": 4,
+    "limitedPicksCount": 4,
+    "avgActualY": 1.1291445311201702,
+    "avgErr": -1.8708554688798298,
+    "limitedPicks": [
+      {
+        "pick": "0700.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.903123138913326,
+        "actualY": 0.8576329331046301,
+        "predErr": -2.14236706689537
+      },
+      {
+        "pick": "2611.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8584447474034971,
+        "actualY": -0.90744101633393,
+        "predErr": -3.90744101633393
+      },
+      {
+        "pick": "2313.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8117655743038672,
+        "actualY": 4.0680473372781005,
+        "predErr": 1.0680473372781005
+      },
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.8080426549546634,
+        "actualY": 0.49833887043188,
+        "predErr": -2.50166112956812
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-19",
+    "initialPicksCount": 3,
+    "limitedPicksCount": 3,
+    "avgActualY": -0.3832666179783266,
+    "avgErr": -3.3832666179783266,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9672019824839284,
+        "actualY": 1.05042016806722,
+        "predErr": -1.94957983193278
+      },
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9497154797792812,
+        "actualY": 0.0,
+        "predErr": -3.0
+      },
+      {
+        "pick": "2318.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.8892736802724673,
+        "actualY": -2.2002200220022,
+        "predErr": -5.2002200220022
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-18",
+    "initialPicksCount": 13,
+    "limitedPicksCount": 5,
+    "avgActualY": 1.1779251050138542,
+    "avgErr": -1.8220748949861458,
+    "limitedPicks": [
+      {
+        "pick": "1972.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9956361452080056,
+        "actualY": 1.8947368421052602,
+        "predErr": -1.1052631578947398
+      },
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9910999206186478,
+        "actualY": 1.23456790123455,
+        "predErr": -1.76543209876545
+      },
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9901998803411552,
+        "actualY": 2.88924558587479,
+        "predErr": -0.11075441412521014
+      },
+      {
+        "pick": "1088.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9898859853679914,
+        "actualY": -1.9893899204243999,
+        "predErr": -4.9893899204244
+      },
+      {
+        "pick": "1336.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.9477593645510598,
+        "actualY": 1.8604651162790702,
+        "predErr": -1.1395348837209298
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-17",
+    "initialPicksCount": 5,
+    "limitedPicksCount": 5,
+    "avgActualY": 1.200629098307566,
+    "avgErr": -1.7993709016924342,
+    "limitedPicks": [
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9234296277868635,
+        "actualY": -1.40405616224647,
+        "predErr": -4.40405616224647
+      },
+      {
+        "pick": "1339.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9085111150520416,
+        "actualY": 1.66666666666666,
+        "predErr": -1.33333333333334
+      },
+      {
+        "pick": "1972.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.901981890790078,
+        "actualY": 2.10526315789473,
+        "predErr": -0.8947368421052699
+      },
+      {
+        "pick": "1299.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8888635177478005,
+        "actualY": 0.7909604519774001,
+        "predErr": -2.2090395480226
+      },
+      {
+        "pick": "0270.XHKG_closeDelta2dR",
+        "pred": 3.0,
+        "predP": 0.8138399022269877,
+        "actualY": 2.8443113772455098,
+        "predErr": -0.15568862275449025
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-16",
+    "initialPicksCount": 4,
+    "limitedPicksCount": 3,
+    "avgActualY": 2.07109646920292,
+    "avgErr": -0.9289035307970801,
+    "limitedPicks": [
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9632500085412684,
+        "actualY": 0.15822784810124998,
+        "predErr": -2.84177215189875
+      },
+      {
+        "pick": "0823.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8729826209385662,
+        "actualY": 1.98529411764705,
+        "predErr": -1.01470588235295
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8532728917468791,
+        "actualY": 4.06976744186046,
+        "predErr": 1.06976744186046
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-13",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "1918.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9632500085412684,
+        "actualY": 0.15822784810124998,
+        "predErr": -2.84177215189875
+      },
+      {
+        "pick": "0823.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.8729826209385662,
+        "actualY": 1.98529411764705,
+        "predErr": -1.01470588235295
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.8532728917468791,
+        "actualY": 4.06976744186046,
+        "predErr": 1.06976744186046
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-12",
+    "initialPicksCount": 4,
+    "limitedPicksCount": 3,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "2007.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9718910441913482,
+        "actualY": 6.56370656370656,
+        "predErr": 3.5637065637065604
+      },
+      {
+        "pick": "4335.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.8994171391814881,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0005.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.8994171391814881,
+        "actualY": 2.95302013422819,
+        "predErr": -0.046979865771810125
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-11",
+    "initialPicksCount": 9,
+    "limitedPicksCount": 5,
+    "avgActualY": NaN,
+    "avgErr": NaN,
+    "limitedPicks": [
+      {
+        "pick": "0011.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.997071715856868,
+        "actualY": 3.05343511450381,
+        "predErr": 0.05343511450380989
+      },
+      {
+        "pick": "4335.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.995802054431572,
+        "actualY": NaN,
+        "predErr": NaN
+      },
+      {
+        "pick": "0005.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.995802054431572,
+        "actualY": 2.34680573663624,
+        "predErr": -0.6531942633637602
+      },
+      {
+        "pick": "2007.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.991699945831719,
+        "actualY": 8.687258687258689,
+        "predErr": 5.687258687258689
+      },
+      {
+        "pick": "2888.XHKG_closeDelta1dR",
+        "pred": 3.0,
+        "predP": 0.9610433698070768,
+        "actualY": 2.93427230046948,
+        "predErr": -0.06572769953052005
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-10",
+    "initialPicksCount": 7,
+    "limitedPicksCount": 5,
+    "avgActualY": -2.617048748048416,
+    "avgErr": -5.617048748048417,
+    "limitedPicks": [
+      {
+        "pick": "0291.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9941954139025962,
+        "actualY": -5.57977332170881,
+        "predErr": -8.57977332170881
+      },
+      {
+        "pick": "0669.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9858148954337528,
+        "actualY": -1.62401574803148,
+        "predErr": -4.62401574803148
+      },
+      {
+        "pick": "0945.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9646124509520078,
+        "actualY": -0.74074074074074,
+        "predErr": -3.74074074074074
+      },
+      {
+        "pick": "1299.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9337171599674612,
+        "actualY": -2.79329608938547,
+        "predErr": -5.7932960893854695
+      },
+      {
+        "pick": "0016.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9007032525873448,
+        "actualY": -2.3474178403755803,
+        "predErr": -5.347417840375581
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-09",
+    "initialPicksCount": 2,
+    "limitedPicksCount": 1,
+    "avgActualY": -3.7837837837837798,
+    "avgErr": -6.78378378378378,
+    "limitedPicks": [
+      {
+        "pick": "0384.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9839269789308184,
+        "actualY": -3.7837837837837798,
+        "predErr": -6.78378378378378
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-06",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "0384.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9839269789308184,
+        "actualY": -3.7837837837837798,
+        "predErr": -6.78378378378378
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-05",
+    "initialPicksCount": 22,
+    "limitedPicksCount": 5,
+    "avgActualY": -0.732953243110962,
+    "avgErr": -3.7329532431109618,
+    "limitedPicks": [
+      {
+        "pick": "1038.XHKG_closeDelta8dR",
+        "pred": 3.0,
+        "predP": 0.9971603609113412,
+        "actualY": -3.8798498122653404,
+        "predErr": -6.87984981226534
+      },
+      {
+        "pick": "0700.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.990584113114178,
+        "actualY": 8.31889081455806,
+        "predErr": 5.31889081455806
+      },
+      {
+        "pick": "1398.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9853412880267066,
+        "actualY": -2.10970464135022,
+        "predErr": -5.10970464135022
+      },
+      {
+        "pick": "0003.XHKG_closeDelta7dR",
+        "pred": 3.0,
+        "predP": 0.9851666250961214,
+        "actualY": -5.62913907284767,
+        "predErr": -8.62913907284767
+      },
+      {
+        "pick": "2007.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9848387707137242,
+        "actualY": -0.36496350364964003,
+        "predErr": -3.36496350364964
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-04",
+    "initialPicksCount": 10,
+    "limitedPicksCount": 5,
+    "avgActualY": -4.814607470899452,
+    "avgErr": -7.814607470899453,
+    "limitedPicks": [
+      {
+        "pick": "0001.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9938764112017126,
+        "actualY": -6.370656370656359,
+        "predErr": -9.37065637065636
+      },
+      {
+        "pick": "1177.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9591393746681496,
+        "actualY": -2.6960784313725403,
+        "predErr": -5.69607843137254
+      },
+      {
+        "pick": "0012.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9444936447031568,
+        "actualY": -6.514657980456021,
+        "predErr": -9.514657980456022
+      },
+      {
+        "pick": "0006.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9170740276693649,
+        "actualY": -4.41001191895113,
+        "predErr": -7.41001191895113
+      },
+      {
+        "pick": "1988.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9043768415927947,
+        "actualY": -4.08163265306121,
+        "predErr": -7.08163265306121
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-03",
+    "initialPicksCount": 0,
+    "limitedPicks": [
+      {
+        "pick": "0001.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9938764112017126,
+        "actualY": -6.370656370656359,
+        "predErr": -9.37065637065636
+      },
+      {
+        "pick": "1177.XHKG_closeDelta3dR",
+        "pred": 3.0,
+        "predP": 0.9591393746681496,
+        "actualY": -2.6960784313725403,
+        "predErr": -5.69607843137254
+      },
+      {
+        "pick": "0012.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9444936447031568,
+        "actualY": -6.514657980456021,
+        "predErr": -9.514657980456022
+      },
+      {
+        "pick": "0006.XHKG_closeDelta5dR",
+        "pred": 3.0,
+        "predP": 0.9170740276693649,
+        "actualY": -4.41001191895113,
+        "predErr": -7.41001191895113
+      },
+      {
+        "pick": "1988.XHKG_closeDelta4dR",
+        "pred": 3.0,
+        "predP": 0.9043768415927947,
+        "actualY": -4.08163265306121,
+        "predErr": -7.08163265306121
+      }
+    ]
+  },
+  {
+    "datetime": "2020-11-02",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": -4.358353510895871,
+    "avgErr": -7.358353510895871,
+    "limitedPicks": [
+      {
+        "pick": "0006.XHKG_closeDelta9dR",
+        "pred": 3.0,
+        "predP": 0.8299494428725634,
+        "actualY": -4.358353510895871,
+        "predErr": -7.358353510895871
+      }
+    ]
+  },
+  {
+    "datetime": "2020-10-30",
+    "initialPicksCount": 1,
+    "limitedPicksCount": 1,
+    "avgActualY": -4.94791666666666,
+    "avgErr": -7.94791666666666,
+    "limitedPicks": [
+      {
+        "pick": "1038.XHKG_closeDelta6dR",
+        "pred": 3.0,
+        "predP": 0.9477574255816884,
+        "actualY": -4.94791666666666,
+        "predErr": -7.94791666666666
+      }
+    ]
+  }
+]
