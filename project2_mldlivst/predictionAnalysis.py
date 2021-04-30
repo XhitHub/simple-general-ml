@@ -6,6 +6,8 @@ import traceback
 
 ROOT = 'project2_mldlivst/data'
 
+max_count = 900
+
 training_ratio = 0.7
 
 pickMin = 5
@@ -59,11 +61,15 @@ def run():
   CLASS_GD = 3
   testCount = int(len(dfJoined.index) * (1 - training_ratio))
   dfJoinedTest = dfJoined[:testCount]
-  predYCols = raw_train_ys_df.columns.values
+  # predYCols = raw_train_ys_df.columns.values
+  predYCols = raw_train_ys_df.columns.values[:max_count]
   res2 = []
   count = 0
   for col in predYCols:
     count += 1
+    # if (count > max_count):
+    #   print('count exceeded max, should break')
+    #   break
     print('analysis 2: ' + str(count) + '/' + str(len(predYCols)))
     actualYs = dfJoinedTest[col]
     preds = dfJoinedTest[col + '_predict']
@@ -94,7 +100,9 @@ def run():
   
   # picking
   dfJoinedTest = dfJoined[:testCount]
-  pickRes = pick(dfJoinedTest, dfTrainingResults, train_ys_df.columns.values)
+  # pickRes = pick(dfJoinedTest, dfTrainingResults, train_ys_df.columns.values)
+  processedTrainYCols = train_ys_df.columns.values[:max_count]
+  pickRes = pick(dfJoinedTest, dfTrainingResults, processedTrainYCols)
   with open(ROOT + '/results/picks_Log_reg_v2.json', 'w') as fout:
     json.dump(pickRes , fout, indent=2)
   pickResDf = pd.DataFrame(pickRes['daysPicks'])
@@ -104,7 +112,7 @@ def run():
 def is_gd_class(c):
   return c == 3
 
-def pick(all_pred_valid_df, train_res_df, yCols, max_pick_count=5):
+def pick(all_pred_valid_df, train_res_df, yCols, max_pick_count=7):
   # all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
   # train_res_df: training_results.csv
   # yCols: all cols of train1_Y
@@ -166,8 +174,8 @@ def pick(all_pred_valid_df, train_res_df, yCols, max_pick_count=5):
       item['avgActualY'] = limitedTotalActualY / limitedPicksCount
       item['avgErr'] = limitedTotalErr / limitedPicksCount
 
-    item['limitedPicks'] = limitedRowPicks
-    item['limitedPicks_simple'] = [d['pick'] for d in limitedRowPicks]
+      item['limitedPicks'] = limitedRowPicks
+      item['limitedPicks_simple'] = [d['pick'] for d in limitedRowPicks]
     res.append(item)
 
   itemsWithAvg = [d for d in res if 'avgActualY' in d and not np.isnan(d['avgActualY'])]
