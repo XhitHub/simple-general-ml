@@ -6,6 +6,8 @@ import traceback
 
 ROOT = 'project2_mldlivst/data'
 
+CLASS_GD = 2
+
 max_count = 900
 
 training_ratio = 0.7
@@ -58,7 +60,6 @@ def run():
   #       2. pick class gd cells
   #         compare with df_valid
   #         calc avg err of them
-  CLASS_GD = 3
   testCount = int(len(dfJoined.index) * (1 - training_ratio))
   dfJoinedTest = dfJoined[:testCount]
   # predYCols = raw_train_ys_df.columns.values
@@ -110,7 +111,7 @@ def run():
 
 
 def is_gd_class(c):
-  return c == 3
+  return c == CLASS_GD
 
 def pick(all_pred_valid_df, train_res_df, yCols, max_pick_count=7):
   # all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
@@ -193,7 +194,6 @@ def pick_v1(all_pred_valid_df, train_res_df, yCols):
   # all_pred_valid_df: all_predictions.csv joined validation1_Y.csv
   # train_res_df: training_results.csv
   # yCols: all cols of train1_Y
-  CLASS_GD = 3
   # determ cols with gd enough test score
   gdCols = []
   for col in yCols:

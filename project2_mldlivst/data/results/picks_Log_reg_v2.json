@@ -1,5 +1,5 @@
 {
-  "allDaysAvgActualY": 0.6244594155692157,
+  "allDaysAvgActualY": 1.266438537876808,
   "daysPicks": [
     {
       "datetime": "2021-04-26",
@@ -7,7 +7,22 @@
     },
     {
       "datetime": "2021-04-23",
-      "initialPicksCount": 0
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": NaN,
+      "avgErr": NaN,
+      "limitedPicks": [
+        {
+          "pick": "2611.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.8191413806644088,
+          "actualY": NaN,
+          "predErr": NaN
+        }
+      ],
+      "limitedPicks_simple": [
+        "2611.XHKG_closeDelta4dR"
+      ]
     },
     {
       "datetime": "2021-04-22",
@@ -59,11 +74,41 @@
     },
     {
       "datetime": "2021-04-01",
-      "initialPicksCount": 0
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": 18.04347826086957,
+      "avgErr": 16.04347826086957,
+      "limitedPicks": [
+        {
+          "pick": "3690.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.8100464306818009,
+          "actualY": 18.04347826086957,
+          "predErr": 16.04347826086957
+        }
+      ],
+      "limitedPicks_simple": [
+        "3690.XHKG_closeDelta5dR"
+      ]
     },
     {
       "datetime": "2021-03-31",
-      "initialPicksCount": 0
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": 6.02189781021896,
+      "avgErr": 4.02189781021896,
+      "limitedPicks": [
+        {
+          "pick": "1658.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.8216621070232842,
+          "actualY": 6.02189781021896,
+          "predErr": 4.02189781021896
+        }
+      ],
+      "limitedPicks_simple": [
+        "1658.XHKG_closeDelta5dR"
+      ]
     },
     {
       "datetime": "2021-03-30",
@@ -71,22 +116,7 @@
     },
     {
       "datetime": "2021-03-29",
-      "initialPicksCount": 1,
-      "limitedPicksCount": 1,
-      "avgActualY": -2.5862068965517198,
-      "avgErr": -5.58620689655172,
-      "limitedPicks": [
-        {
-          "pick": "2328.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.879346280085487,
-          "actualY": -2.5862068965517198,
-          "predErr": -5.58620689655172
-        }
-      ],
-      "limitedPicks_simple": [
-        "2328.XHKG_closeDelta8dR"
-      ]
+      "initialPicksCount": 0
     },
     {
       "datetime": "2021-03-26",
@@ -106,72 +136,87 @@
     },
     {
       "datetime": "2021-03-22",
-      "initialPicksCount": 0
-    },
-    {
-      "datetime": "2021-03-19",
-      "initialPicksCount": 6,
-      "limitedPicksCount": 5,
-      "avgActualY": 3.2531138110169833,
-      "avgErr": 0.2531138110169836,
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": -1.01010101010101,
+      "avgErr": -3.01010101010101,
       "limitedPicks": [
         {
-          "pick": "0914.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9529430858850526,
-          "actualY": 3.3099297893680997,
-          "predErr": 0.3099297893680997
-        },
-        {
-          "pick": "0883.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9409613721605244,
-          "actualY": 3.4653465346534498,
-          "predErr": 0.4653465346534498
-        },
-        {
-          "pick": "1093.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9060172644070528,
-          "actualY": 8.305274971941639,
-          "predErr": 5.305274971941639
-        },
-        {
-          "pick": "1800.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.8736304177276129,
-          "actualY": 2.10526315789473,
-          "predErr": -0.8947368421052699
-        },
-        {
-          "pick": "0939.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.812846217983732,
-          "actualY": -0.9202453987729999,
-          "predErr": -3.920245398773
+          "pick": "3988.XHKG_closeDelta9dR",
+          "pred": 2.0,
+          "predP": 0.9443018523467576,
+          "actualY": -1.01010101010101,
+          "predErr": -3.01010101010101
         }
       ],
       "limitedPicks_simple": [
-        "0914.XHKG_closeDelta4dR",
-        "0883.XHKG_closeDelta4dR",
-        "1093.XHKG_closeDelta4dR",
-        "1800.XHKG_closeDelta3dR",
-        "0939.XHKG_closeDelta9dR"
+        "3988.XHKG_closeDelta9dR"
+      ]
+    },
+    {
+      "datetime": "2021-03-19",
+      "initialPicksCount": 5,
+      "limitedPicksCount": 5,
+      "avgActualY": 0.5768619782510641,
+      "avgErr": -1.4231380217489356,
+      "limitedPicks": [
+        {
+          "pick": "2328.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9663278647664272,
+          "actualY": -1.79640718562874,
+          "predErr": -3.7964071856287402
+        },
+        {
+          "pick": "3988.XHKG_closeDelta9dR",
+          "pred": 2.0,
+          "predP": 0.9263051454076706,
+          "actualY": -2.37288135593221,
+          "predErr": -4.3728813559322095
+        },
+        {
+          "pick": "0012.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9056013290528648,
+          "actualY": 1.20300751879698,
+          "predErr": -0.79699248120302
+        },
+        {
+          "pick": "0390.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.8699315878771428,
+          "actualY": 3.2418952618453805,
+          "predErr": 1.2418952618453805
+        },
+        {
+          "pick": "0788.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.8004834423859908,
+          "actualY": 2.60869565217391,
+          "predErr": 0.60869565217391
+        }
+      ],
+      "limitedPicks_simple": [
+        "2328.XHKG_closeDelta4dR",
+        "3988.XHKG_closeDelta9dR",
+        "0012.XHKG_closeDelta4dR",
+        "0390.XHKG_closeDelta4dR",
+        "0788.XHKG_closeDelta2dR"
       ]
     },
     {
       "datetime": "2021-03-18",
-      "initialPicksCount": 1,
+      "initialPicksCount": 2,
       "limitedPicksCount": 1,
       "avgActualY": 5.96774193548387,
-      "avgErr": 2.96774193548387,
+      "avgErr": 3.96774193548387,
       "limitedPicks": [
         {
           "pick": "2328.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9345671607835192,
+          "pred": 2.0,
+          "predP": 0.9719947149588312,
           "actualY": 5.96774193548387,
-          "predErr": 2.96774193548387
+          "predErr": 3.96774193548387
         }
       ],
       "limitedPicks_simple": [
@@ -182,19 +227,19 @@
       "datetime": "2021-03-17",
       "initialPicksCount": 1,
       "limitedPicksCount": 1,
-      "avgActualY": 2.8124999999999902,
-      "avgErr": -0.18750000000000977,
+      "avgActualY": 0.84745762711864,
+      "avgErr": -1.15254237288136,
       "limitedPicks": [
         {
-          "pick": "2328.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.8009846428222345,
-          "actualY": 2.8124999999999902,
-          "predErr": -0.18750000000000977
+          "pick": "0788.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.8617760119000736,
+          "actualY": 0.84745762711864,
+          "predErr": -1.15254237288136
         }
       ],
       "limitedPicks_simple": [
-        "2328.XHKG_closeDelta4dR"
+        "0788.XHKG_closeDelta2dR"
       ]
     },
     {
@@ -207,22 +252,7 @@
     },
     {
       "datetime": "2021-03-12",
-      "initialPicksCount": 1,
-      "limitedPicksCount": 1,
-      "avgActualY": 1.4516129032257998,
-      "avgErr": -1.5483870967742002,
-      "limitedPicks": [
-        {
-          "pick": "2328.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.8159061473283957,
-          "actualY": 1.4516129032257998,
-          "predErr": -1.5483870967742002
-        }
-      ],
-      "limitedPicks_simple": [
-        "2328.XHKG_closeDelta8dR"
-      ]
+      "initialPicksCount": 0
     },
     {
       "datetime": "2021-03-11",
@@ -248,54 +278,46 @@
       "datetime": "2021-03-04",
       "initialPicksCount": 1,
       "limitedPicksCount": 1,
-      "avgActualY": -6.31741140215716,
-      "avgErr": -9.317411402157159,
+      "avgActualY": 0.84151472650772,
+      "avgErr": -1.1584852734922801,
       "limitedPicks": [
         {
-          "pick": "2328.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.8889666887832143,
-          "actualY": -6.31741140215716,
-          "predErr": -9.317411402157159
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.8142695482884575,
+          "actualY": 0.84151472650772,
+          "predErr": -1.1584852734922801
         }
       ],
       "limitedPicks_simple": [
-        "2328.XHKG_closeDelta8dR"
+        "6837.XHKG_closeDelta8dR"
       ]
     },
     {
       "datetime": "2021-03-03",
-      "initialPicksCount": 5,
-      "limitedPicksCount": 3,
-      "avgActualY": -2.9236940573619363,
-      "avgErr": -5.923694057361936,
+      "initialPicksCount": 2,
+      "limitedPicksCount": 2,
+      "avgActualY": 0.31081019581559,
+      "avgErr": -1.68918980418441,
       "limitedPicks": [
         {
-          "pick": "6818.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9404951663147828,
-          "actualY": -2.5568181818181697,
-          "predErr": -5.556818181818169
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9799690543316376,
+          "actualY": 2.24403927068723,
+          "predErr": 0.24403927068722986
         },
         {
-          "pick": "2628.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.8598001299212509,
-          "actualY": 0.9732360097323599,
-          "predErr": -2.02676399026764
-        },
-        {
-          "pick": "1288.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.8152282923718615,
-          "actualY": -7.187499999999999,
-          "predErr": -10.1875
+          "pick": "0267.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.8879089985821063,
+          "actualY": -1.6224188790560499,
+          "predErr": -3.62241887905605
         }
       ],
       "limitedPicks_simple": [
-        "6818.XHKG_closeDelta9dR",
-        "2628.XHKG_closeDelta9dR",
-        "1288.XHKG_closeDelta9dR"
+        "6837.XHKG_closeDelta8dR",
+        "0267.XHKG_closeDelta4dR"
       ]
     },
     {
@@ -308,557 +330,549 @@
     },
     {
       "datetime": "2021-02-26",
-      "initialPicksCount": 1,
-      "limitedPicksCount": 1,
-      "avgActualY": -0.58997050147491,
-      "avgErr": -3.58997050147491,
+      "initialPicksCount": 7,
+      "limitedPicksCount": 5,
+      "avgActualY": -2.006878683990576,
+      "avgErr": -4.006878683990577,
       "limitedPicks": [
         {
-          "pick": "0012.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.8073475109106684,
-          "actualY": -0.58997050147491,
-          "predErr": -3.58997050147491
+          "pick": "0998.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9590927787519072,
+          "actualY": -3.43007915567282,
+          "predErr": -5.43007915567282
+        },
+        {
+          "pick": "0012.XHKG_closeDelta9dR",
+          "pred": 2.0,
+          "predP": 0.9414400727090392,
+          "actualY": -0.73637702503681,
+          "predErr": -2.73637702503681
+        },
+        {
+          "pick": "1339.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9199044078417448,
+          "actualY": -2.42914979757085,
+          "predErr": -4.42914979757085
+        },
+        {
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.8864753159216227,
+          "actualY": 0.56737588652482,
+          "predErr": -1.43262411347518
+        },
+        {
+          "pick": "0939.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.8565657406522488,
+          "actualY": -4.00616332819722,
+          "predErr": -6.00616332819722
         }
       ],
       "limitedPicks_simple": [
-        "0012.XHKG_closeDelta8dR"
+        "0998.XHKG_closeDelta5dR",
+        "0012.XHKG_closeDelta9dR",
+        "1339.XHKG_closeDelta7dR",
+        "6837.XHKG_closeDelta8dR",
+        "0939.XHKG_closeDelta5dR"
       ]
     },
     {
       "datetime": "2021-02-25",
-      "initialPicksCount": 36,
+      "initialPicksCount": 29,
       "limitedPicksCount": 7,
-      "avgActualY": 2.6957550956804996,
-      "avgErr": -0.3042449043195001,
+      "avgActualY": 1.2713790439513502,
+      "avgErr": -0.72862095604865,
       "limitedPicks": [
         {
-          "pick": "1288.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9984041535581788,
-          "actualY": -1.0204081632652902,
-          "predErr": -4.02040816326529
+          "pick": "3988.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9955392192759286,
+          "actualY": -3.8194444444444398,
+          "predErr": -5.819444444444439
         },
         {
-          "pick": "2007.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9968529684514464,
-          "actualY": 7.03463203463203,
-          "predErr": 4.03463203463203
+          "pick": "3328.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9925459480944842,
+          "actualY": 1.7897091722595002,
+          "predErr": -0.21029082774049979
         },
         {
-          "pick": "0267.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9967755036252682,
-          "actualY": 2.57186081694402,
-          "predErr": -0.42813918305598
+          "pick": "1339.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.978658321860901,
+          "actualY": 0.0,
+          "predErr": -2.0
+        },
+        {
+          "pick": "1816.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.9730438682377311,
+          "actualY": 2.32558139534883,
+          "predErr": 0.3255813953488298
+        },
+        {
+          "pick": "0939.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9694596361939756,
+          "actualY": 4.7854785478547806,
+          "predErr": 2.7854785478547806
         },
         {
           "pick": "0012.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9920330787087798,
+          "pred": 2.0,
+          "predP": 0.9686034420540658,
           "actualY": 1.7699115044247802,
-          "predErr": -1.2300884955752198
+          "predErr": -0.23008849557521982
         },
         {
-          "pick": "1336.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.986855627655291,
-          "actualY": 6.521739130434789,
-          "predErr": 3.5217391304347894
-        },
-        {
-          "pick": "3968.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9758165544283752,
-          "actualY": 4.14971521562245,
-          "predErr": 1.1497152156224502
-        },
-        {
-          "pick": "0939.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9695613741077412,
-          "actualY": -2.15716486902928,
-          "predErr": -5.15716486902928
+          "pick": "0941.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9632235634886028,
+          "actualY": 2.048417132216,
+          "predErr": 0.04841713221600008
         }
       ],
       "limitedPicks_simple": [
-        "1288.XHKG_closeDelta5dR",
-        "2007.XHKG_closeDelta7dR",
-        "0267.XHKG_closeDelta5dR",
+        "3988.XHKG_closeDelta7dR",
+        "3328.XHKG_closeDelta5dR",
+        "1339.XHKG_closeDelta7dR",
+        "1816.XHKG_closeDelta6dR",
+        "0939.XHKG_closeDelta3dR",
         "0012.XHKG_closeDelta9dR",
-        "1336.XHKG_closeDelta6dR",
-        "3968.XHKG_closeDelta6dR",
-        "0939.XHKG_closeDelta6dR"
+        "0941.XHKG_closeDelta1dR"
       ]
     },
     {
       "datetime": "2021-02-24",
-      "initialPicksCount": 8,
+      "initialPicksCount": 3,
+      "limitedPicksCount": 3,
+      "avgActualY": -2.2641116666961234,
+      "avgErr": -4.264111666696123,
+      "limitedPicks": [
+        {
+          "pick": "1658.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9387321297348776,
+          "actualY": -5.33980582524271,
+          "predErr": -7.33980582524271
+        },
+        {
+          "pick": "0011.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9044300084548836,
+          "actualY": 1.35961930659415,
+          "predErr": -0.64038069340585
+        },
+        {
+          "pick": "0006.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.8882919681266034,
+          "actualY": -2.81214848143981,
+          "predErr": -4.8121484814398094
+        }
+      ],
+      "limitedPicks_simple": [
+        "1658.XHKG_closeDelta5dR",
+        "0011.XHKG_closeDelta4dR",
+        "0006.XHKG_closeDelta8dR"
+      ]
+    },
+    {
+      "datetime": "2021-02-23",
+      "initialPicksCount": 36,
       "limitedPicksCount": 7,
       "avgActualY": NaN,
       "avgErr": NaN,
       "limitedPicks": [
         {
-          "pick": "0267.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9191103152171508,
-          "actualY": 1.51285930408471,
-          "predErr": -1.48714069591529
+          "pick": "3988.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9998478935094092,
+          "actualY": 0.35971223021583,
+          "predErr": -1.64028776978417
         },
         {
-          "pick": "0941.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9040868320250688,
-          "actualY": -2.5777777777777797,
-          "predErr": -5.577777777777779
+          "pick": "0998.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9991414067697402,
+          "actualY": -1.3192612137203101,
+          "predErr": -3.31926121372031
+        },
+        {
+          "pick": "3968.XHKG_closeDelta9dR",
+          "pred": 2.0,
+          "predP": 0.9986126311407,
+          "actualY": 13.032367972742739,
+          "predErr": 11.032367972742739
         },
         {
           "pick": "4335.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.896399680758698,
+          "pred": 2.0,
+          "predP": 0.9939734422892392,
           "actualY": NaN,
           "predErr": NaN
         },
         {
           "pick": "0005.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.896399680758698,
-          "actualY": -2.5369978858350803,
-          "predErr": -5.53699788583508
+          "pred": 2.0,
+          "predP": 0.9939734422892392,
+          "actualY": -1.99370409233997,
+          "predErr": -3.99370409233997
         },
         {
-          "pick": "0939.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.871765404686923,
-          "actualY": -2.19435736677115,
-          "predErr": -5.1943573667711505
+          "pick": "3328.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.993137216962616,
+          "actualY": -0.87912087912088,
+          "predErr": -2.87912087912088
         },
         {
-          "pick": "1658.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.8684889377365441,
-          "actualY": -5.33980582524271,
-          "predErr": -8.33980582524271
-        },
-        {
-          "pick": "1288.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.8448718409471386,
-          "actualY": -3.03030303030304,
-          "predErr": -6.03030303030304
+          "pick": "0939.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9925135368510616,
+          "actualY": 2.24719101123594,
+          "predErr": 0.24719101123594012
         }
       ],
       "limitedPicks_simple": [
-        "0267.XHKG_closeDelta6dR",
-        "0941.XHKG_closeDelta5dR",
+        "3988.XHKG_closeDelta7dR",
+        "0998.XHKG_closeDelta8dR",
+        "3968.XHKG_closeDelta9dR",
         "4335.XHKG_closeDelta2dR",
         "0005.XHKG_closeDelta2dR",
-        "0939.XHKG_closeDelta6dR",
-        "1658.XHKG_closeDelta5dR",
-        "1288.XHKG_closeDelta5dR"
-      ]
-    },
-    {
-      "datetime": "2021-02-23",
-      "initialPicksCount": 53,
-      "limitedPicksCount": 7,
-      "avgActualY": 0.7952089529518813,
-      "avgErr": -2.204791047048119,
-      "limitedPicks": [
-        {
-          "pick": "0939.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.999341688564318,
-          "actualY": -0.15673981191222,
-          "predErr": -3.15673981191222
-        },
-        {
-          "pick": "1288.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.998761967930602,
-          "actualY": 0.6802721088435301,
-          "predErr": -2.31972789115647
-        },
-        {
-          "pick": "1398.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9968262163301662,
-          "actualY": -0.18939393939395,
-          "predErr": -3.18939393939395
-        },
-        {
-          "pick": "0941.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9954513598369332,
-          "actualY": 1.6363636363636298,
-          "predErr": -1.3636363636363702
-        },
-        {
-          "pick": "2628.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9951182608762756,
-          "actualY": 3.1707317073170898,
-          "predErr": 0.17073170731708975
-        },
-        {
-          "pick": "3988.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9931699471896706,
-          "actualY": -1.7605633802816802,
-          "predErr": -4.76056338028168
-        },
-        {
-          "pick": "0998.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9929136211851118,
-          "actualY": 2.18579234972677,
-          "predErr": -0.81420765027323
-        }
-      ],
-      "limitedPicks_simple": [
-        "0939.XHKG_closeDelta7dR",
-        "1288.XHKG_closeDelta7dR",
-        "1398.XHKG_closeDelta7dR",
-        "0941.XHKG_closeDelta5dR",
-        "2628.XHKG_closeDelta7dR",
-        "3988.XHKG_closeDelta8dR",
-        "0998.XHKG_closeDelta3dR"
+        "3328.XHKG_closeDelta8dR",
+        "0939.XHKG_closeDelta3dR"
       ]
     },
     {
       "datetime": "2021-02-22",
       "initialPicksCount": 41,
       "limitedPicksCount": 7,
-      "avgActualY": -0.04238829926400551,
-      "avgErr": -3.0423882992640054,
+      "avgActualY": 0.43324888968443404,
+      "avgErr": -1.5667511103155662,
       "limitedPicks": [
         {
-          "pick": "0857.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.9969352126299784,
-          "actualY": -0.35587188612099996,
-          "predErr": -3.355871886121
-        },
-        {
           "pick": "0267.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9968570257818316,
+          "pred": 2.0,
+          "predP": 0.999035436792337,
           "actualY": 0.60882800608828,
-          "predErr": -2.39117199391172
+          "predErr": -1.39117199391172
         },
         {
-          "pick": "1800.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9968552689267202,
-          "actualY": 0.0,
-          "predErr": -3.0
+          "pick": "3328.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.998932634940774,
+          "actualY": -1.10864745011086,
+          "predErr": -3.10864745011086
         },
         {
-          "pick": "6818.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9947393463929696,
-          "actualY": -2.3391812865497097,
-          "predErr": -5.33918128654971
+          "pick": "0945.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9982794245837862,
+          "actualY": -0.67024128686327,
+          "predErr": -2.67024128686327
         },
         {
-          "pick": "1398.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9943712288157984,
-          "actualY": 1.38339920948617,
-          "predErr": -1.61660079051383
+          "pick": "1113.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9980686746971942,
+          "actualY": -7.89473684210526,
+          "predErr": -9.89473684210526
         },
         {
-          "pick": "0998.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9942358028867668,
-          "actualY": -3.42105263157894,
-          "predErr": -6.42105263157894
+          "pick": "3690.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9966284357931232,
+          "actualY": 9.10577971646673,
+          "predErr": 7.10577971646673
         },
         {
-          "pick": "1093.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9939964320110224,
-          "actualY": 3.82716049382716,
-          "predErr": 0.8271604938271602
+          "pick": "0390.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.996191159987112,
+          "actualY": 0.51020408163265,
+          "predErr": -1.4897959183673501
+        },
+        {
+          "pick": "0011.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9947368986114844,
+          "actualY": 2.48155600268277,
+          "predErr": 0.4815560026827699
         }
       ],
       "limitedPicks_simple": [
-        "0857.XHKG_closeDelta2dR",
         "0267.XHKG_closeDelta4dR",
-        "1800.XHKG_closeDelta3dR",
-        "6818.XHKG_closeDelta3dR",
-        "1398.XHKG_closeDelta4dR",
-        "0998.XHKG_closeDelta3dR",
-        "1093.XHKG_closeDelta4dR"
+        "3328.XHKG_closeDelta2dR",
+        "0945.XHKG_closeDelta2dR",
+        "1113.XHKG_closeDelta3dR",
+        "3690.XHKG_closeDelta5dR",
+        "0390.XHKG_closeDelta2dR",
+        "0011.XHKG_closeDelta2dR"
       ]
     },
     {
       "datetime": "2021-02-19",
-      "initialPicksCount": 38,
+      "initialPicksCount": 48,
       "limitedPicksCount": 7,
-      "avgActualY": -0.7935543457777986,
-      "avgErr": -3.7935543457777987,
+      "avgActualY": -2.2946186195101643,
+      "avgErr": -4.294618619510165,
       "limitedPicks": [
         {
-          "pick": "1093.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9993549263477772,
-          "actualY": 4.47400241837969,
-          "predErr": 1.4740024183796896
+          "pick": "0939.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9999745484273852,
+          "actualY": -1.4423076923076898,
+          "predErr": -3.44230769230769
         },
         {
-          "pick": "0267.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.9993479757326676,
-          "actualY": -5.63798219584569,
-          "predErr": -8.63798219584569
+          "pick": "3328.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9999505416064308,
+          "actualY": -1.10864745011086,
+          "predErr": -3.10864745011086
         },
         {
-          "pick": "0390.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9990027554330144,
-          "actualY": -5.58252427184466,
-          "predErr": -8.58252427184466
+          "pick": "1113.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9982570209833114,
+          "actualY": -7.29053318824809,
+          "predErr": -9.29053318824809
         },
         {
-          "pick": "0914.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.998600396144948,
-          "actualY": -0.1937984496124,
-          "predErr": -3.1937984496124
+          "pick": "0390.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9975095429478972,
+          "actualY": -3.2338308457711302,
+          "predErr": -5.233830845771131
         },
         {
-          "pick": "0883.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9966656535343688,
-          "actualY": 0.50709939148073,
-          "predErr": -2.49290060851927
+          "pick": "0998.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9887290864326268,
+          "actualY": -3.68421052631578,
+          "predErr": -5.6842105263157805
         },
         {
-          "pick": "0998.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9958505346082276,
-          "actualY": -0.54347826086956,
-          "predErr": -3.54347826086956
+          "pick": "1339.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9872994580359828,
+          "actualY": 1.6326530612244898,
+          "predErr": -0.36734693877551017
         },
         {
-          "pick": "1336.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9919257160004488,
-          "actualY": 1.4218009478673002,
-          "predErr": -1.5781990521326998
+          "pick": "2888.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.986682353344604,
+          "actualY": -0.93545369504209,
+          "predErr": -2.93545369504209
         }
       ],
       "limitedPicks_simple": [
-        "1093.XHKG_closeDelta4dR",
-        "0267.XHKG_closeDelta2dR",
-        "0390.XHKG_closeDelta4dR",
-        "0914.XHKG_closeDelta4dR",
-        "0883.XHKG_closeDelta4dR",
-        "0998.XHKG_closeDelta3dR",
-        "1336.XHKG_closeDelta3dR"
+        "0939.XHKG_closeDelta3dR",
+        "3328.XHKG_closeDelta3dR",
+        "1113.XHKG_closeDelta3dR",
+        "0390.XHKG_closeDelta2dR",
+        "0998.XHKG_closeDelta4dR",
+        "1339.XHKG_closeDelta3dR",
+        "2888.XHKG_closeDelta1dR"
       ]
     },
     {
       "datetime": "2021-02-18",
-      "initialPicksCount": 13,
+      "initialPicksCount": 22,
       "limitedPicksCount": 7,
-      "avgActualY": -0.018500129138257066,
-      "avgErr": -3.0185001291382565,
+      "avgActualY": -0.4704645076085759,
+      "avgErr": -2.4704645076085754,
       "limitedPicks": [
         {
-          "pick": "2378.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9809265866527956,
-          "actualY": -3.06188925081432,
-          "predErr": -6.061889250814319
+          "pick": "3328.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9946258209882812,
+          "actualY": -0.6651884700665001,
+          "predErr": -2.6651884700665
         },
         {
-          "pick": "0883.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9742988362115744,
-          "actualY": 4.97925311203318,
-          "predErr": 1.97925311203318
+          "pick": "0012.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9874359099916036,
+          "actualY": -5.62962962962962,
+          "predErr": -7.62962962962962
         },
         {
-          "pick": "3328.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9679624808252796,
-          "actualY": -1.53846153846152,
-          "predErr": -4.53846153846152
+          "pick": "0945.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.9869405933586308,
+          "actualY": -2.88831835686777,
+          "predErr": -4.88831835686777
         },
         {
-          "pick": "1093.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.964176424333186,
-          "actualY": -0.60096153846154,
-          "predErr": -3.60096153846154
+          "pick": "0267.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9824839699531136,
+          "actualY": -3.02571860816944,
+          "predErr": -5.02571860816944
         },
         {
-          "pick": "3988.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9558689488388116,
-          "actualY": 0.0,
-          "predErr": -3.0
+          "pick": "2378.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.9773633782409478,
+          "actualY": -2.8086218158066503,
+          "predErr": -4.80862181580665
         },
         {
-          "pick": "0001.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9020108146911288,
-          "actualY": -5.65068493150684,
-          "predErr": -8.65068493150684
+          "pick": "0390.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9477265019312576,
+          "actualY": -3.82653061224489,
+          "predErr": -5.826530612244889
         },
         {
-          "pick": "1336.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.8971665778290913,
-          "actualY": 5.74324324324324,
-          "predErr": 2.7432432432432403
+          "pick": "3690.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.947666866009904,
+          "actualY": 15.55075593952484,
+          "predErr": 13.55075593952484
         }
       ],
       "limitedPicks_simple": [
-        "2378.XHKG_closeDelta4dR",
-        "0883.XHKG_closeDelta4dR",
-        "3328.XHKG_closeDelta5dR",
-        "1093.XHKG_closeDelta4dR",
-        "3988.XHKG_closeDelta6dR",
-        "0001.XHKG_closeDelta9dR",
-        "1336.XHKG_closeDelta6dR"
+        "3328.XHKG_closeDelta4dR",
+        "0012.XHKG_closeDelta4dR",
+        "0945.XHKG_closeDelta6dR",
+        "0267.XHKG_closeDelta2dR",
+        "2378.XHKG_closeDelta6dR",
+        "0390.XHKG_closeDelta4dR",
+        "3690.XHKG_closeDelta5dR"
       ]
     },
     {
       "datetime": "2021-02-17",
-      "initialPicksCount": 32,
+      "initialPicksCount": 28,
       "limitedPicksCount": 7,
-      "avgActualY": 0.9642623903070758,
-      "avgErr": -2.0357376096929243,
+      "avgActualY": -0.5686726099924373,
+      "avgErr": -2.568672609992437,
       "limitedPicks": [
         {
-          "pick": "6837.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9848357191423108,
-          "actualY": 1.95530726256982,
-          "predErr": -1.04469273743018
+          "pick": "0001.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9976931177952914,
+          "actualY": -1.50709219858156,
+          "predErr": -3.50709219858156
         },
         {
-          "pick": "0914.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9844666539875604,
-          "actualY": -2.6369168356997896,
-          "predErr": -5.63691683569979
+          "pick": "0027.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.992674244018802,
+          "actualY": -8.218277449046681,
+          "predErr": -10.218277449046681
         },
         {
-          "pick": "3968.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9793775247802796,
-          "actualY": 2.11002260738508,
-          "predErr": -0.8899773926149201
+          "pick": "0998.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9874505736613872,
+          "actualY": 2.44565217391303,
+          "predErr": 0.44565217391303014
         },
         {
-          "pick": "0883.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9785859892227248,
-          "actualY": -4.134615384615381,
-          "predErr": -7.134615384615381
+          "pick": "3968.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9857096200759504,
+          "actualY": 13.57921207041073,
+          "predErr": 11.57921207041073
         },
         {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9784484490964224,
-          "actualY": 4.9079754601227,
-          "predErr": 1.9079754601227004
+          "pick": "0019.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9819373793953976,
+          "actualY": -4.74547023295944,
+          "predErr": -6.74547023295944
         },
         {
-          "pick": "0001.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.973704369599351,
-          "actualY": -3.8927335640138403,
-          "predErr": -6.89273356401384
+          "pick": "3988.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9806674343521194,
+          "actualY": -0.3623188405797,
+          "predErr": -2.3623188405797
         },
         {
-          "pick": "6030.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9640539560988334,
-          "actualY": 8.44079718640094,
-          "predErr": 5.440797186400941
+          "pick": "0823.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.974508039105532,
+          "actualY": -5.1724137931034395,
+          "predErr": -7.1724137931034395
         }
       ],
       "limitedPicks_simple": [
-        "6837.XHKG_closeDelta3dR",
-        "0914.XHKG_closeDelta4dR",
-        "3968.XHKG_closeDelta4dR",
-        "0883.XHKG_closeDelta4dR",
-        "2628.XHKG_closeDelta8dR",
-        "0001.XHKG_closeDelta9dR",
-        "6030.XHKG_closeDelta5dR"
+        "0001.XHKG_closeDelta3dR",
+        "0027.XHKG_closeDelta4dR",
+        "0998.XHKG_closeDelta5dR",
+        "3968.XHKG_closeDelta8dR",
+        "0019.XHKG_closeDelta3dR",
+        "3988.XHKG_closeDelta5dR",
+        "0823.XHKG_closeDelta5dR"
       ]
     },
     {
       "datetime": "2021-02-16",
-      "initialPicksCount": 15,
-      "limitedPicksCount": 7,
-      "avgActualY": -2.741477712436869,
-      "avgErr": -5.74147771243687,
+      "initialPicksCount": 6,
+      "limitedPicksCount": 6,
+      "avgActualY": 2.6527955465083948,
+      "avgErr": 0.6527955465083949,
       "limitedPicks": [
         {
-          "pick": "1800.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9933557364158871,
-          "actualY": -7.32323232323232,
-          "predErr": -10.32323232323232
+          "pick": "3690.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9760087146634256,
+          "actualY": 11.81262729124235,
+          "predErr": 9.81262729124235
         },
         {
-          "pick": "1093.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.971588108462447,
-          "actualY": 0.73260073260073,
-          "predErr": -2.26739926739927
+          "pick": "0813.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9755592714749473,
+          "actualY": 0.66371681415928,
+          "predErr": -1.33628318584072
         },
         {
-          "pick": "2378.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9532779431266102,
-          "actualY": -5.4054054054054,
-          "predErr": -8.4054054054054
+          "pick": "0001.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9395413706837108,
+          "actualY": -2.12765957446807,
+          "predErr": -4.12765957446807
         },
         {
-          "pick": "0001.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9397204148980663,
-          "actualY": -6.1224489795918196,
-          "predErr": -9.12244897959182
+          "pick": "0019.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9298358973962808,
+          "actualY": -2.50215703192407,
+          "predErr": -4.50215703192407
         },
         {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9136232095417156,
-          "actualY": 1.9559902200489,
-          "predErr": -1.0440097799511
+          "pick": "0388.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.8754966058084098,
+          "actualY": 7.662082514734769,
+          "predErr": 5.662082514734769
         },
         {
-          "pick": "2888.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.8965528111517596,
-          "actualY": -1.30963517305893,
-          "predErr": -4.30963517305893
-        },
-        {
-          "pick": "1288.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.871757042340343,
-          "actualY": -1.71821305841925,
-          "predErr": -4.71821305841925
+          "pick": "1339.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.8100615886796391,
+          "actualY": 0.40816326530611,
+          "predErr": -1.59183673469389
         }
       ],
       "limitedPicks_simple": [
-        "1800.XHKG_closeDelta3dR",
-        "1093.XHKG_closeDelta9dR",
-        "2378.XHKG_closeDelta7dR",
-        "0001.XHKG_closeDelta9dR",
-        "2628.XHKG_closeDelta8dR",
-        "2888.XHKG_closeDelta4dR",
-        "1288.XHKG_closeDelta7dR"
+        "3690.XHKG_closeDelta5dR",
+        "0813.XHKG_closeDelta1dR",
+        "0001.XHKG_closeDelta4dR",
+        "0019.XHKG_closeDelta4dR",
+        "0388.XHKG_closeDelta6dR",
+        "1339.XHKG_closeDelta6dR"
       ]
     },
     {
@@ -867,21 +881,37 @@
     },
     {
       "datetime": "2021-02-10",
-      "initialPicksCount": 1,
-      "limitedPicksCount": 1,
-      "avgActualY": -11.530944625407159,
-      "avgErr": -14.530944625407159,
+      "initialPicksCount": 3,
+      "limitedPicksCount": 3,
+      "avgActualY": -2.46009037014892,
+      "avgErr": -4.46009037014892,
       "limitedPicks": [
         {
-          "pick": "2378.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.8714664527037423,
-          "actualY": -11.530944625407159,
-          "predErr": -14.530944625407159
+          "pick": "0700.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9771362371030432,
+          "actualY": 0.52840158520475,
+          "predErr": -1.4715984147952499
+        },
+        {
+          "pick": "3690.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9223970013201616,
+          "actualY": 1.60528800755428,
+          "predErr": -0.3947119924457201
+        },
+        {
+          "pick": "1997.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.8554948019282276,
+          "actualY": -9.51396070320579,
+          "predErr": -11.51396070320579
         }
       ],
       "limitedPicks_simple": [
-        "2378.XHKG_closeDelta7dR"
+        "0700.XHKG_closeDelta1dR",
+        "3690.XHKG_closeDelta5dR",
+        "1997.XHKG_closeDelta2dR"
       ]
     },
     {
@@ -898,64 +928,49 @@
     },
     {
       "datetime": "2021-02-04",
-      "initialPicksCount": 1,
-      "limitedPicksCount": 1,
-      "avgActualY": 1.45454545454544,
-      "avgErr": -1.54545454545456,
-      "limitedPicks": [
-        {
-          "pick": "1093.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.8227057957341656,
-          "actualY": 1.45454545454544,
-          "predErr": -1.54545454545456
-        }
-      ],
-      "limitedPicks_simple": [
-        "1093.XHKG_closeDelta6dR"
-      ]
+      "initialPicksCount": 0
     },
     {
       "datetime": "2021-02-03",
-      "initialPicksCount": 3,
-      "limitedPicksCount": 1,
-      "avgActualY": 3.63636363636364,
-      "avgErr": 0.6363636363636398,
-      "limitedPicks": [
-        {
-          "pick": "1093.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9865980775738776,
-          "actualY": 3.63636363636364,
-          "predErr": 0.6363636363636398
-        }
-      ],
-      "limitedPicks_simple": [
-        "1093.XHKG_closeDelta7dR"
-      ]
+      "initialPicksCount": 0
     },
     {
       "datetime": "2021-02-02",
-      "initialPicksCount": 3,
+      "initialPicksCount": 1,
       "limitedPicksCount": 1,
-      "avgActualY": 7.29927007299269,
-      "avgErr": 4.29927007299269,
+      "avgActualY": 0.0,
+      "avgErr": -2.0,
       "limitedPicks": [
         {
-          "pick": "1093.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.8797566068411182,
-          "actualY": 7.29927007299269,
-          "predErr": 4.29927007299269
+          "pick": "1113.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.859267458404545,
+          "actualY": 0.0,
+          "predErr": -2.0
         }
       ],
       "limitedPicks_simple": [
-        "1093.XHKG_closeDelta7dR"
+        "1113.XHKG_closeDelta6dR"
       ]
     },
     {
       "datetime": "2021-02-01",
-      "initialPicksCount": 0
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": 3.5772357723577204,
+      "avgErr": 1.5772357723577204,
+      "limitedPicks": [
+        {
+          "pick": "0012.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.8611783485248355,
+          "actualY": 3.5772357723577204,
+          "predErr": 1.5772357723577204
+        }
+      ],
+      "limitedPicks_simple": [
+        "0012.XHKG_closeDelta6dR"
+      ]
     },
     {
       "datetime": "2021-01-29",
@@ -963,11 +978,41 @@
     },
     {
       "datetime": "2021-01-28",
-      "initialPicksCount": 0
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": 1.9305019305019302,
+      "avgErr": -0.0694980694980698,
+      "limitedPicks": [
+        {
+          "pick": "1113.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.8552037655545625,
+          "actualY": 1.9305019305019302,
+          "predErr": -0.0694980694980698
+        }
+      ],
+      "limitedPicks_simple": [
+        "1113.XHKG_closeDelta6dR"
+      ]
     },
     {
       "datetime": "2021-01-27",
-      "initialPicksCount": 0
+      "initialPicksCount": 1,
+      "limitedPicksCount": 1,
+      "avgActualY": 4.46428571428569,
+      "avgErr": 2.4642857142856904,
+      "limitedPicks": [
+        {
+          "pick": "0788.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.8748544484970261,
+          "actualY": 4.46428571428569,
+          "predErr": 2.4642857142856904
+        }
+      ],
+      "limitedPicks_simple": [
+        "0788.XHKG_closeDelta2dR"
+      ]
     },
     {
       "datetime": "2021-01-26",
@@ -975,441 +1020,440 @@
     },
     {
       "datetime": "2021-01-25",
-      "initialPicksCount": 0
+      "initialPicksCount": 2,
+      "limitedPicksCount": 2,
+      "avgActualY": 5.7352487711088145,
+      "avgErr": 3.7352487711088145,
+      "limitedPicks": [
+        {
+          "pick": "3690.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.8778011157484544,
+          "actualY": 2.2506393861892597,
+          "predErr": 0.25063938618925974
+        },
+        {
+          "pick": "2611.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.8127417390419183,
+          "actualY": 9.21985815602837,
+          "predErr": 7.219858156028369
+        }
+      ],
+      "limitedPicks_simple": [
+        "3690.XHKG_closeDelta5dR",
+        "2611.XHKG_closeDelta4dR"
+      ]
     },
     {
       "datetime": "2021-01-22",
       "initialPicksCount": 3,
       "limitedPicksCount": 3,
-      "avgActualY": 3.93801762406413,
-      "avgErr": 0.9380176240641299,
+      "avgActualY": 4.4621927135413495,
+      "avgErr": 2.46219271354135,
       "limitedPicks": [
         {
-          "pick": "6837.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9502736120562914,
-          "actualY": 6.10465116279069,
-          "predErr": 3.10465116279069
+          "pick": "0788.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.8858423409138376,
+          "actualY": 5.30973451327434,
+          "predErr": 3.30973451327434
         },
         {
-          "pick": "0788.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.8407292978264014,
-          "actualY": 1.70940170940171,
-          "predErr": -1.29059829059829
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.8585872499574868,
+          "actualY": 3.54609929078014,
+          "predErr": 1.5460992907801399
         },
         {
-          "pick": "1336.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.8283385614123118,
-          "actualY": 3.99999999999999,
-          "predErr": 0.9999999999999898
+          "pick": "0012.XHKG_closeDelta9dR",
+          "pred": 2.0,
+          "predP": 0.8284028627895621,
+          "actualY": 4.53074433656957,
+          "predErr": 2.53074433656957
         }
       ],
       "limitedPicks_simple": [
-        "6837.XHKG_closeDelta9dR",
-        "0788.XHKG_closeDelta3dR",
-        "1336.XHKG_closeDelta3dR"
+        "0788.XHKG_closeDelta2dR",
+        "6837.XHKG_closeDelta8dR",
+        "0012.XHKG_closeDelta9dR"
       ]
     },
     {
       "datetime": "2021-01-21",
-      "initialPicksCount": 26,
+      "initialPicksCount": 23,
       "limitedPicksCount": 7,
-      "avgActualY": 5.271193292692982,
-      "avgErr": 2.2711932926929816,
+      "avgActualY": 4.8036821315483795,
+      "avgErr": 2.80368213154838,
       "limitedPicks": [
         {
-          "pick": "2007.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9839163750259916,
-          "actualY": 4.0,
-          "predErr": 1.0
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.99287712772012,
+          "actualY": 7.5177304964539005,
+          "predErr": 5.5177304964539005
+        },
+        {
+          "pick": "0998.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.989949897973298,
+          "actualY": 3.13390313390314,
+          "predErr": 1.1339031339031398
+        },
+        {
+          "pick": "0267.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9841300783725312,
+          "actualY": 3.5889070146818804,
+          "predErr": 1.5889070146818804
         },
         {
           "pick": "0012.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9616637271671729,
+          "pred": 2.0,
+          "predP": 0.9816509235864768,
           "actualY": 4.64,
-          "predErr": 1.6399999999999997
+          "predErr": 2.6399999999999997
         },
         {
-          "pick": "0939.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9536816398040654,
-          "actualY": 5.7921635434412195,
-          "predErr": 2.7921635434412195
+          "pick": "0019.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9734764468698603,
+          "actualY": 2.80842527582747,
+          "predErr": 0.8084252758274699
         },
         {
-          "pick": "3328.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9413180347948992,
-          "actualY": 6.16113744075831,
-          "predErr": 3.16113744075831
+          "pick": "1339.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.959419362713612,
+          "actualY": 9.20502092050208,
+          "predErr": 7.205020920502079
         },
         {
-          "pick": "2328.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.933301126649768,
-          "actualY": 11.30742049469964,
-          "predErr": 8.30742049469964
-        },
-        {
-          "pick": "1658.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.926176751929918,
-          "actualY": -0.36429872495446997,
-          "predErr": -3.36429872495447
-        },
-        {
-          "pick": "1800.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.9253412226162046,
-          "actualY": 5.36193029490617,
-          "predErr": 2.36193029490617
+          "pick": "3968.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.949070902283358,
+          "actualY": 2.73178807947019,
+          "predErr": 0.7317880794701899
         }
       ],
       "limitedPicks_simple": [
-        "2007.XHKG_closeDelta4dR",
+        "6837.XHKG_closeDelta8dR",
+        "0998.XHKG_closeDelta7dR",
+        "0267.XHKG_closeDelta2dR",
         "0012.XHKG_closeDelta9dR",
-        "0939.XHKG_closeDelta7dR",
-        "3328.XHKG_closeDelta8dR",
-        "2328.XHKG_closeDelta6dR",
-        "1658.XHKG_closeDelta7dR",
-        "1800.XHKG_closeDelta2dR"
+        "0019.XHKG_closeDelta2dR",
+        "1339.XHKG_closeDelta6dR",
+        "3968.XHKG_closeDelta8dR"
       ]
     },
     {
       "datetime": "2021-01-20",
       "initialPicksCount": 32,
       "limitedPicksCount": 7,
-      "avgActualY": 7.69778361372031,
-      "avgErr": 4.69778361372031,
+      "avgActualY": 5.381821756567102,
+      "avgErr": 3.3818217565671027,
       "limitedPicks": [
         {
-          "pick": "6837.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9971736006982492,
-          "actualY": 5.198358413132699,
-          "predErr": 2.1983584131326994
+          "pick": "0998.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9906238732979462,
+          "actualY": 0.0,
+          "predErr": -2.0
         },
         {
-          "pick": "6030.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9937705414733764,
-          "actualY": 13.055555555555559,
-          "predErr": 10.055555555555559
-        },
-        {
-          "pick": "1336.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.979189992905926,
-          "actualY": 6.9354838709677304,
-          "predErr": 3.9354838709677304
-        },
-        {
-          "pick": "2007.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9678322336917528,
-          "actualY": 4.79041916167665,
-          "predErr": 1.7904191616766498
-        },
-        {
-          "pick": "1109.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9622116877724572,
+          "pick": "1339.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9868379598861412,
           "actualY": 6.02409638554216,
-          "predErr": 3.02409638554216
+          "predErr": 4.02409638554216
         },
         {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9502670731282,
-          "actualY": 10.12195121951219,
-          "predErr": 7.121951219512191
+          "pick": "0267.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9852444114552488,
+          "actualY": 2.44299674267101,
+          "predErr": 0.44299674267100997
         },
         {
-          "pick": "0788.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9480493474046916,
-          "actualY": 7.75862068965518,
-          "predErr": 4.75862068965518
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9783093166854272,
+          "actualY": 10.01430615164521,
+          "predErr": 8.01430615164521
+        },
+        {
+          "pick": "1088.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9761544355859384,
+          "actualY": 5.79514824797843,
+          "predErr": 3.79514824797843
+        },
+        {
+          "pick": "0390.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9636744106611392,
+          "actualY": 9.041095890410961,
+          "predErr": 7.041095890410961
+        },
+        {
+          "pick": "2611.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9435690711994836,
+          "actualY": 4.35510887772195,
+          "predErr": 2.3551088777219498
         }
       ],
       "limitedPicks_simple": [
-        "6837.XHKG_closeDelta3dR",
-        "6030.XHKG_closeDelta4dR",
-        "1336.XHKG_closeDelta3dR",
-        "2007.XHKG_closeDelta4dR",
-        "1109.XHKG_closeDelta3dR",
-        "2628.XHKG_closeDelta8dR",
-        "0788.XHKG_closeDelta3dR"
+        "0998.XHKG_closeDelta5dR",
+        "1339.XHKG_closeDelta3dR",
+        "0267.XHKG_closeDelta2dR",
+        "6837.XHKG_closeDelta8dR",
+        "1088.XHKG_closeDelta4dR",
+        "0390.XHKG_closeDelta4dR",
+        "2611.XHKG_closeDelta4dR"
       ]
     },
     {
       "datetime": "2021-01-19",
-      "initialPicksCount": 36,
+      "initialPicksCount": 33,
       "limitedPicksCount": 7,
-      "avgActualY": 6.742714470304807,
-      "avgErr": 3.742714470304807,
+      "avgActualY": 4.8627137745874975,
+      "avgErr": 2.862713774587497,
       "limitedPicks": [
         {
-          "pick": "1336.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9959403163948718,
-          "actualY": 11.166666666666671,
-          "predErr": 8.166666666666671
+          "pick": "3328.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9976549135450526,
+          "actualY": 1.60183066361556,
+          "predErr": -0.3981693363844401
         },
         {
-          "pick": "2328.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9882548482378808,
-          "actualY": 12.367491166077741,
-          "predErr": 9.367491166077741
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9910530501939296,
+          "actualY": 11.86685962373372,
+          "predErr": 9.86685962373372
         },
         {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9874219512781915,
-          "actualY": 8.99149453219927,
-          "predErr": 5.991494532199271
+          "pick": "0998.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9900272399987194,
+          "actualY": 0.8333333333333199,
+          "predErr": -1.16666666666668
         },
         {
-          "pick": "3988.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9843048672258408,
-          "actualY": 5.32319391634981,
-          "predErr": 2.32319391634981
+          "pick": "0390.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9882697316152228,
+          "actualY": 8.15217391304347,
+          "predErr": 6.15217391304347
         },
         {
-          "pick": "0267.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.9842710169236564,
-          "actualY": 2.12071778140293,
-          "predErr": -0.8792822185970701
+          "pick": "3988.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9822281556619038,
+          "actualY": 3.35820895522387,
+          "predErr": 1.35820895522387
         },
         {
-          "pick": "3328.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9803395661618348,
-          "actualY": 5.71428571428571,
-          "predErr": 2.71428571428571
+          "pick": "0012.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.9623985798851252,
+          "actualY": 1.87207488299532,
+          "predErr": -0.12792511700468
         },
         {
-          "pick": "6818.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9746841425930328,
-          "actualY": 1.51515151515152,
-          "predErr": -1.48484848484848
+          "pick": "2328.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9595042703655732,
+          "actualY": 6.35451505016722,
+          "predErr": 4.35451505016722
         }
       ],
       "limitedPicks_simple": [
-        "1336.XHKG_closeDelta6dR",
-        "2328.XHKG_closeDelta8dR",
-        "2628.XHKG_closeDelta8dR",
-        "3988.XHKG_closeDelta8dR",
-        "0267.XHKG_closeDelta4dR",
-        "3328.XHKG_closeDelta8dR",
-        "6818.XHKG_closeDelta3dR"
+        "3328.XHKG_closeDelta3dR",
+        "6837.XHKG_closeDelta8dR",
+        "0998.XHKG_closeDelta5dR",
+        "0390.XHKG_closeDelta4dR",
+        "3988.XHKG_closeDelta7dR",
+        "0012.XHKG_closeDelta5dR",
+        "2328.XHKG_closeDelta4dR"
       ]
     },
     {
       "datetime": "2021-01-18",
-      "initialPicksCount": 6,
-      "limitedPicksCount": 3,
-      "avgActualY": 3.8173512207743094,
-      "avgErr": 0.8173512207743099,
+      "initialPicksCount": 8,
+      "limitedPicksCount": 4,
+      "avgActualY": 1.98815684892796,
+      "avgErr": -0.011843151072040037,
       "limitedPicks": [
         {
-          "pick": "2328.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.943929409585343,
-          "actualY": 3.6789297658862803,
-          "predErr": 0.6789297658862803
+          "pick": "2328.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9227072945984642,
+          "actualY": 2.9900332225913697,
+          "predErr": 0.9900332225913697
         },
         {
-          "pick": "6818.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9097394086359218,
-          "actualY": 0.60422960725075,
-          "predErr": -2.3957703927492497
+          "pick": "3328.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9143712652971904,
+          "actualY": 0.9259259259259199,
+          "predErr": -1.0740740740740802
         },
         {
-          "pick": "2628.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.8105976501093882,
-          "actualY": 7.168894289185899,
-          "predErr": 4.168894289185899
+          "pick": "0998.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.8905847995667219,
+          "actualY": -2.2222222222222197,
+          "predErr": -4.22222222222222
+        },
+        {
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.8464707511926961,
+          "actualY": 6.2588904694167695,
+          "predErr": 4.2588904694167695
         }
       ],
       "limitedPicks_simple": [
-        "2328.XHKG_closeDelta5dR",
-        "6818.XHKG_closeDelta6dR",
-        "2628.XHKG_closeDelta9dR"
+        "2328.XHKG_closeDelta4dR",
+        "3328.XHKG_closeDelta7dR",
+        "0998.XHKG_closeDelta6dR",
+        "6837.XHKG_closeDelta8dR"
       ]
     },
     {
       "datetime": "2021-01-15",
-      "initialPicksCount": 8,
-      "limitedPicksCount": 7,
-      "avgActualY": -0.3279697905076114,
-      "avgErr": -3.3279697905076118,
+      "initialPicksCount": 5,
+      "limitedPicksCount": 3,
+      "avgActualY": -0.2779565048021899,
+      "avgErr": -2.2779565048021904,
       "limitedPicks": [
         {
-          "pick": "6030.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.8920911660058929,
-          "actualY": 9.7560975609756,
-          "predErr": 6.756097560975601
+          "pick": "3328.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9660146190674602,
+          "actualY": 1.16009280742461,
+          "predErr": -0.83990719257539
         },
         {
-          "pick": "0267.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.8781203834083705,
-          "actualY": -2.44698205546491,
-          "predErr": -5.44698205546491
+          "pick": "0998.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.9501160815737972,
+          "actualY": -4.37158469945355,
+          "predErr": -6.37158469945355
         },
         {
-          "pick": "1109.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.8428064362750924,
-          "actualY": -11.36363636363637,
-          "predErr": -14.36363636363637
-        },
-        {
-          "pick": "6818.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.832430914382896,
-          "actualY": -1.81268882175226,
-          "predErr": -4.8126888217522605
-        },
-        {
-          "pick": "0998.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.831729754332024,
-          "actualY": -2.77777777777778,
-          "predErr": -5.77777777777778
-        },
-        {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.8316758582681817,
-          "actualY": 3.7647058823529402,
-          "predErr": 0.7647058823529402
-        },
-        {
-          "pick": "1398.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.8166765912302192,
-          "actualY": 2.5844930417495,
-          "predErr": -0.4155069582505
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9312051621566751,
+          "actualY": 2.37762237762237,
+          "predErr": 0.37762237762236994
         }
       ],
       "limitedPicks_simple": [
-        "6030.XHKG_closeDelta9dR",
-        "0267.XHKG_closeDelta6dR",
-        "1109.XHKG_closeDelta3dR",
-        "6818.XHKG_closeDelta7dR",
-        "0998.XHKG_closeDelta8dR",
-        "2628.XHKG_closeDelta8dR",
-        "1398.XHKG_closeDelta7dR"
+        "3328.XHKG_closeDelta7dR",
+        "0998.XHKG_closeDelta6dR",
+        "6837.XHKG_closeDelta8dR"
       ]
     },
     {
       "datetime": "2021-01-14",
-      "initialPicksCount": 3,
-      "limitedPicksCount": 3,
-      "avgActualY": -3.14587604768244,
-      "avgErr": -6.14587604768244,
+      "initialPicksCount": 6,
+      "limitedPicksCount": 4,
+      "avgActualY": -1.302344702601285,
+      "avgErr": -3.302344702601285,
       "limitedPicks": [
         {
-          "pick": "6818.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9141606653825896,
-          "actualY": -7.35294117647058,
-          "predErr": -10.35294117647058
+          "pick": "6837.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9769606826698062,
+          "actualY": 2.22531293463142,
+          "predErr": 0.22531293463142
         },
         {
-          "pick": "6837.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9133927540165812,
-          "actualY": 2.7972027972027798,
-          "predErr": -0.20279720279722024
+          "pick": "0998.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9626886440578872,
+          "actualY": -5.0,
+          "predErr": -7.0
         },
         {
-          "pick": "0267.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.8588911108282622,
-          "actualY": -4.88188976377952,
-          "predErr": -7.88188976377952
+          "pick": "3328.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.9364854649377912,
+          "actualY": -0.91954022988505,
+          "predErr": -2.91954022988505
+        },
+        {
+          "pick": "0019.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.8356615230674053,
+          "actualY": -1.51515151515151,
+          "predErr": -3.5151515151515103
         }
       ],
       "limitedPicks_simple": [
-        "6818.XHKG_closeDelta7dR",
-        "6837.XHKG_closeDelta9dR",
-        "0267.XHKG_closeDelta5dR"
+        "6837.XHKG_closeDelta8dR",
+        "0998.XHKG_closeDelta8dR",
+        "3328.XHKG_closeDelta7dR",
+        "0019.XHKG_closeDelta6dR"
       ]
     },
     {
       "datetime": "2021-01-13",
-      "initialPicksCount": 4,
-      "limitedPicksCount": 3,
-      "avgActualY": -1.961573408026813,
-      "avgErr": -4.961573408026813,
+      "initialPicksCount": 2,
+      "limitedPicksCount": 2,
+      "avgActualY": -3.63095238095237,
+      "avgErr": -5.63095238095237,
       "limitedPicks": [
         {
-          "pick": "6030.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9904943083995904,
-          "actualY": -4.76658476658477,
-          "predErr": -7.76658476658477
+          "pick": "0998.XHKG_closeDelta9dR",
+          "pred": 2.0,
+          "predP": 0.8576395066324175,
+          "actualY": -5.27777777777777,
+          "predErr": -7.27777777777777
         },
         {
-          "pick": "6818.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.911079205202138,
-          "actualY": -5.15151515151514,
-          "predErr": -8.15151515151514
-        },
-        {
-          "pick": "6837.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.8008498081582889,
-          "actualY": 4.0333796940194695,
-          "predErr": 1.0333796940194695
+          "pick": "1339.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.8441385198390334,
+          "actualY": -1.9841269841269702,
+          "predErr": -3.98412698412697
         }
       ],
       "limitedPicks_simple": [
-        "6030.XHKG_closeDelta5dR",
-        "6818.XHKG_closeDelta7dR",
-        "6837.XHKG_closeDelta9dR"
+        "0998.XHKG_closeDelta9dR",
+        "1339.XHKG_closeDelta7dR"
       ]
     },
     {
       "datetime": "2021-01-12",
       "initialPicksCount": 5,
       "limitedPicksCount": 2,
-      "avgActualY": 0.12164513276861011,
-      "avgErr": -2.8783548672313897,
+      "avgActualY": -3.6722521292996597,
+      "avgErr": -5.672252129299659,
       "limitedPicks": [
         {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.982345924578605,
-          "actualY": 2.8735632183908,
-          "predErr": -0.12643678160920002
+          "pick": "3328.XHKG_closeDelta3dR",
+          "pred": 2.0,
+          "predP": 0.9428575815502838,
+          "actualY": -1.8348623853211,
+          "predErr": -3.8348623853210997
         },
         {
-          "pick": "6030.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.91423928183014,
-          "actualY": -2.6302729528535798,
-          "predErr": -5.63027295285358
+          "pick": "0998.XHKG_closeDelta5dR",
+          "pred": 2.0,
+          "predP": 0.8267920210893995,
+          "actualY": -5.50964187327822,
+          "predErr": -7.50964187327822
         }
       ],
       "limitedPicks_simple": [
-        "2628.XHKG_closeDelta8dR",
-        "6030.XHKG_closeDelta5dR"
+        "3328.XHKG_closeDelta3dR",
+        "0998.XHKG_closeDelta5dR"
       ]
     },
     {
@@ -1418,159 +1462,182 @@
     },
     {
       "datetime": "2021-01-08",
-      "initialPicksCount": 0
-    },
-    {
-      "datetime": "2021-01-07",
       "initialPicksCount": 1,
       "limitedPicksCount": 1,
-      "avgActualY": -0.98643649815043,
-      "avgErr": -3.98643649815043,
+      "avgActualY": -3.69230769230769,
+      "avgErr": -5.69230769230769,
       "limitedPicks": [
         {
-          "pick": "1093.XHKG_closeDelta4dR",
-          "pred": 3.0,
-          "predP": 0.8961025400944927,
-          "actualY": -0.98643649815043,
-          "predErr": -3.98643649815043
+          "pick": "0012.XHKG_closeDelta8dR",
+          "pred": 2.0,
+          "predP": 0.9148194844561424,
+          "actualY": -3.69230769230769,
+          "predErr": -5.69230769230769
         }
       ],
       "limitedPicks_simple": [
-        "1093.XHKG_closeDelta4dR"
+        "0012.XHKG_closeDelta8dR"
+      ]
+    },
+    {
+      "datetime": "2021-01-07",
+      "initialPicksCount": 2,
+      "limitedPicksCount": 2,
+      "avgActualY": -1.012145748987855,
+      "avgErr": -3.012145748987855,
+      "limitedPicks": [
+        {
+          "pick": "0813.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.8644310296056452,
+          "actualY": 0.0,
+          "predErr": -2.0
+        },
+        {
+          "pick": "1339.XHKG_closeDelta7dR",
+          "pred": 2.0,
+          "predP": 0.8463589477956684,
+          "actualY": -2.02429149797571,
+          "predErr": -4.02429149797571
+        }
+      ],
+      "limitedPicks_simple": [
+        "0813.XHKG_closeDelta1dR",
+        "1339.XHKG_closeDelta7dR"
       ]
     },
     {
       "datetime": "2021-01-06",
-      "initialPicksCount": 13,
+      "initialPicksCount": 17,
       "limitedPicksCount": 7,
-      "avgActualY": -3.830129320362211,
-      "avgErr": -6.830129320362212,
+      "avgActualY": -1.9882826800000513,
+      "avgErr": -3.9882826800000513,
       "limitedPicks": [
         {
-          "pick": "0012.XHKG_closeDelta9dR",
-          "pred": 3.0,
-          "predP": 0.9721423318058834,
-          "actualY": -3.36906584992342,
-          "predErr": -6.36906584992342
+          "pick": "3328.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.999000310572524,
+          "actualY": -3.24825986078885,
+          "predErr": -5.24825986078885
         },
         {
-          "pick": "0939.XHKG_closeDelta7dR",
-          "pred": 3.0,
-          "predP": 0.9665854742207336,
-          "actualY": -6.796116504854361,
-          "predErr": -9.79611650485436
+          "pick": "0998.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.9866332488202222,
+          "actualY": -2.9239766081871297,
+          "predErr": -4.92397660818713
         },
         {
-          "pick": "2628.XHKG_closeDelta8dR",
-          "pred": 3.0,
-          "predP": 0.9639252197364206,
-          "actualY": -3.0612244897959098,
-          "predErr": -6.06122448979591
+          "pick": "0267.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9809878446145988,
+          "actualY": -1.21317157712303,
+          "predErr": -3.2131715771230303
         },
         {
-          "pick": "6818.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9580452123793106,
-          "actualY": -3.57142857142856,
-          "predErr": -6.5714285714285605
+          "pick": "2328.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.969167987855522,
+          "actualY": -2.12071778140293,
+          "predErr": -4.12071778140293
         },
         {
-          "pick": "3988.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9540937845312034,
-          "actualY": -1.4760147601476001,
-          "predErr": -4.4760147601476
+          "pick": "6808.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9649741808909814,
+          "actualY": 2.3936170212766,
+          "predErr": 0.3936170212765999
         },
         {
-          "pick": "1336.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9388658288290708,
-          "actualY": -2.90791599353796,
-          "predErr": -5.90791599353796
+          "pick": "1816.XHKG_closeDelta6dR",
+          "pred": 2.0,
+          "predP": 0.9504412785422393,
+          "actualY": -0.5681818181818099,
+          "predErr": -2.56818181818181
         },
         {
-          "pick": "0267.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.92853541330014,
-          "actualY": -5.62913907284767,
-          "predErr": -8.62913907284767
+          "pick": "0011.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9286067867914204,
+          "actualY": -6.23728813559321,
+          "predErr": -8.23728813559321
         }
       ],
       "limitedPicks_simple": [
-        "0012.XHKG_closeDelta9dR",
-        "0939.XHKG_closeDelta7dR",
-        "2628.XHKG_closeDelta8dR",
-        "6818.XHKG_closeDelta3dR",
-        "3988.XHKG_closeDelta6dR",
-        "1336.XHKG_closeDelta6dR",
-        "0267.XHKG_closeDelta6dR"
+        "3328.XHKG_closeDelta6dR",
+        "0998.XHKG_closeDelta6dR",
+        "0267.XHKG_closeDelta2dR",
+        "2328.XHKG_closeDelta2dR",
+        "6808.XHKG_closeDelta1dR",
+        "1816.XHKG_closeDelta6dR",
+        "0011.XHKG_closeDelta2dR"
       ]
     },
     {
       "datetime": "2021-01-05",
-      "initialPicksCount": 12,
+      "initialPicksCount": 17,
       "limitedPicksCount": 7,
-      "avgActualY": -0.764704689948017,
-      "avgErr": -3.764704689948018,
+      "avgActualY": -3.196497295148837,
+      "avgErr": -5.196497295148837,
       "limitedPicks": [
         {
-          "pick": "1093.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9932490091753252,
-          "actualY": -3.06748466257668,
-          "predErr": -6.06748466257668
-        },
-        {
-          "pick": "6837.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.987117952208702,
-          "actualY": -3.05980528511822,
-          "predErr": -6.05980528511822
+          "pick": "0728.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9894867346289604,
+          "actualY": -3.57142857142857,
+          "predErr": -5.571428571428569
         },
         {
           "pick": "0267.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.969268439673814,
+          "pred": 2.0,
+          "predP": 0.9893540799640282,
           "actualY": -2.10526315789473,
-          "predErr": -5.10526315789473
+          "predErr": -4.10526315789473
         },
         {
-          "pick": "3988.XHKG_closeDelta6dR",
-          "pred": 3.0,
-          "predP": 0.9579694512063516,
-          "actualY": -2.94117647058823,
-          "predErr": -5.94117647058823
+          "pick": "1816.XHKG_closeDelta4dR",
+          "pred": 2.0,
+          "predP": 0.9693668048337208,
+          "actualY": -3.38983050847457,
+          "predErr": -5.38983050847457
         },
         {
-          "pick": "1336.XHKG_closeDelta3dR",
-          "pred": 3.0,
-          "predP": 0.9389804117761916,
-          "actualY": -1.67224080267558,
-          "predErr": -4.67224080267558
+          "pick": "2888.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9665354653855276,
+          "actualY": -2.9702970297029703,
+          "predErr": -4.97029702970297
         },
         {
-          "pick": "0762.XHKG_closeDelta2dR",
-          "pred": 3.0,
-          "predP": 0.9338632012287756,
-          "actualY": 8.988764044943801,
-          "predErr": 5.988764044943801
+          "pick": "2378.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9643939657666808,
+          "actualY": -1.3623978201634799,
+          "predErr": -3.36239782016348
         },
         {
-          "pick": "0941.XHKG_closeDelta5dR",
-          "pred": 3.0,
-          "predP": 0.9281431725508198,
-          "actualY": -1.49572649572648,
-          "predErr": -4.49572649572648
+          "pick": "0914.XHKG_closeDelta1dR",
+          "pred": 2.0,
+          "predP": 0.9582840002887087,
+          "actualY": -5.99613152804642,
+          "predErr": -7.99613152804642
+        },
+        {
+          "pick": "2328.XHKG_closeDelta2dR",
+          "pred": 2.0,
+          "predP": 0.9514211355934172,
+          "actualY": -2.9801324503311197,
+          "predErr": -4.980132450331119
         }
       ],
       "limitedPicks_simple": [
-        "1093.XHKG_closeDelta5dR",
-        "6837.XHKG_closeDelta3dR",
+        "0728.XHKG_closeDelta1dR",
         "0267.XHKG_closeDelta2dR",
-        "3988.XHKG_closeDelta6dR",
-        "1336.XHKG_closeDelta3dR",
-        "0762.XHKG_closeDelta2dR",
-        "0941.XHKG_closeDelta5dR"
+        "1816.XHKG_closeDelta4dR",
+        "2888.XHKG_closeDelta1dR",
+        "2378.XHKG_closeDelta1dR",
+        "0914.XHKG_closeDelta1dR",
+        "2328.XHKG_closeDelta2dR"
       ]
     },
     {

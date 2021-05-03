@@ -5,7 +5,8 @@ from joblib import dump, load
 ROOT = 'project2_mldlivst/data'
 trimCount = 8
 # yCtgArr = [-5, 0, 2, 5]
-yCtgArr = [0, 3]
+# yCtgArr = [0, 3]
+yCtgArr = [0, 2]
 
 def run():
   x_df_all = pd.read_csv(ROOT + '/training1_X.csv')
